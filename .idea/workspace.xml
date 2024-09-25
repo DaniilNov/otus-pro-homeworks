@@ -5,18 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AgreementDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AgreementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/PaymentProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AgreementServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/PaymentProcessorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/AgreementServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/PaymentProcessorImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/PaymentProcessorImplWithSpyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +36,52 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="otus-pro-homeworks" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="otus-pro-homeworks" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="otus-pro-homeworks" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -42,10 +95,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.AccountServiceImplParametrizedTest.executor": "Run",
+    "Gradle.Build otus-pro-homeworks.executor": "Run",
+    "Gradle.Tests in 'impl'.executor": "Run",
+    "Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'.executor": "Run",
     "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "Gradle.otus-pro-homeworks [:Application.main()].executor": "Run",
     "Gradle.otus-pro-homeworks [:Main.main()].executor": "Run",
+    "Gradle.otus-pro-homeworks [build].executor": "Run",
+    "Gradle.otus-pro-homeworks [dependencies].executor": "Run",
+    "JUnit.AccountServiceImplParametrizedTest.executor": "Run",
+    "JUnit.AccountServiceImplTest.executor": "Run",
+    "JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks/src/main/test/ru/otus/java/pro/unittests/bank/service/impl",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,23 +126,128 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.Main" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\src\main\test\ru\otus\java\pro\unittests\bank\service\impl" />
+      <recent name="C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\src\main\java\ru\otus\java\pro\unittests\bank" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.otus.java.pro.unittests.bank.service.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'">
+    <configuration name="AccountServiceImplParametrizedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;impl.AccountServiceImplParametrizedTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'impl'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;impl.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'ru.otus.java.pro.unittests.bank.service.impl'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.otus.java.pro.unittests.bank.service.impl.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AccountServiceImplParametrizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="otus-pro-homeworks.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.otus.java.pro.*" />
+          <option name="PATTERN" value="ru.otus.java.pro.unittests.bank.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ru.otus.java.pro.unittests.bank.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.unittests.bank.service.impl.AccountServiceImplParametrizedTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="otus-pro-homeworks.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.otus.java.pro.unittests.bank.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.otus.java.pro.unittests.bank.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.unittests.bank.service.impl.AccountServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'" />
+        <item itemvalue="Gradle.AccountServiceImplParametrizedTest" />
+        <item itemvalue="Gradle.Tests in 'impl'" />
+        <item itemvalue="JUnit.AccountServiceImplParametrizedTest" />
+        <item itemvalue="JUnit.AccountServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -95,11 +268,219 @@
       <option name="presentableId" value="Default" />
       <updated>1726643186346</updated>
       <workItem from="1726643187429" duration="738000" />
-      <workItem from="1726643970714" duration="572000" />
+      <workItem from="1726643970714" duration="3310000" />
+      <workItem from="1727240860064" duration="2417000" />
     </task>
+    <task id="LOCAL-00001" summary="master-commit">
+      <option name="closed" value="true" />
+      <created>1726644698594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726644698594</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Homework Reflection API и аннотации">
+      <option name="closed" value="true" />
+      <created>1726647111288</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726647111288</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Homework Reflection API и аннотации v2">
+      <option name="closed" value="true" />
+      <created>1727241031646</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727241031646</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="master-commit" />
+    <MESSAGE value="Homework Reflection API и аннотации" />
+    <MESSAGE value="Homework Reflection API и аннотации v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework Reflection API и аннотации v2" />
+  </component>
+  <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
+    <option name="historyDtoById">
+      <map>
+        <entry key="0b3236">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                </list>
+              </option>
+              <option name="id" value="0b3236" />
+              <option name="initiateTms" value="1727249402645" />
+              <option name="request" value=" Как создать тестовую директорию" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Создание тестовой директории в вашем проекте зависит от используемой вами системы сборки (Gradle или Maven). Я опишу шаги для обеих систем.&#10;&#10;### Gradle&#10;&#10;1. **Создание структуры директорий:**&#10;   В корне вашего проекта создайте следующую структуру директорий, если она еще не существует:&#10;   ```&#10;   src&#10;   └── test&#10;       └── java&#10;   ```&#10;&#10;2. **Настройка `build.gradle`:**&#10;   Убедитесь, что ваш `build.gradle` файл настроен для использования JUnit 5. Добавьте следующие зависимости, если они еще не добавлены:&#10;   ```groovy&#10;   plugins {&#10;       id 'java'&#10;   }&#10;&#10;   repositories {&#10;       mavenCentral()&#10;   }&#10;&#10;   dependencies {&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;       testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'&#10;       testImplementation 'org.mockito:mockito-core:5.11.0'&#10;       testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;   }&#10;&#10;   test {&#10;       useJUnitPlatform()&#10;   }&#10;   ```&#10;&#10;3. **Создание тестового класса:**&#10;   В директории `src/test/java` создайте пакет, соответствующий структуре вашего основного кода, и добавьте тестовый класс. Например:&#10;   ```&#10;   src&#10;   └── test&#10;       └── java&#10;           └── ru&#10;               └── otus&#10;                   └── java&#10;                       └── pro&#10;                           └── unittests&#10;                               └── bank&#10;                                   └── service&#10;                                       └── impl&#10;                                           └── AccountServiceImplParametrizedTest.java&#10;   ```&#10;&#10;### Maven&#10;&#10;1. **Создание структуры директорий:**&#10;   В корне вашего проекта создайте следующую структуру директорий, если она еще не существует:&#10;   ```&#10;   src&#10;   └── test&#10;       └── java&#10;   ```&#10;&#10;2. **Настройка `pom.xml`:**&#10;   Убедитесь, что ваш `pom.xml` файл настроен для использования JUnit 5. Добавьте следующие зависимости, если они еще не добавлены:&#10;   ```xml&#10;   &lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;&#10;            xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;            xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;&#10;       &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#10;       &lt;groupId&gt;com.example&lt;/groupId&gt;&#10;       &lt;artifactId&gt;your-project&lt;/artifactId&gt;&#10;       &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;&#10;&#10;       &lt;dependencies&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;               &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;&#10;               &lt;version&gt;5.10.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;               &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;&#10;               &lt;version&gt;5.10.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;               &lt;artifactId&gt;junit-jupiter-params&lt;/artifactId&gt;&#10;               &lt;version&gt;5.10.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;               &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;               &lt;version&gt;5.11.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;               &lt;artifactId&gt;mockito-junit-jupiter&lt;/artifactId&gt;&#10;               &lt;version&gt;5.11.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;       &lt;/dependencies&gt;&#10;&#10;       &lt;build&gt;&#10;           &lt;plugins&gt;&#10;               &lt;plugin&gt;&#10;                   &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;&#10;                   &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;&#10;                   &lt;version&gt;3.0.0-M5&lt;/version&gt;&#10;                   &lt;configuration&gt;&#10;                       &lt;includes&gt;&#10;                           &lt;include&gt;**/*Test.java&lt;/include&gt;&#10;                       &lt;/includes&gt;&#10;                   &lt;/configuration&gt;&#10;               &lt;/plugin&gt;&#10;           &lt;/plugins&gt;&#10;       &lt;/build&gt;&#10;   &lt;/project&gt;&#10;   ```&#10;&#10;3. **Создание тестового класса:**&#10;   В директории `src/test/java` создайте пакет, соответствующий структуре вашего основного кода, и добавьте тестовый класс. Например:&#10;   ```&#10;   src&#10;   └── test&#10;       └── java&#10;           └── ru&#10;               └── otus&#10;                   └── java&#10;                       └── pro&#10;                           └── unittests&#10;                               └── bank&#10;                                   └── service&#10;                                       └── impl&#10;                                           └── AccountServiceImplParametrizedTest.java&#10;   ```&#10;&#10;После выполнения этих шагов, вы должны иметь рабочую тестовую директорию, и ваши тесты должны запускаться корректно." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1727249431266" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
+                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="53a3af">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                </list>
+              </option>
+              <option name="id" value="53a3af" />
+              <option name="initiateTms" value="1727249183649" />
+              <option name="request" value=" How to fix the following error:&#10;Cannot resolve symbol 'ParameterizedTest'" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Ошибка &quot;Cannot resolve symbol 'ParameterizedTest'&quot; указывает на то, что ваш проект не может найти аннотацию `ParameterizedTest` из JUnit. Это может быть связано с отсутствием правильных зависимостей в вашем проекте.&#10;&#10;Для решения этой проблемы, убедитесь, что у вас правильно настроены зависимости JUnit в вашем проекте. Если вы используете Gradle, добавьте следующие зависимости в ваш `build.gradle` файл:&#10;&#10;```groovy&#10;dependencies {&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'&#10;    testImplementation 'org.mockito:mockito-core:5.11.0'&#10;    testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;}&#10;```&#10;&#10;Если вы используете Maven, добавьте следующие зависимости в ваш `pom.xml` файл:&#10;&#10;```xml&#10;&lt;dependencies&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-params&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-junit-jupiter&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;&lt;/dependencies&gt;&#10;```&#10;&#10;После добавления зависимостей, выполните команду для обновления зависимостей:&#10;&#10;Для Gradle:&#10;```sh&#10;./gradlew build&#10;```&#10;&#10;Для Maven:&#10;```sh&#10;mvn clean install&#10;```&#10;&#10;Также убедитесь, что ваш тестовый класс импортирует правильные аннотации. В начале вашего тестового класса должны быть следующие импорты:&#10;&#10;```java&#10;import org.junit.jupiter.api.extension.ExtendWith;&#10;import org.junit.jupiter.params.ParameterizedTest;&#10;import org.junit.jupiter.params.provider.Arguments;&#10;import org.junit.jupiter.params.provider.CsvSource;&#10;import org.junit.jupiter.params.provider.MethodSource;&#10;import org.mockito.InjectMocks;&#10;import org.mockito.Mock;&#10;import org.mockito.junit.jupiter.MockitoExtension;&#10;import ru.otus.java.pro.unittests.bank.dao.AccountDao;&#10;import ru.otus.java.pro.unittests.bank.entity.Account;&#10;&#10;import java.math.BigDecimal;&#10;import java.util.Optional;&#10;import java.util.stream.Stream;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.mockito.ArgumentMatchers.eq;&#10;import static org.mockito.Mockito.when;&#10;```&#10;&#10;После выполнения этих шагов, ошибка &quot;Cannot resolve symbol 'ParameterizedTest'&quot; должна исчезнуть." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1727249196287" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
+                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="5abd3d">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                </list>
+              </option>
+              <option name="id" value="5abd3d" />
+              <option name="initiateTms" value="1727249373547" />
+              <option name="request" value=" C:\Users\xa86\.jdks\temurin-21.0.4\bin\java.exe -ea -Didea.test.cyclic.buffer.size=1048576 &quot;-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\lib\idea_rt.jar=59473:C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\bin&quot; -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath &quot;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\plugins\junit\lib\junit-rt.jar;C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\build\classes\java\main;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.10.0\2fe4ba3d31d5067878e468c96aa039005a9134d3\junit-jupiter-api-5.10.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\5.11.0\e4069fa4f4ff2c94322cfec5f2e45341c6c70aff\mockito-core-5.11.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-junit-jupiter\5.11.0\8e658dd339f40305ed4293db25545b5df98b171b\mockito-junit-jupiter-5.11.0.jar&quot; com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 ru.otus.java.pro.unittests.bank.service.impl.AccountServiceImplParametrizedTest&#10;Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: org/junit/platform/engine/TestDescriptor&#10;&#9;at java.base/java.lang.Class.forName0(Native Method)&#10;&#9;at java.base/java.lang.Class.forName(Class.java:421)&#10;&#9;at java.base/java.lang.Class.forName(Class.java:412)&#10;&#9;at com.intellij.rt.junit.JUnitStarter.getAgentClass(JUnitStarter.java:241)&#10;&#9;at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:222)&#10;&#9;at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)&#10;Caused by: java.lang.ClassNotFoundException: org.junit.platform.engine.TestDescriptor&#10;&#9;at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)&#10;&#9;at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)&#10;&#9;at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)&#10;&#9;... 6 more" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Ошибка `java.lang.NoClassDefFoundError: org/junit/platform/engine/TestDescriptor` указывает на то, что в classpath отсутствует необходимая библиотека JUnit Platform Engine. Это может произойти, если зависимости JUnit не были правильно настроены в вашем проекте.&#10;&#10;Для решения этой проблемы, убедитесь, что у вас правильно настроены зависимости JUnit в вашем проекте. Если вы используете Gradle, добавьте следующие зависимости в ваш `build.gradle` файл:&#10;&#10;```groovy&#10;dependencies {&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'&#10;    testImplementation 'org.mockito:mockito-core:5.11.0'&#10;    testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;}&#10;```&#10;&#10;Если вы используете Maven, добавьте следующие зависимости в ваш `pom.xml` файл:&#10;&#10;```xml&#10;&lt;dependencies&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-params&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-junit-jupiter&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;&lt;/dependencies&gt;&#10;```&#10;&#10;После добавления зависимостей, выполните команду для обновления зависимостей:&#10;&#10;Для Gradle:&#10;```sh&#10;./gradlew build&#10;```&#10;&#10;Для Maven:&#10;```sh&#10;mvn clean install&#10;```&#10;&#10;Также убедитесь, что ваш тестовый класс импортирует правильные аннотации. В начале вашего тестового класса должны быть следующие импорты:&#10;&#10;```java&#10;import org.junit.jupiter.api.extension.ExtendWith;&#10;import org.junit.jupiter.params.ParameterizedTest;&#10;import org.junit.jupiter.params.provider.Arguments;&#10;import org.junit.jupiter.params.provider.CsvSource;&#10;import org.junit.jupiter.params.provider.MethodSource;&#10;import org.mockito.InjectMocks;&#10;import org.mockito.Mock;&#10;import org.mockito.junit.jupiter.MockitoExtension;&#10;import ru.otus.java.pro.unittests.bank.dao.AccountDao;&#10;import ru.otus.java.pro.unittests.bank.entity.Account;&#10;&#10;import java.math.BigDecimal;&#10;import java.util.Optional;&#10;import java.util.stream.Stream;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.mockito.ArgumentMatchers.eq;&#10;import static org.mockito.Mockito.when;&#10;```&#10;&#10;Если вы используете IntelliJ IDEA, убедитесь, что ваш проект настроен на использование JUnit 5. Для этого:&#10;&#10;1. Откройте настройки проекта (`File` -&gt; `Project Structure`).&#10;2. Перейдите в раздел `Modules` и выберите ваш модуль.&#10;3. Убедитесь, что в разделе `Dependencies` добавлены все необходимые зависимости JUnit 5.&#10;4. Перейдите в раздел `Libraries` и убедитесь, что JUnit 5 добавлен в качестве библиотеки.&#10;&#10;После выполнения этих шагов, ошибка &quot;Cannot resolve symbol 'ParameterizedTest'&quot; должна исчезнуть." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1727249391505" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="84c658">
+          <value>
+            <ChatHistoryModel>
+              <option name="id" value="84c658" />
+              <option name="initiateTms" value="1727248978927" />
+              <option name="isStopped" value="true" />
+              <option name="request" value=" При запуске тестов:&#10;AccountServiceImplParametrizedTest&#10;AccountServiceImplTest&#10;AgreementServiceImplTest&#10;PaymentProcessorImplTest&#10;PaymentProcessorImplWithSpyTest" />
+              <option name="response" value="" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="d81608">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                </list>
+              </option>
+              <option name="id" value="d81608" />
+              <option name="initiateTms" value="1727248993876" />
+              <option name="request" value=" При запуске тестов: C:\Users\xa86\.jdks\temurin-21.0.4\bin\java.exe -ea -Didea.test.cyclic.buffer.size=1048576 &quot;-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\lib\idea_rt.jar=59299:C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\bin&quot; -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath &quot;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\plugins\junit\lib\junit-rt.jar;C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\build\classes\java\main;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.10.0\2fe4ba3d31d5067878e468c96aa039005a9134d3\junit-jupiter-api-5.10.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.10.0\9041c7365495a897a64782ea5a6fdb99dab1814e\junit-jupiter-params-5.10.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\5.11.0\e4069fa4f4ff2c94322cfec5f2e45341c6c70aff\mockito-core-5.11.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-junit-jupiter\5.11.0\8e658dd339f40305ed4293db25545b5df98b171b\mockito-junit-jupiter-5.11.0.jar&quot; com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 ru.otus.java.pro.unittests.bank.service.impl.AccountServiceImplParametrizedTest&#10;                    Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: org/junit/platform/engine/TestDescriptor&#10;                    &#9;at java.base/java.lang.Class.forName0(Native Method)&#10;                    &#9;at java.base/java.lang.Class.forName(Class.java:421)&#10;                    &#9;at java.base/java.lang.Class.forName(Class.java:412)&#10;                    &#9;at com.intellij.rt.junit.JUnitStarter.getAgentClass(JUnitStarter.java:241)&#10;                    &#9;at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:222)&#10;                    &#9;at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)&#10;                    Caused by: java.lang.ClassNotFoundException: org.junit.platform.engine.TestDescriptor&#10;                    &#9;at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)&#10;                    &#9;at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)&#10;                    &#9;at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Ошибка `java.lang.NoClassDefFoundError: org/junit/platform/engine/TestDescriptor` указывает на то, что в classpath отсутствует необходимая библиотека JUnit Platform Engine. Это может произойти, если зависимости JUnit не были правильно настроены в вашем проекте.&#10;&#10;Для решения этой проблемы, убедитесь, что у вас правильно настроены зависимости JUnit в вашем проекте. Если вы используете Gradle, добавьте следующие зависимости в ваш `build.gradle` файл:&#10;&#10;```groovy&#10;dependencies {&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;    testImplementation 'org.mockito:mockito-core:5.11.0'&#10;    testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;}&#10;```&#10;&#10;Если вы используете Maven, добавьте следующие зависимости в ваш `pom.xml` файл:&#10;&#10;```xml&#10;&lt;dependencies&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-junit-jupiter&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;&lt;/dependencies&gt;&#10;```&#10;&#10;После добавления зависимостей, выполните команду для обновления зависимостей:&#10;&#10;Для Gradle:&#10;```sh&#10;./gradlew build&#10;```&#10;&#10;Для Maven:&#10;```sh&#10;mvn clean install&#10;```&#10;&#10;После этого попробуйте снова запустить тесты. Это должно решить проблему с отсутствующей библиотекой JUnit Platform Engine." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1727249017922" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
