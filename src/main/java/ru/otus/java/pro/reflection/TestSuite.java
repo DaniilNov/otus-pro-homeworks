@@ -1,6 +1,6 @@
-package ru.otus.java.pro;
+package ru.otus.java.pro.reflection;
 
-import ru.otus.java.pro.annotations.*;
+import ru.otus.java.pro.reflection.annotations.*;
 
 public class TestSuite {
 

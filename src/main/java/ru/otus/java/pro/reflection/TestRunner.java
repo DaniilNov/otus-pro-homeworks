@@ -1,10 +1,10 @@
-package ru.otus.java.pro;
+package ru.otus.java.pro.reflection;
 
-import ru.otus.java.pro.annotations.AfterSuite;
-import ru.otus.java.pro.annotations.BeforeSuite;
-import ru.otus.java.pro.annotations.Disabled;
-import ru.otus.java.pro.annotations.Test;
-import ru.otus.java.pro.exceptions.TestConfigurationException;
+import ru.otus.java.pro.reflection.annotations.AfterSuite;
+import ru.otus.java.pro.reflection.annotations.BeforeSuite;
+import ru.otus.java.pro.reflection.annotations.Disabled;
+import ru.otus.java.pro.reflection.annotations.Test;
+import ru.otus.java.pro.reflection.exceptions.TestConfigurationException;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

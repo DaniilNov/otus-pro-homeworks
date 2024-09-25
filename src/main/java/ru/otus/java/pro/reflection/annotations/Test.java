@@ -1,4 +1,4 @@
-package ru.otus.java.pro.annotations;
+package ru.otus.java.pro.reflection.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
