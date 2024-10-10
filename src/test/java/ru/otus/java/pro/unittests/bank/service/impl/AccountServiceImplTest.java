@@ -9,13 +9,16 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import ru.otus.java.pro.unittests.bank.dao.AccountDao;
 import ru.otus.java.pro.unittests.bank.entity.Account;
+import ru.otus.java.pro.unittests.bank.entity.Agreement;
 import ru.otus.java.pro.unittests.bank.service.exception.AccountException;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -83,4 +86,59 @@ public class AccountServiceImplTest {
         verify(accountDao).save(argThat(sourceMatcher));
         verify(accountDao).save(argThat(destinationMatcher));
         }
+
+    @Test
+    public void testAddAccount() {
+        Agreement agreement = new Agreement();
+        agreement.setId(1L);
+
+        Account account = new Account();
+        account.setAgreementId(agreement.getId());
+        account.setNumber("12345");
+        account.setType(1);
+        account.setAmount(new BigDecimal(100));
+
+        when(accountDao.save(any(Account.class))).thenReturn(account);
+
+        Account result = accountServiceImpl.addAccount(agreement, "12345", 1, new BigDecimal(100));
+
+        assertEquals(account, result);
+        verify(accountDao).save(any(Account.class));
+    }
+
+    @Test
+    public void testGetAccounts() {
+        List<Account> accounts = List.of(new Account(), new Account());
+        when(accountDao.findAll()).thenReturn(accounts);
+
+        List<Account> result = accountServiceImpl.getAccounts();
+
+        assertEquals(accounts, result);
+        verify(accountDao).findAll();
+    }
+
+    @Test
+    public void testCharge() {
+        Account account = new Account();
+        account.setAmount(new BigDecimal(100));
+
+        when(accountDao.findById(eq(1L))).thenReturn(Optional.of(account));
+
+        boolean result = accountServiceImpl.charge(1L, new BigDecimal(10));
+
+        assertEquals(new BigDecimal(90), account.getAmount());
+        assertTrue(result);
+        verify(accountDao).save(account);
+    }
+
+    @Test
+    public void testChargeAccountNotFound() {
+        when(accountDao.findById(anyLong())).thenReturn(Optional.empty());
+
+        AccountException exception = assertThrows(AccountException.class, () -> {
+            accountServiceImpl.charge(1L, new BigDecimal(10));
+        });
+
+        assertEquals("No source account", exception.getMessage());
+    }
 }
