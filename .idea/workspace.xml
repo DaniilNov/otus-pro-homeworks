@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AgreementDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AgreementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/PaymentProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AgreementServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/PaymentProcessorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/AgreementServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/PaymentProcessorImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/otus/java/pro/unittests/bank/service/impl/PaymentProcessorImplWithSpyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +55,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,39 +77,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.AccountServiceImplParametrizedTest.executor": "Run",
-    "Gradle.Build otus-pro-homeworks.executor": "Run",
-    "Gradle.Tests in 'impl'.executor": "Run",
-    "Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'.executor": "Run",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "Gradle.otus-pro-homeworks [:Application.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [:Main.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [build].executor": "Run",
-    "Gradle.otus-pro-homeworks [dependencies].executor": "Run",
-    "JUnit.AccountServiceImplParametrizedTest.executor": "Run",
-    "JUnit.AccountServiceImplTest.executor": "Run",
-    "JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks/src/main/test/ru/otus/java/pro/unittests/bank/service/impl",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.AccountServiceImplParametrizedTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build otus-pro-homeworks.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'impl'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountServiceImplParametrizedTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks/src/main/test/ru/otus/java/pro/unittests/bank/service/impl&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\src\main\test\ru\otus\java\pro\unittests\bank\service\impl" />
@@ -138,7 +122,46 @@
       <recent name="ru.otus.java.pro.unittests.bank.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'">
+  <component name="RunManager" selected="Application.ru.otus.java.pro.streamapi.Main">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.reflection.Application" />
+      <module name="otus-pro-homeworks.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.otus.java.pro.reflection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.unittests.bank.Main" />
+      <module name="otus-pro-homeworks.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.otus.java.pro.unittests.bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ru.otus.java.pro.streamapi.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.streamapi.Main" />
+      <module name="otus-pro-homeworks.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.otus.java.pro.streamapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccountServiceImplParametrizedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -153,30 +176,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;impl.AccountServiceImplParametrizedTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tests in 'impl'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;impl.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -211,43 +210,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AccountServiceImplParametrizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="otus-pro-homeworks.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.otus.java.pro.unittests.bank.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.otus.java.pro.unittests.bank.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.unittests.bank.service.impl.AccountServiceImplParametrizedTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="otus-pro-homeworks.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.otus.java.pro.unittests.bank.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.otus.java.pro.unittests.bank.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.unittests.bank.service.impl.AccountServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ru.otus.java.pro.streamapi.Main" />
+        <item itemvalue="Application.Application" />
         <item itemvalue="Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.AccountServiceImplParametrizedTest" />
-        <item itemvalue="Gradle.Tests in 'impl'" />
-        <item itemvalue="JUnit.AccountServiceImplParametrizedTest" />
-        <item itemvalue="JUnit.AccountServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -310,171 +279,101 @@
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
       <map>
-        <entry key="0b3236">
+        <entry key="0d27cd">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
                 </list>
               </option>
-              <option name="id" value="0b3236" />
-              <option name="initiateTms" value="1727249402645" />
-              <option name="request" value=" Как создать тестовую директорию" />
+              <option name="id" value="0d27cd" />
+              <option name="initiateTms" value="1728548565829" />
+              <option name="request" value=" Давай Status и Task положим в отдельный пакет" />
               <option name="response" value="" />
-              <option name="responseDescription" value="Создание тестовой директории в вашем проекте зависит от используемой вами системы сборки (Gradle или Maven). Я опишу шаги для обеих систем.&#10;&#10;### Gradle&#10;&#10;1. **Создание структуры директорий:**&#10;   В корне вашего проекта создайте следующую структуру директорий, если она еще не существует:&#10;   ```&#10;   src&#10;   └── test&#10;       └── java&#10;   ```&#10;&#10;2. **Настройка `build.gradle`:**&#10;   Убедитесь, что ваш `build.gradle` файл настроен для использования JUnit 5. Добавьте следующие зависимости, если они еще не добавлены:&#10;   ```groovy&#10;   plugins {&#10;       id 'java'&#10;   }&#10;&#10;   repositories {&#10;       mavenCentral()&#10;   }&#10;&#10;   dependencies {&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;       testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'&#10;       testImplementation 'org.mockito:mockito-core:5.11.0'&#10;       testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;   }&#10;&#10;   test {&#10;       useJUnitPlatform()&#10;   }&#10;   ```&#10;&#10;3. **Создание тестового класса:**&#10;   В директории `src/test/java` создайте пакет, соответствующий структуре вашего основного кода, и добавьте тестовый класс. Например:&#10;   ```&#10;   src&#10;   └── test&#10;       └── java&#10;           └── ru&#10;               └── otus&#10;                   └── java&#10;                       └── pro&#10;                           └── unittests&#10;                               └── bank&#10;                                   └── service&#10;                                       └── impl&#10;                                           └── AccountServiceImplParametrizedTest.java&#10;   ```&#10;&#10;### Maven&#10;&#10;1. **Создание структуры директорий:**&#10;   В корне вашего проекта создайте следующую структуру директорий, если она еще не существует:&#10;   ```&#10;   src&#10;   └── test&#10;       └── java&#10;   ```&#10;&#10;2. **Настройка `pom.xml`:**&#10;   Убедитесь, что ваш `pom.xml` файл настроен для использования JUnit 5. Добавьте следующие зависимости, если они еще не добавлены:&#10;   ```xml&#10;   &lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;&#10;            xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;            xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;&#10;       &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#10;       &lt;groupId&gt;com.example&lt;/groupId&gt;&#10;       &lt;artifactId&gt;your-project&lt;/artifactId&gt;&#10;       &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;&#10;&#10;       &lt;dependencies&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;               &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;&#10;               &lt;version&gt;5.10.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;               &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;&#10;               &lt;version&gt;5.10.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;               &lt;artifactId&gt;junit-jupiter-params&lt;/artifactId&gt;&#10;               &lt;version&gt;5.10.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;               &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;               &lt;version&gt;5.11.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;           &lt;dependency&gt;&#10;               &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;               &lt;artifactId&gt;mockito-junit-jupiter&lt;/artifactId&gt;&#10;               &lt;version&gt;5.11.0&lt;/version&gt;&#10;               &lt;scope&gt;test&lt;/scope&gt;&#10;           &lt;/dependency&gt;&#10;       &lt;/dependencies&gt;&#10;&#10;       &lt;build&gt;&#10;           &lt;plugins&gt;&#10;               &lt;plugin&gt;&#10;                   &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;&#10;                   &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;&#10;                   &lt;version&gt;3.0.0-M5&lt;/version&gt;&#10;                   &lt;configuration&gt;&#10;                       &lt;includes&gt;&#10;                           &lt;include&gt;**/*Test.java&lt;/include&gt;&#10;                       &lt;/includes&gt;&#10;                   &lt;/configuration&gt;&#10;               &lt;/plugin&gt;&#10;           &lt;/plugins&gt;&#10;       &lt;/build&gt;&#10;   &lt;/project&gt;&#10;   ```&#10;&#10;3. **Создание тестового класса:**&#10;   В директории `src/test/java` создайте пакет, соответствующий структуре вашего основного кода, и добавьте тестовый класс. Например:&#10;   ```&#10;   src&#10;   └── test&#10;       └── java&#10;           └── ru&#10;               └── otus&#10;                   └── java&#10;                       └── pro&#10;                           └── unittests&#10;                               └── bank&#10;                                   └── service&#10;                                       └── impl&#10;                                           └── AccountServiceImplParametrizedTest.java&#10;   ```&#10;&#10;После выполнения этих шагов, вы должны иметь рабочую тестовую директорию, и ваши тесты должны запускаться корректно." />
+              <option name="responseDescription" value="Хорошо, давайте создадим новый пакет, например, `ru.otus.java.pro.streamapi.model`, и переместим туда классы `Status` и `Task`.&#10;&#10;### Шаг 1: Создание нового пакета и перемещение классов&#10;&#10;Создайте новый пакет `ru.otus.java.pro.streamapi.model` и переместите туда файлы `Status.java` и `Task.java`.&#10;&#10;### Новый файл `Status.java`&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi.model;&#10;&#10;public enum Status {&#10;    OPEN, IN_PROGRESS, CLOSED&#10;}&#10;```&#10;&#10;### Обновленный файл `Task.java`&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi.model;&#10;&#10;public class Task {&#10;    private final int id;&#10;    private final String name;&#10;    private final Status status;&#10;&#10;    public Task(int id, String name, Status status) {&#10;        this.id = id;&#10;        this.name = name;&#10;        this.status = status;&#10;    }&#10;&#10;    public int getId() {&#10;        return id;&#10;    }&#10;&#10;    public String getName() {&#10;        return name;&#10;    }&#10;&#10;    public Status getStatus() {&#10;        return status;&#10;    }&#10;&#10;    @Override&#10;    public String toString() {&#10;        return &quot;Task{&quot; +&#10;                &quot;id=&quot; + id +&#10;                &quot;, name='&quot; + name + '\'' +&#10;                &quot;, status=&quot; + status +&#10;                '}';&#10;    }&#10;}&#10;```&#10;&#10;### Шаг 2: Обновление класса `Main`&#10;&#10;Теперь обновим класс `Main` для использования новых путей к классам `Status` и `Task`.&#10;&#10;### Обновленный файл `Main.java`&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi;&#10;&#10;import ru.otus.java.pro.streamapi.model.Status;&#10;import ru.otus.java.pro.streamapi.model.Task;&#10;&#10;import java.util.Arrays;&#10;import java.util.List;&#10;import java.util.stream.Collectors;&#10;&#10;public class Main {&#10;    public static void main(String[] args) {&#10;        List&lt;Task&gt; tasks = Arrays.asList(&#10;                new Task(1, &quot;Task 1&quot;, Status.OPEN),&#10;                new Task(2, &quot;Task 2&quot;, Status.IN_PROGRESS),&#10;                new Task(3, &quot;Task 3&quot;, Status.CLOSED),&#10;                new Task(4, &quot;Task 4&quot;, Status.OPEN),&#10;                new Task(5, &quot;Task 5&quot;, Status.IN_PROGRESS)&#10;        );&#10;&#10;        // Получение списка задач по выбранному статусу&#10;        List&lt;Task&gt; openTasks = getTasksByStatus(tasks, Status.OPEN);&#10;        System.out.println(&quot;Open Tasks: &quot; + openTasks);&#10;&#10;        // Проверка наличия задачи с указанным ID&#10;        boolean hasTaskWithId = hasTaskWithId(tasks, 3);&#10;        System.out.println(&quot;Has task with ID 3: &quot; + hasTaskWithId);&#10;&#10;        // Получение списка задач в отсортированном по статусу виде&#10;        List&lt;Task&gt; sortedTasks = getTasksSortedByStatus(tasks);&#10;        System.out.println(&quot;Sorted Tasks: &quot; + sortedTasks);&#10;&#10;        // Подсчет количества задач по определенному статусу&#10;        long countOpenTasks = countTasksByStatus(tasks, Status.OPEN);&#10;        System.out.println(&quot;Count of Open Tasks: &quot; + countOpenTasks);&#10;    }&#10;&#10;    public static List&lt;Task&gt; getTasksByStatus(List&lt;Task&gt; tasks, Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    public static boolean hasTaskWithId(List&lt;Task&gt; tasks, int id) {&#10;        return tasks.stream()&#10;                .anyMatch(task -&gt; task.getId() == id);&#10;    }&#10;&#10;    public static List&lt;Task&gt; getTasksSortedByStatus(List&lt;Task&gt; tasks) {&#10;        return tasks.stream()&#10;                .sorted((task1, task2) -&gt; {&#10;                    if (task1.getStatus() == task2.getStatus()) {&#10;                        return 0;&#10;                    }&#10;                    if (task1.getStatus() == Status.OPEN) {&#10;                        return -1;&#10;                    }&#10;                    if (task1.getStatus() == Status.IN_PROGRESS) {&#10;                        return task2.getStatus() == Status.OPEN ? 1 : -1;&#10;                    }&#10;                    return 1;&#10;                })&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    public static long countTasksByStatus(List&lt;Task&gt; tasks, Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .count();&#10;    }&#10;}&#10;```&#10;&#10;Теперь классы `Status` и `Task` находятся в отдельном пакете `ru.otus.java.pro.streamapi.model`, что улучшает организацию кода и делает его более модульным." />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1727249431266" />
+              <option name="responseTms" value="1728548581406" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
-                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
                 </list>
               </option>
             </ChatHistoryModel>
           </value>
         </entry>
-        <entry key="53a3af">
+        <entry key="3f2946">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
                 </list>
               </option>
-              <option name="id" value="53a3af" />
-              <option name="initiateTms" value="1727249183649" />
-              <option name="request" value=" How to fix the following error:&#10;Cannot resolve symbol 'ParameterizedTest'" />
+              <option name="id" value="3f2946" />
+              <option name="initiateTms" value="1728548462199" />
+              <option name="request" value=" Имеется список объектов класса Задача (ID, название, статус). С помощью Stream API реализуйте:&#10;&#10;    Получение списка задач по выбранному статусу;&#10;    Проверка наличия задачи с указанным ID;&#10;    Получение списка задач в отсортированном по статусу виде: открыта, в работе, закрыта (можете выбирать любой статус и любой порядок, главное чтобы было 3 разных статуса);&#10;    Подсчет количества задач по определенному статусу." />
               <option name="response" value="" />
-              <option name="responseDescription" value="Ошибка &quot;Cannot resolve symbol 'ParameterizedTest'&quot; указывает на то, что ваш проект не может найти аннотацию `ParameterizedTest` из JUnit. Это может быть связано с отсутствием правильных зависимостей в вашем проекте.&#10;&#10;Для решения этой проблемы, убедитесь, что у вас правильно настроены зависимости JUnit в вашем проекте. Если вы используете Gradle, добавьте следующие зависимости в ваш `build.gradle` файл:&#10;&#10;```groovy&#10;dependencies {&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'&#10;    testImplementation 'org.mockito:mockito-core:5.11.0'&#10;    testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;}&#10;```&#10;&#10;Если вы используете Maven, добавьте следующие зависимости в ваш `pom.xml` файл:&#10;&#10;```xml&#10;&lt;dependencies&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-params&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-junit-jupiter&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;&lt;/dependencies&gt;&#10;```&#10;&#10;После добавления зависимостей, выполните команду для обновления зависимостей:&#10;&#10;Для Gradle:&#10;```sh&#10;./gradlew build&#10;```&#10;&#10;Для Maven:&#10;```sh&#10;mvn clean install&#10;```&#10;&#10;Также убедитесь, что ваш тестовый класс импортирует правильные аннотации. В начале вашего тестового класса должны быть следующие импорты:&#10;&#10;```java&#10;import org.junit.jupiter.api.extension.ExtendWith;&#10;import org.junit.jupiter.params.ParameterizedTest;&#10;import org.junit.jupiter.params.provider.Arguments;&#10;import org.junit.jupiter.params.provider.CsvSource;&#10;import org.junit.jupiter.params.provider.MethodSource;&#10;import org.mockito.InjectMocks;&#10;import org.mockito.Mock;&#10;import org.mockito.junit.jupiter.MockitoExtension;&#10;import ru.otus.java.pro.unittests.bank.dao.AccountDao;&#10;import ru.otus.java.pro.unittests.bank.entity.Account;&#10;&#10;import java.math.BigDecimal;&#10;import java.util.Optional;&#10;import java.util.stream.Stream;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.mockito.ArgumentMatchers.eq;&#10;import static org.mockito.Mockito.when;&#10;```&#10;&#10;После выполнения этих шагов, ошибка &quot;Cannot resolve symbol 'ParameterizedTest'&quot; должна исчезнуть." />
+              <option name="responseDescription" value="Для выполнения этих задач с использованием Stream API, сначала создадим класс `Task` с полями `id`, `name` и `status`. Затем реализуем методы для выполнения указанных операций.&#10;&#10;### Шаг 1: Создание класса `Task`&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi;&#10;&#10;public class Task {&#10;    private final int id;&#10;    private final String name;&#10;    private final Status status;&#10;&#10;    public Task(int id, String name, Status status) {&#10;        this.id = id;&#10;        this.name = name;&#10;        this.status = status;&#10;    }&#10;&#10;    public int getId() {&#10;        return id;&#10;    }&#10;&#10;    public String getName() {&#10;        return name;&#10;    }&#10;&#10;    public Status getStatus() {&#10;        return status;&#10;    }&#10;&#10;    @Override&#10;    public String toString() {&#10;        return &quot;Task{&quot; +&#10;                &quot;id=&quot; + id +&#10;                &quot;, name='&quot; + name + '\'' +&#10;                &quot;, status=&quot; + status +&#10;                '}';&#10;    }&#10;&#10;    public enum Status {&#10;        OPEN, IN_PROGRESS, CLOSED&#10;    }&#10;}&#10;```&#10;&#10;### Шаг 2: Реализация методов в классе `Main`&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi;&#10;&#10;import java.util.Arrays;&#10;import java.util.List;&#10;import java.util.Optional;&#10;import java.util.stream.Collectors;&#10;&#10;public class Main {&#10;    public static void main(String[] args) {&#10;        List&lt;Task&gt; tasks = Arrays.asList(&#10;                new Task(1, &quot;Task 1&quot;, Task.Status.OPEN),&#10;                new Task(2, &quot;Task 2&quot;, Task.Status.IN_PROGRESS),&#10;                new Task(3, &quot;Task 3&quot;, Task.Status.CLOSED),&#10;                new Task(4, &quot;Task 4&quot;, Task.Status.OPEN),&#10;                new Task(5, &quot;Task 5&quot;, Task.Status.IN_PROGRESS)&#10;        );&#10;&#10;        // Получение списка задач по выбранному статусу&#10;        List&lt;Task&gt; openTasks = getTasksByStatus(tasks, Task.Status.OPEN);&#10;        System.out.println(&quot;Open Tasks: &quot; + openTasks);&#10;&#10;        // Проверка наличия задачи с указанным ID&#10;        boolean hasTaskWithId = hasTaskWithId(tasks, 3);&#10;        System.out.println(&quot;Has task with ID 3: &quot; + hasTaskWithId);&#10;&#10;        // Получение списка задач в отсортированном по статусу виде&#10;        List&lt;Task&gt; sortedTasks = getTasksSortedByStatus(tasks);&#10;        System.out.println(&quot;Sorted Tasks: &quot; + sortedTasks);&#10;&#10;        // Подсчет количества задач по определенному статусу&#10;        long countOpenTasks = countTasksByStatus(tasks, Task.Status.OPEN);&#10;        System.out.println(&quot;Count of Open Tasks: &quot; + countOpenTasks);&#10;    }&#10;&#10;    public static List&lt;Task&gt; getTasksByStatus(List&lt;Task&gt; tasks, Task.Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    public static boolean hasTaskWithId(List&lt;Task&gt; tasks, int id) {&#10;        return tasks.stream()&#10;                .anyMatch(task -&gt; task.getId() == id);&#10;    }&#10;&#10;    public static List&lt;Task&gt; getTasksSortedByStatus(List&lt;Task&gt; tasks) {&#10;        return tasks.stream()&#10;                .sorted((task1, task2) -&gt; {&#10;                    if (task1.getStatus() == task2.getStatus()) {&#10;                        return 0;&#10;                    }&#10;                    if (task1.getStatus() == Task.Status.OPEN) {&#10;                        return -1;&#10;                    }&#10;                    if (task1.getStatus() == Task.Status.IN_PROGRESS) {&#10;                        return task2.getStatus() == Task.Status.OPEN ? 1 : -1;&#10;                    }&#10;                    return 1;&#10;                })&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    public static long countTasksByStatus(List&lt;Task&gt; tasks, Task.Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .count();&#10;    }&#10;}&#10;```&#10;&#10;### Объяснение&#10;&#10;1. **Получение списка задач по выбранному статусу**:&#10;   Метод `getTasksByStatus` использует `filter` для выбора задач с указанным статусом и собирает их в список с помощью `collect(Collectors.toList())`.&#10;&#10;2. **Проверка наличия задачи с указанным ID**:&#10;   Метод `hasTaskWithId` использует `anyMatch` для проверки наличия задачи с указанным ID.&#10;&#10;3. **Получение списка задач в отсортированном по статусу виде**:&#10;   Метод `getTasksSortedByStatus` использует `sorted` для сортировки задач по статусу. В данном примере задачи сортируются в порядке: `OPEN`, `IN_PROGRESS`, `CLOSED`.&#10;&#10;4. **Подсчет количества задач по определенному статусу**:&#10;   Метод `countTasksByStatus` использует `filter` для выбора задач с указанным статусом и `count` для подсчета их количества.&#10;&#10;Эти методы демонстрируют использование Stream API для выполнения различных операций с коллекциями объектов." />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1727249196287" />
+              <option name="responseTms" value="1728548479167" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
-                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
                 </list>
               </option>
             </ChatHistoryModel>
           </value>
         </entry>
-        <entry key="5abd3d">
+        <entry key="579a9f">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
                 </list>
               </option>
-              <option name="id" value="5abd3d" />
-              <option name="initiateTms" value="1727249373547" />
-              <option name="request" value=" C:\Users\xa86\.jdks\temurin-21.0.4\bin\java.exe -ea -Didea.test.cyclic.buffer.size=1048576 &quot;-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\lib\idea_rt.jar=59473:C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\bin&quot; -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath &quot;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\plugins\junit\lib\junit-rt.jar;C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\build\classes\java\main;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.10.0\2fe4ba3d31d5067878e468c96aa039005a9134d3\junit-jupiter-api-5.10.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\5.11.0\e4069fa4f4ff2c94322cfec5f2e45341c6c70aff\mockito-core-5.11.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-junit-jupiter\5.11.0\8e658dd339f40305ed4293db25545b5df98b171b\mockito-junit-jupiter-5.11.0.jar&quot; com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 ru.otus.java.pro.unittests.bank.service.impl.AccountServiceImplParametrizedTest&#10;Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: org/junit/platform/engine/TestDescriptor&#10;&#9;at java.base/java.lang.Class.forName0(Native Method)&#10;&#9;at java.base/java.lang.Class.forName(Class.java:421)&#10;&#9;at java.base/java.lang.Class.forName(Class.java:412)&#10;&#9;at com.intellij.rt.junit.JUnitStarter.getAgentClass(JUnitStarter.java:241)&#10;&#9;at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:222)&#10;&#9;at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)&#10;Caused by: java.lang.ClassNotFoundException: org.junit.platform.engine.TestDescriptor&#10;&#9;at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)&#10;&#9;at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)&#10;&#9;at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)&#10;&#9;... 6 more" />
+              <option name="id" value="579a9f" />
+              <option name="initiateTms" value="1728548754381" />
+              <option name="request" value=" Вместо комментариев над вызовами, давай добавим описание через javadoc над методами" />
               <option name="response" value="" />
-              <option name="responseDescription" value="Ошибка `java.lang.NoClassDefFoundError: org/junit/platform/engine/TestDescriptor` указывает на то, что в classpath отсутствует необходимая библиотека JUnit Platform Engine. Это может произойти, если зависимости JUnit не были правильно настроены в вашем проекте.&#10;&#10;Для решения этой проблемы, убедитесь, что у вас правильно настроены зависимости JUnit в вашем проекте. Если вы используете Gradle, добавьте следующие зависимости в ваш `build.gradle` файл:&#10;&#10;```groovy&#10;dependencies {&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'&#10;    testImplementation 'org.mockito:mockito-core:5.11.0'&#10;    testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;}&#10;```&#10;&#10;Если вы используете Maven, добавьте следующие зависимости в ваш `pom.xml` файл:&#10;&#10;```xml&#10;&lt;dependencies&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-params&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-junit-jupiter&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;&lt;/dependencies&gt;&#10;```&#10;&#10;После добавления зависимостей, выполните команду для обновления зависимостей:&#10;&#10;Для Gradle:&#10;```sh&#10;./gradlew build&#10;```&#10;&#10;Для Maven:&#10;```sh&#10;mvn clean install&#10;```&#10;&#10;Также убедитесь, что ваш тестовый класс импортирует правильные аннотации. В начале вашего тестового класса должны быть следующие импорты:&#10;&#10;```java&#10;import org.junit.jupiter.api.extension.ExtendWith;&#10;import org.junit.jupiter.params.ParameterizedTest;&#10;import org.junit.jupiter.params.provider.Arguments;&#10;import org.junit.jupiter.params.provider.CsvSource;&#10;import org.junit.jupiter.params.provider.MethodSource;&#10;import org.mockito.InjectMocks;&#10;import org.mockito.Mock;&#10;import org.mockito.junit.jupiter.MockitoExtension;&#10;import ru.otus.java.pro.unittests.bank.dao.AccountDao;&#10;import ru.otus.java.pro.unittests.bank.entity.Account;&#10;&#10;import java.math.BigDecimal;&#10;import java.util.Optional;&#10;import java.util.stream.Stream;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.mockito.ArgumentMatchers.eq;&#10;import static org.mockito.Mockito.when;&#10;```&#10;&#10;Если вы используете IntelliJ IDEA, убедитесь, что ваш проект настроен на использование JUnit 5. Для этого:&#10;&#10;1. Откройте настройки проекта (`File` -&gt; `Project Structure`).&#10;2. Перейдите в раздел `Modules` и выберите ваш модуль.&#10;3. Убедитесь, что в разделе `Dependencies` добавлены все необходимые зависимости JUnit 5.&#10;4. Перейдите в раздел `Libraries` и убедитесь, что JUnit 5 добавлен в качестве библиотеки.&#10;&#10;После выполнения этих шагов, ошибка &quot;Cannot resolve symbol 'ParameterizedTest'&quot; должна исчезнуть." />
+              <option name="responseDescription" value="Конечно, добавление Javadoc комментариев над методами улучшит читаемость и документацию вашего кода. Давайте добавим Javadoc комментарии к каждому методу в классе `Main`.&#10;&#10;### Обновленный файл `Main.java` с Javadoc комментариями&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi;&#10;&#10;import ru.otus.java.pro.streamapi.model.Status;&#10;import ru.otus.java.pro.streamapi.model.Task;&#10;&#10;import java.util.Arrays;&#10;import java.util.List;&#10;import java.util.stream.Collectors;&#10;&#10;public class Main {&#10;    public static void main(String[] args) {&#10;        List&lt;Task&gt; tasks = Arrays.asList(&#10;                new Task(1, &quot;Task 1&quot;, Status.OPEN),&#10;                new Task(2, &quot;Task 2&quot;, Status.IN_PROGRESS),&#10;                new Task(3, &quot;Task 3&quot;, Status.CLOSED),&#10;                new Task(4, &quot;Task 4&quot;, Status.OPEN),&#10;                new Task(5, &quot;Task 5&quot;, Status.IN_PROGRESS)&#10;        );&#10;&#10;        List&lt;Task&gt; openTasks = getTasksByStatus(tasks, Status.OPEN);&#10;        System.out.println(&quot;Open Tasks: &quot; + openTasks);&#10;&#10;        boolean hasTaskWithId = hasTaskWithId(tasks, 3);&#10;        System.out.println(&quot;Has task with ID 3: &quot; + hasTaskWithId);&#10;&#10;        List&lt;Task&gt; sortedTasks = getTasksSortedByStatus(tasks);&#10;        System.out.println(&quot;Sorted Tasks: &quot; + sortedTasks);&#10;&#10;        long countOpenTasks = countTasksByStatus(tasks, Status.OPEN);&#10;        System.out.println(&quot;Count of Open Tasks: &quot; + countOpenTasks);&#10;    }&#10;&#10;    /**&#10;     * Получает список задач по выбранному статусу.&#10;     *&#10;     * @param tasks  список задач&#10;     * @param status статус для фильтрации задач&#10;     * @return список задач с указанным статусом&#10;     */&#10;    public static List&lt;Task&gt; getTasksByStatus(List&lt;Task&gt; tasks, Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    /**&#10;     * Проверяет наличие задачи с указанным ID.&#10;     *&#10;     * @param tasks список задач&#10;     * @param id    ID задачи для проверки&#10;     * @return true, если задача с указанным ID существует, иначе false&#10;     */&#10;    public static boolean hasTaskWithId(List&lt;Task&gt; tasks, int id) {&#10;        return tasks.stream()&#10;                .anyMatch(task -&gt; task.getId() == id);&#10;    }&#10;&#10;    /**&#10;     * Получает список задач, отсортированных по статусу.&#10;     * Порядок сортировки: OPEN, IN_PROGRESS, CLOSED.&#10;     *&#10;     * @param tasks список задач&#10;     * @return отсортированный список задач&#10;     */&#10;    public static List&lt;Task&gt; getTasksSortedByStatus(List&lt;Task&gt; tasks) {&#10;        return tasks.stream()&#10;                .sorted((task1, task2) -&gt; {&#10;                    if (task1.getStatus() == task2.getStatus()) {&#10;                        return 0;&#10;                    }&#10;                    if (task1.getStatus() == Status.OPEN) {&#10;                        return -1;&#10;                    }&#10;                    if (task1.getStatus() == Status.IN_PROGRESS) {&#10;                        return task2.getStatus() == Status.OPEN ? 1 : -1;&#10;                    }&#10;                    return 1;&#10;                })&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    /**&#10;     * Подсчитывает количество задач по определенному статусу.&#10;     *&#10;     * @param tasks  список задач&#10;     * @param status статус для фильтрации задач&#10;     * @return количество задач с указанным статусом&#10;     */&#10;    public static long countTasksByStatus(List&lt;Task&gt; tasks, Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .count();&#10;    }&#10;}&#10;```&#10;&#10;Теперь каждый метод в классе `Main` имеет Javadoc комментарий, который описывает его назначение, параметры и возвращаемое значение. Это улучшает документацию и делает код более понятным для других разработчиков." />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1727249391505" />
+              <option name="responseTms" value="1728548763906" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" />
-                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
                 </list>
               </option>
             </ChatHistoryModel>
           </value>
         </entry>
-        <entry key="84c658">
-          <value>
-            <ChatHistoryModel>
-              <option name="id" value="84c658" />
-              <option name="initiateTms" value="1727248978927" />
-              <option name="isStopped" value="true" />
-              <option name="request" value=" При запуске тестов:&#10;AccountServiceImplParametrizedTest&#10;AccountServiceImplTest&#10;AgreementServiceImplTest&#10;PaymentProcessorImplTest&#10;PaymentProcessorImplWithSpyTest" />
-              <option name="response" value="" />
-              <option name="usedLocalFilePaths">
-                <list>
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
-                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
-                </list>
-              </option>
-            </ChatHistoryModel>
-          </value>
-        </entry>
-        <entry key="d81608">
+        <entry key="86b815">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
                 </list>
               </option>
-              <option name="id" value="d81608" />
-              <option name="initiateTms" value="1727248993876" />
-              <option name="request" value=" При запуске тестов: C:\Users\xa86\.jdks\temurin-21.0.4\bin\java.exe -ea -Didea.test.cyclic.buffer.size=1048576 &quot;-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\lib\idea_rt.jar=59299:C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\bin&quot; -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath &quot;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.6\plugins\junit\lib\junit-rt.jar;C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\build\classes\java\main;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.10.0\2fe4ba3d31d5067878e468c96aa039005a9134d3\junit-jupiter-api-5.10.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.10.0\9041c7365495a897a64782ea5a6fdb99dab1814e\junit-jupiter-params-5.10.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\5.11.0\e4069fa4f4ff2c94322cfec5f2e45341c6c70aff\mockito-core-5.11.0.jar;C:\Users\xa86\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-junit-jupiter\5.11.0\8e658dd339f40305ed4293db25545b5df98b171b\mockito-junit-jupiter-5.11.0.jar&quot; com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 ru.otus.java.pro.unittests.bank.service.impl.AccountServiceImplParametrizedTest&#10;                    Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: org/junit/platform/engine/TestDescriptor&#10;                    &#9;at java.base/java.lang.Class.forName0(Native Method)&#10;                    &#9;at java.base/java.lang.Class.forName(Class.java:421)&#10;                    &#9;at java.base/java.lang.Class.forName(Class.java:412)&#10;                    &#9;at com.intellij.rt.junit.JUnitStarter.getAgentClass(JUnitStarter.java:241)&#10;                    &#9;at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:222)&#10;                    &#9;at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)&#10;                    Caused by: java.lang.ClassNotFoundException: org.junit.platform.engine.TestDescriptor&#10;                    &#9;at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)&#10;                    &#9;at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)&#10;                    &#9;at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)" />
+              <option name="id" value="86b815" />
+              <option name="initiateTms" value="1728548528471" />
+              <option name="request" value=" Вынеси     public enum Status {&#10;               OPEN, IN_PROGRESS, CLOSED&#10;           } в отдельный класс" />
               <option name="response" value="" />
-              <option name="responseDescription" value="Ошибка `java.lang.NoClassDefFoundError: org/junit/platform/engine/TestDescriptor` указывает на то, что в classpath отсутствует необходимая библиотека JUnit Platform Engine. Это может произойти, если зависимости JUnit не были правильно настроены в вашем проекте.&#10;&#10;Для решения этой проблемы, убедитесь, что у вас правильно настроены зависимости JUnit в вашем проекте. Если вы используете Gradle, добавьте следующие зависимости в ваш `build.gradle` файл:&#10;&#10;```groovy&#10;dependencies {&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;    testImplementation 'org.mockito:mockito-core:5.11.0'&#10;    testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;}&#10;```&#10;&#10;Если вы используете Maven, добавьте следующие зависимости в ваш `pom.xml` файл:&#10;&#10;```xml&#10;&lt;dependencies&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-api&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;        &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;&#10;        &lt;version&gt;5.10.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;    &lt;dependency&gt;&#10;        &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;        &lt;artifactId&gt;mockito-junit-jupiter&lt;/artifactId&gt;&#10;        &lt;version&gt;5.11.0&lt;/version&gt;&#10;        &lt;scope&gt;test&lt;/scope&gt;&#10;    &lt;/dependency&gt;&#10;&lt;/dependencies&gt;&#10;```&#10;&#10;После добавления зависимостей, выполните команду для обновления зависимостей:&#10;&#10;Для Gradle:&#10;```sh&#10;./gradlew build&#10;```&#10;&#10;Для Maven:&#10;```sh&#10;mvn clean install&#10;```&#10;&#10;После этого попробуйте снова запустить тесты. Это должно решить проблему с отсутствующей библиотекой JUnit Platform Engine." />
+              <option name="responseDescription" value="Конечно! Чтобы вынести `enum Status` в отдельный класс, мы создадим новый файл `Status.java` и переместим туда перечисление. Затем обновим класс `Task` для использования этого нового класса.&#10;&#10;### Шаг 1: Создание файла `Status.java`&#10;&#10;Создайте новый файл `Status.java` в пакете `ru.otus.java.pro.streamapi`:&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi;&#10;&#10;public enum Status {&#10;    OPEN, IN_PROGRESS, CLOSED&#10;}&#10;```&#10;&#10;### Шаг 2: Обновление класса `Task`&#10;&#10;Теперь обновим класс `Task` для использования `Status` из нового файла:&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi;&#10;&#10;public class Task {&#10;    private final int id;&#10;    private final String name;&#10;    private final Status status;&#10;&#10;    public Task(int id, String name, Status status) {&#10;        this.id = id;&#10;        this.name = name;&#10;        this.status = status;&#10;    }&#10;&#10;    public int getId() {&#10;        return id;&#10;    }&#10;&#10;    public String getName() {&#10;        return name;&#10;    }&#10;&#10;    public Status getStatus() {&#10;        return status;&#10;    }&#10;&#10;    @Override&#10;    public String toString() {&#10;        return &quot;Task{&quot; +&#10;                &quot;id=&quot; + id +&#10;                &quot;, name='&quot; + name + '\'' +&#10;                &quot;, status=&quot; + status +&#10;                '}';&#10;    }&#10;}&#10;```&#10;&#10;### Шаг 3: Обновление класса `Main`&#10;&#10;Класс `Main` уже использует `Status` из пакета `ru.otus.java.pro.streamapi`, поэтому никаких изменений в нем не требуется. Убедитесь, что все импорты корректны и соответствуют новому расположению `Status`.&#10;&#10;Теперь у вас есть отдельный класс `Status`, который можно использовать в других частях вашего проекта, если это необходимо. Это улучшает организацию кода и делает его более модульным." />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1727249017922" />
+              <option name="responseTms" value="1728548534831" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Account.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/dao/AccountDao.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/AccountService.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/Main.java" />
-                  <option value="$PROJECT_DIR$/src/main/test/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImplParametrizedTest.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/entity/Agreement.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/exception/AccountException.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/unittests/bank/service/impl/AccountServiceImpl.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
                 </list>
               </option>
             </ChatHistoryModel>
