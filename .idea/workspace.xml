@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,6 +237,7 @@
       <workItem from="1726643187429" duration="738000" />
       <workItem from="1726643970714" duration="3310000" />
       <workItem from="1727240860064" duration="2417000" />
+      <workItem from="1729670781657" duration="388000" />
     </task>
     <task id="LOCAL-00001" summary="master-commit">
       <option name="closed" value="true" />
@@ -264,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727241031646</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Homework Stream Api v1">
+      <option name="closed" value="true" />
+      <created>1728549054044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728549054044</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +281,8 @@
     <MESSAGE value="master-commit" />
     <MESSAGE value="Homework Reflection API и аннотации" />
     <MESSAGE value="Homework Reflection API и аннотации v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework Reflection API и аннотации v2" />
+    <MESSAGE value="Homework Stream Api v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework Stream Api v1" />
   </component>
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
@@ -355,6 +363,23 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="7ada95">
+          <value>
+            <ChatHistoryModel>
+              <option name="id" value="7ada95" />
+              <option name="initiateTms" value="1729670963215" />
+              <option name="response" value="" />
+              <option name="responseTms" value="1729670982496" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="86b815">
           <value>
             <ChatHistoryModel>
@@ -374,6 +399,62 @@
               <option name="usedLocalFilePaths">
                 <list>
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="91e510">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
+                </list>
+              </option>
+              <option name="id" value="91e510" />
+              <option name="initiateTms" value="1728549083205" />
+              <option name="request" value=" как назвать пакет для заданий со streamApi" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Для пакета, содержащего задания и примеры использования Stream API, можно выбрать имя, которое четко отражает его назначение. Например, вы можете назвать пакет `ru.otus.java.pro.streamapi.tasks` или `ru.otus.java.pro.streamapi.examples`. Это поможет другим разработчикам легко понять, что в этом пакете находятся задания или примеры, связанные с использованием Stream API.&#10;&#10;### Пример структуры пакета&#10;&#10;```&#10;src/&#10;└── main/&#10;    └── java/&#10;        └── ru/&#10;            └── otus/&#10;                └── java/&#10;                    └── pro/&#10;                        └── streamapi/&#10;                            ├── model/&#10;                            │   ├── Status.java&#10;                            │   └── Task.java&#10;                            └── tasks/&#10;                                └── Main.java&#10;```&#10;&#10;### Обновленный файл `Main.java` в новом пакете&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi.tasks;&#10;&#10;import ru.otus.java.pro.streamapi.model.Status;&#10;import ru.otus.java.pro.streamapi.model.Task;&#10;&#10;import java.util.Arrays;&#10;import java.util.List;&#10;import java.util.stream.Collectors;&#10;&#10;public class Main {&#10;    public static void main(String[] args) {&#10;        List&lt;Task&gt; tasks = Arrays.asList(&#10;                new Task(1, &quot;Task 1&quot;, Status.OPEN),&#10;                new Task(2, &quot;Task 2&quot;, Status.IN_PROGRESS),&#10;                new Task(3, &quot;Task 3&quot;, Status.CLOSED),&#10;                new Task(4, &quot;Task 4&quot;, Status.OPEN),&#10;                new Task(5, &quot;Task 5&quot;, Status.IN_PROGRESS)&#10;        );&#10;&#10;        List&lt;Task&gt; openTasks = getTasksByStatus(tasks, Status.OPEN);&#10;        System.out.println(&quot;Open Tasks: &quot; + openTasks);&#10;&#10;        boolean hasTaskWithId = hasTaskWithId(tasks, 3);&#10;        System.out.println(&quot;Has task with ID 3: &quot; + hasTaskWithId);&#10;&#10;        List&lt;Task&gt; sortedTasks = getTasksSortedByStatus(tasks);&#10;        System.out.println(&quot;Sorted Tasks: &quot; + sortedTasks);&#10;&#10;        long countOpenTasks = countTasksByStatus(tasks, Status.OPEN);&#10;        System.out.println(&quot;Count of Open Tasks: &quot; + countOpenTasks);&#10;    }&#10;&#10;    /**&#10;     * Получает список задач по выбранному статусу.&#10;     *&#10;     * @param tasks  список задач&#10;     * @param status статус для фильтрации задач&#10;     * @return список задач с указанным статусом&#10;     */&#10;    public static List&lt;Task&gt; getTasksByStatus(List&lt;Task&gt; tasks, Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    /**&#10;     * Проверяет наличие задачи с указанным ID.&#10;     *&#10;     * @param tasks список задач&#10;     * @param id    ID задачи для проверки&#10;     * @return true, если задача с указанным ID существует, иначе false&#10;     */&#10;    public static boolean hasTaskWithId(List&lt;Task&gt; tasks, int id) {&#10;        return tasks.stream()&#10;                .anyMatch(task -&gt; task.getId() == id);&#10;    }&#10;&#10;    /**&#10;     * Получает список задач, отсортированных по статусу.&#10;     * Порядок сортировки: OPEN, IN_PROGRESS, CLOSED.&#10;     *&#10;     * @param tasks список задач&#10;     * @return отсортированный список задач&#10;     */&#10;    public static List&lt;Task&gt; getTasksSortedByStatus(List&lt;Task&gt; tasks) {&#10;        return tasks.stream()&#10;                .sorted((task1, task2) -&gt; {&#10;                    if (task1.getStatus() == task2.getStatus()) {&#10;                        return 0;&#10;                    }&#10;                    if (task1.getStatus() == Status.OPEN) {&#10;                        return -1;&#10;                    }&#10;                    if (task1.getStatus() == Status.IN_PROGRESS) {&#10;                        return task2.getStatus() == Status.OPEN ? 1 : -1;&#10;                    }&#10;                    return 1;&#10;                })&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    /**&#10;     * Подсчитывает количество задач по определенному статусу.&#10;     *&#10;     * @param tasks  список задач&#10;     * @param status статус для фильтрации задач&#10;     * @return количество задач с указанным статусом&#10;     */&#10;    public static long countTasksByStatus(List&lt;Task&gt; tasks, Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .count();&#10;    }&#10;}&#10;```&#10;&#10;Теперь ваш проект имеет четкую структуру, где пакет `ru.otus.java.pro.streamapi.model` содержит модели данных, а пакет `ru.otus.java.pro.streamapi.tasks` содержит задания и примеры использования Stream API." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1728549096092" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="b6cd89">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" />
+                </list>
+              </option>
+              <option name="id" value="b6cd89" />
+              <option name="initiateTms" value="1729671001734" />
+              <option name="request" value=" В методе     public static List&lt;Task&gt; getTasksSortedByStatus(List&lt;Task&gt; tasks) {&#10;                 return tasks.stream()&#10;                         .sorted((task1, task2) -&gt; {&#10;                             if (task1.getStatus() == task2.getStatus()) {&#10;                                 return 0;&#10;                             }&#10;                             if (task1.getStatus() == Status.OPEN) {&#10;                                 return -1;&#10;                             }&#10;                             if (task1.getStatus() == Status.IN_PROGRESS) {&#10;                                 return task2.getStatus() == Status.OPEN ? 1 : -1;&#10;                             }&#10;                             return 1;&#10;                         })&#10;                         .collect(Collectors.toList());&#10;             }&#10;             получил комментарий:&#10;             Здесь можно исп. Comparator.comparing, чтобы избежать ручной реализации сортировки:&#10;             &#10;             .sorted(Comparator.comparing(Task::getStatus))" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Да, использование `Comparator.comparing` значительно упростит код и сделает его более читаемым. Однако, чтобы сохранить порядок сортировки `OPEN`, `IN_PROGRESS`, `CLOSED`, нам нужно будет использовать кастомный компаратор, так как `Comparator.comparing` по умолчанию будет сортировать в порядке, определенном в `enum`.&#10;&#10;Мы можем создать компаратор, который будет использовать порядок, определенный в `enum Status`, и затем использовать его в методе `getTasksSortedByStatus`.&#10;&#10;### Обновленный метод `getTasksSortedByStatus`&#10;&#10;```java&#10;import java.util.Comparator;&#10;&#10;public static List&lt;Task&gt; getTasksSortedByStatus(List&lt;Task&gt; tasks) {&#10;    return tasks.stream()&#10;            .sorted(Comparator.comparing(Task::getStatus, Comparator.comparingInt(Status::ordinal)))&#10;            .collect(Collectors.toList());&#10;}&#10;```&#10;&#10;### Полный файл `Main.java` с обновленным методом&#10;&#10;```java&#10;package ru.otus.java.pro.streamapi.tasks;&#10;&#10;import ru.otus.java.pro.streamapi.model.Status;&#10;import ru.otus.java.pro.streamapi.model.Task;&#10;&#10;import java.util.Arrays;&#10;import java.util.Comparator;&#10;import java.util.List;&#10;import java.util.stream.Collectors;&#10;&#10;public class Main {&#10;    public static void main(String[] args) {&#10;        List&lt;Task&gt; tasks = Arrays.asList(&#10;                new Task(1, &quot;Task 1&quot;, Status.OPEN),&#10;                new Task(2, &quot;Task 2&quot;, Status.IN_PROGRESS),&#10;                new Task(3, &quot;Task 3&quot;, Status.CLOSED),&#10;                new Task(4, &quot;Task 4&quot;, Status.OPEN),&#10;                new Task(5, &quot;Task 5&quot;, Status.IN_PROGRESS)&#10;        );&#10;&#10;        List&lt;Task&gt; openTasks = getTasksByStatus(tasks, Status.OPEN);&#10;        System.out.println(&quot;Open Tasks: &quot; + openTasks);&#10;&#10;        boolean hasTaskWithId = hasTaskWithId(tasks, 3);&#10;        System.out.println(&quot;Has task with ID 3: &quot; + hasTaskWithId);&#10;&#10;        List&lt;Task&gt; sortedTasks = getTasksSortedByStatus(tasks);&#10;        System.out.println(&quot;Sorted Tasks: &quot; + sortedTasks);&#10;&#10;        long countOpenTasks = countTasksByStatus(tasks, Status.OPEN);&#10;        System.out.println(&quot;Count of Open Tasks: &quot; + countOpenTasks);&#10;    }&#10;&#10;    /**&#10;     * Получает список задач по выбранному статусу.&#10;     *&#10;     * @param tasks  список задач&#10;     * @param status статус для фильтрации задач&#10;     * @return список задач с указанным статусом&#10;     */&#10;    public static List&lt;Task&gt; getTasksByStatus(List&lt;Task&gt; tasks, Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    /**&#10;     * Проверяет наличие задачи с указанным ID.&#10;     *&#10;     * @param tasks список задач&#10;     * @param id    ID задачи для проверки&#10;     * @return true, если задача с указанным ID существует, иначе false&#10;     */&#10;    public static boolean hasTaskWithId(List&lt;Task&gt; tasks, int id) {&#10;        return tasks.stream()&#10;                .anyMatch(task -&gt; task.getId() == id);&#10;    }&#10;&#10;    /**&#10;     * Получает список задач, отсортированных по статусу.&#10;     * Порядок сортировки: OPEN, IN_PROGRESS, CLOSED.&#10;     *&#10;     * @param tasks список задач&#10;     * @return отсортированный список задач&#10;     */&#10;    public static List&lt;Task&gt; getTasksSortedByStatus(List&lt;Task&gt; tasks) {&#10;        return tasks.stream()&#10;                .sorted(Comparator.comparing(Task::getStatus, Comparator.comparingInt(Status::ordinal)))&#10;                .collect(Collectors.toList());&#10;    }&#10;&#10;    /**&#10;     * Подсчитывает количество задач по определенному статусу.&#10;     *&#10;     * @param tasks  список задач&#10;     * @param status статус для фильтрации задач&#10;     * @return количество задач с указанным статусом&#10;     */&#10;    public static long countTasksByStatus(List&lt;Task&gt; tasks, Status status) {&#10;        return tasks.stream()&#10;                .filter(task -&gt; task.getStatus() == status)&#10;                .count();&#10;    }&#10;}&#10;```&#10;&#10;Теперь метод `getTasksSortedByStatus` использует `Comparator.comparing` для сортировки задач по статусу, что делает код более чистым и читаемым." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1729671019346" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
                 </list>
               </option>
             </ChatHistoryModel>

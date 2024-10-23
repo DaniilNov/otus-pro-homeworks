@@ -4,6 +4,7 @@ import ru.otus.java.pro.streamapi.model.Status;
 import ru.otus.java.pro.streamapi.model.Task;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -52,7 +53,9 @@ public class Main {
      */
     public static boolean hasTaskWithId(List<Task> tasks, int id) {
         return tasks.stream()
-                .anyMatch(task -> task.getId() == id);
+                .filter(task -> task.getId() == id)
+                .findAny()
+                .isPresent();
     }
 
     /**
@@ -64,18 +67,7 @@ public class Main {
      */
     public static List<Task> getTasksSortedByStatus(List<Task> tasks) {
         return tasks.stream()
-                .sorted((task1, task2) -> {
-                    if (task1.getStatus() == task2.getStatus()) {
-                        return 0;
-                    }
-                    if (task1.getStatus() == Status.OPEN) {
-                        return -1;
-                    }
-                    if (task1.getStatus() == Status.IN_PROGRESS) {
-                        return task2.getStatus() == Status.OPEN ? 1 : -1;
-                    }
-                    return 1;
-                })
+                .sorted(Comparator.comparing(Task::getStatus, Comparator.comparingInt(Status::ordinal)))
                 .collect(Collectors.toList());
     }
 
