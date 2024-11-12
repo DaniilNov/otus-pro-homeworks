@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,39 +74,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.AccountServiceImplParametrizedTest.executor": "Run",
-    "Gradle.Build otus-pro-homeworks.executor": "Run",
-    "Gradle.Tests in 'impl'.executor": "Run",
-    "Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'.executor": "Run",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "Gradle.otus-pro-homeworks [:Application.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [:Main.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [build].executor": "Run",
-    "Gradle.otus-pro-homeworks [dependencies].executor": "Run",
-    "JUnit.AccountServiceImplParametrizedTest.executor": "Run",
-    "JUnit.AccountServiceImplTest.executor": "Run",
-    "JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks/src/main/test/ru/otus/java/pro/unittests/bank/service/impl",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.AccountServiceImplParametrizedTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build otus-pro-homeworks.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'impl'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountServiceImplParametrizedTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks/src/main/test/ru/otus/java/pro/unittests/bank/service/impl&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\src\main\test\ru\otus\java\pro\unittests\bank\service\impl" />
@@ -230,6 +226,7 @@
       <workItem from="1726643970714" duration="3310000" />
       <workItem from="1727240860064" duration="2417000" />
       <workItem from="1729670781657" duration="388000" />
+      <workItem from="1731242419581" duration="815000" />
     </task>
     <task id="LOCAL-00001" summary="master-commit">
       <option name="closed" value="true" />
@@ -263,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728549054044</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Homework Concurrency v1">
+      <option name="closed" value="true" />
+      <created>1729674000457</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729674000457</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +279,8 @@
     <MESSAGE value="Homework Reflection API и аннотации" />
     <MESSAGE value="Homework Reflection API и аннотации v2" />
     <MESSAGE value="Homework Stream Api v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework Stream Api v1" />
+    <MESSAGE value="Homework Concurrency v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework Concurrency v1" />
   </component>
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
@@ -390,6 +396,60 @@
                 <list>
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="3008e1">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
+                </list>
+              </option>
+              <option name="id" value="3008e1" />
+              <option name="initiateTms" value="1731242536674" />
+              <option name="request" value=" При обновлении плагина Plugin &quot;Machinet AI GPT-4 Chat and Unit Tests&quot; was not installed: We are sorry, but we are currently unable to provide our products or services to you due to export control regulations." />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Сообщение об ошибке, которое вы видите, указывает на то, что плагин &quot;Machinet AI GPT-4 Chat and Unit Tests&quot; не может быть установлен из-за экспортных ограничений. Это может быть связано с географическими ограничениями или другими правовыми ограничениями, наложенными на распространение программного обеспечения.&#10;&#10;### Возможные решения&#10;&#10;1. **Проверьте региональные ограничения**:&#10;    - Убедитесь, что ваш регион не попадает под экспортные ограничения, наложенные на данный плагин. Если это так, возможно, вам придется использовать альтернативные инструменты или плагины.&#10;&#10;2. **Свяжитесь с поддержкой**:&#10;    - Свяжитесь с поддержкой плагина или платформы, на которой вы пытаетесь его установить. Они могут предоставить дополнительную информацию или предложить обходные пути.&#10;&#10;3. **Используйте альтернативные инструменты**:&#10;    - Если плагин недоступен, рассмотрите возможность использования других инструментов для выполнения аналогичных задач. Например, для генерации юнит-тестов и работы с AI можно использовать другие плагины или библиотеки.&#10;&#10;### Альтернативные инструменты для генерации юнит-тестов&#10;&#10;Если вам нужен инструмент для генерации юнит-тестов, вы можете рассмотреть следующие альтернативы:&#10;&#10;1. **JUnit**:&#10;    - JUnit является стандартным фреймворком для тестирования в Java. Вы можете писать тесты вручную или использовать инструменты для автоматической генерации тестов.&#10;&#10;2. **Mockito**:&#10;    - Mockito используется для создания mock-объектов в тестах. Он хорошо интегрируется с JUnit и позволяет легко тестировать взаимодействие между объектами.&#10;&#10;3. **EclEmma**:&#10;    - EclEmma предоставляет возможности для анализа покрытия кода и интегрируется с Eclipse IDE.&#10;&#10;### Пример использования JUnit и Mockito&#10;&#10;Вот пример того, как можно написать юнит-тесты для класса `CustomThreadPool` с использованием JUnit и Mockito:&#10;&#10;1. **Добавьте зависимости в `build.gradle`**:&#10;&#10;```gradle&#10;dependencies {&#10;    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;    testImplementation 'org.mockito:mockito-core:5.11.0'&#10;    testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;}&#10;```&#10;&#10;2. **Напишите тесты**:&#10;&#10;Создайте файл `CustomThreadPoolTest.java` и добавьте в него следующие тесты:&#10;&#10;```java&#10;import org.junit.jupiter.api.BeforeEach;&#10;import org.junit.jupiter.api.Test;&#10;import org.mockito.Mockito;&#10;&#10;import java.util.concurrent.atomic.AtomicBoolean;&#10;&#10;import static org.junit.jupiter.api.Assertions.*;&#10;import static org.mockito.Mockito.*;&#10;&#10;class CustomThreadPoolTest {&#10;&#10;    private CustomThreadPool threadPool;&#10;&#10;    @BeforeEach&#10;    void setUp() {&#10;        threadPool = new CustomThreadPool(2);&#10;    }&#10;&#10;    @Test&#10;    void testExecute() {&#10;        AtomicBoolean taskExecuted = new AtomicBoolean(false);&#10;        Runnable task = () -&gt; taskExecuted.set(true);&#10;&#10;        threadPool.execute(task);&#10;&#10;        // Wait a bit to let the task execute&#10;        try {&#10;            Thread.sleep(100);&#10;        } catch (InterruptedException e) {&#10;            Thread.currentThread().interrupt();&#10;        }&#10;&#10;        assertTrue(taskExecuted.get());&#10;    }&#10;&#10;    @Test&#10;    void testShutdown() {&#10;        threadPool.shutdown();&#10;        assertTrue(threadPool.isShutdown());&#10;    }&#10;&#10;    @Test&#10;    void testExecuteAfterShutdown() {&#10;        threadPool.shutdown();&#10;        Runnable task = mock(Runnable.class);&#10;&#10;        assertThrows(IllegalStateException.class, () -&gt; threadPool.execute(task));&#10;        verify(task, never()).run();&#10;    }&#10;}&#10;```&#10;&#10;### Заключение&#10;&#10;Если вы столкнулись с ограничениями при установке плагина, рассмотрите возможность использования альтернативных инструментов и библиотек для выполнения необходимых задач. JUnit и Mockito являются мощными инструментами для написания и выполнения юнит-тестов в Java и могут быть хорошей заменой." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1731242548139" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="398fed">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
+                </list>
+              </option>
+              <option name="id" value="398fed" />
+              <option name="initiateTms" value="1731242459688" />
+              <option name="request" value=" Hello world напиши" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Конечно, вот простой пример программы &quot;Hello, World!&quot; на Java:&#10;&#10;### Пример программы &quot;Hello, World!&quot;&#10;&#10;Создайте новый файл `HelloWorld.java` и добавьте в него следующий код:&#10;&#10;```java&#10;public class HelloWorld {&#10;    public static void main(String[] args) {&#10;        System.out.println(&quot;Hello, World!&quot;);&#10;    }&#10;}&#10;```&#10;&#10;### Запуск программы&#10;&#10;1. **Компиляция**:&#10;    - Откройте командную строку или терминал.&#10;    - Перейдите в директорию, где находится ваш файл `HelloWorld.java`.&#10;    - Выполните команду для компиляции:&#10;      ```sh&#10;      javac HelloWorld.java&#10;      ```&#10;&#10;2. **Запуск**:&#10;    - После успешной компиляции выполните команду для запуска:&#10;      ```sh&#10;      java HelloWorld&#10;      ```&#10;&#10;Вы должны увидеть следующий вывод:&#10;&#10;```&#10;Hello, World!&#10;```&#10;&#10;### Объяснение кода&#10;&#10;- `public class HelloWorld`: Определяет класс с именем `HelloWorld`.&#10;- `public static void main(String[] args)`: Определяет метод `main`, который является точкой входа для программы.&#10;- `System.out.println(&quot;Hello, World!&quot;);`: Выводит строку &quot;Hello, World!&quot; на консоль.&#10;&#10;Этот пример демонстрирует базовую структуру программы на Java и является отличной отправной точкой для изучения языка." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1731242466525" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
                 </list>
               </option>
             </ChatHistoryModel>

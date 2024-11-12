@@ -52,6 +52,14 @@ public class CustomThreadPool {
         synchronized (taskQueue) {
             taskQueue.notifyAll();
         }
+        // Ждать завершения потоков
+        for (Worker worker : workers) {
+            try {
+                worker.join();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
     }
 
     /**
