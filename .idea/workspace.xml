@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part1/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part1/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part1/Matryoshka.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +122,7 @@
       <recent name="ru.otus.java.pro.unittests.bank.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ru.otus.java.pro.concurrency.Application">
+  <component name="RunManager" selected="Application.ru.otus.java.pro.patterns.part1.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.reflection.Application" />
       <module name="otus-pro-homeworks.main" />
@@ -133,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.unittests.bank.Main" />
+    <configuration name="ru.otus.java.pro.concurrency.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.concurrency.Application" />
       <module name="otus-pro-homeworks.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.otus.java.pro.unittests.bank.*" />
+          <option name="PATTERN" value="ru.otus.java.pro.concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ru.otus.java.pro.concurrency.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.concurrency.Application" />
+    <configuration name="ru.otus.java.pro.patterns.part1.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.patterns.part1.Application" />
       <module name="otus-pro-homeworks.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.otus.java.pro.concurrency.*" />
+          <option name="PATTERN" value="ru.otus.java.pro.patterns.part1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ru.otus.java.pro.patterns.part1.Application" />
         <item itemvalue="Application.ru.otus.java.pro.concurrency.Application" />
         <item itemvalue="Application.ru.otus.java.pro.streamapi.Main" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -429,6 +432,82 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="34c850">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                </list>
+              </option>
+              <option name="id" value="34c850" />
+              <option name="initiateTms" value="1731395404576" />
+              <option name="request" value=" как назвать ветку с домашним заданием по паттернам" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Назвать ветку с домашним заданием по паттернам можно так, чтобы название было информативным и легко идентифицируемым. Хорошей практикой является использование формата, который включает в себя тип задания и его тему. Например:&#10;&#10;1. **Использование префикса `feature/`**:&#10;    - `feature/patterns-homework`&#10;    - `feature/design-patterns-assignment`&#10;    - `feature/patterns-task`&#10;&#10;2. **Использование префикса `hw/` (сокращение от &quot;homework&quot;)**:&#10;    - `hw/patterns`&#10;    - `hw/design-patterns`&#10;    - `hw/patterns-assignment`&#10;&#10;3. **Использование префикса `task/`**:&#10;    - `task/patterns-homework`&#10;    - `task/design-patterns`&#10;&#10;4. **Использование префикса `assignment/`**:&#10;    - `assignment/patterns`&#10;    - `assignment/design-patterns`&#10;&#10;### Примеры&#10;&#10;- `feature/patterns-homework`&#10;- `hw/design-patterns`&#10;- `task/patterns-assignment`&#10;- `assignment/design-patterns`&#10;&#10;### Рекомендации&#10;&#10;- **Будьте последовательны**: Используйте один и тот же формат для всех веток, связанных с домашними заданиями, чтобы было легче ориентироваться в репозитории.&#10;- **Будьте конкретны**: Если у вас несколько домашних заданий по паттернам, добавьте номер или тему задания, например, `feature/patterns-homework-1` или `hw/design-patterns-factory`.&#10;&#10;### Пример создания ветки&#10;&#10;Если вы используете Git, вы можете создать новую ветку с помощью следующей команды:&#10;&#10;```sh&#10;git checkout -b feature/patterns-homework&#10;```&#10;&#10;Или, если вы предпочитаете другой формат:&#10;&#10;```sh&#10;git checkout -b hw/design-patterns&#10;```&#10;&#10;Эти команды создадут и переключат вас на новую ветку с указанным именем." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1731395411259" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="3937f5">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                </list>
+              </option>
+              <option name="id" value="3937f5" />
+              <option name="initiateTms" value="1731395661731" />
+              <option name="request" value=" Сделай реализацию проще и добавь описание через javadoc на русском" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Конечно, давайте упростим реализацию и добавим описание через Javadoc на русском языке.&#10;&#10;### Класс `Matryoshka`&#10;&#10;```java&#10;import java.util.List;&#10;&#10;/**&#10; * Класс, представляющий матрёшку, состоящую из 10 частей.&#10; */&#10;public final class Matryoshka {&#10;    private final List&lt;String&gt; items;&#10;&#10;    /**&#10;     * Конструктор для создания матрёшки.&#10;     *&#10;     * @param items Список строк, представляющих части матрёшки.&#10;     */&#10;    public Matryoshka(List&lt;String&gt; items) {&#10;        this.items = items;&#10;    }&#10;&#10;    /**&#10;     * Возвращает список частей матрёшки.&#10;     *&#10;     * @return Список строк, представляющих части матрёшки.&#10;     */&#10;    public List&lt;String&gt; getItems() {&#10;        return items;&#10;    }&#10;}&#10;```&#10;&#10;### Класс `Box`&#10;&#10;```java&#10;import java.util.Iterator;&#10;import java.util.List;&#10;import java.util.NoSuchElementException;&#10;&#10;/**&#10; * Класс, представляющий коробку с четырьмя матрёшками разных цветов.&#10; */&#10;public final class Box {&#10;    private final Matryoshka red;&#10;    private final Matryoshka green;&#10;    private final Matryoshka blue;&#10;    private final Matryoshka magenta;&#10;&#10;    /**&#10;     * Конструктор для создания коробки с матрёшками.&#10;     *&#10;     * @param red     Красная матрёшка.&#10;     * @param green   Зелёная матрёшка.&#10;     * @param blue    Синяя матрёшка.&#10;     * @param magenta Пурпурная матрёшка.&#10;     */&#10;    public Box(Matryoshka red, Matryoshka green, Matryoshka blue, Matryoshka magenta) {&#10;        this.red = red;&#10;        this.green = green;&#10;        this.blue = blue;&#10;        this.magenta = magenta;&#10;    }&#10;&#10;    /**&#10;     * Возвращает итератор, который последовательно возвращает части матрёшек,&#10;     * начиная с самых маленьких всех цветов, затем побольше и так далее.&#10;     *&#10;     * @return Итератор для обхода частей матрёшек.&#10;     */&#10;    public Iterator&lt;String&gt; getSmallFirstIterator() {&#10;        return new SmallFirstIterator(List.of(red, green, blue, magenta));&#10;    }&#10;&#10;    /**&#10;     * Возвращает итератор, который последовательно возвращает части одной матрёшки&#10;     * от маленькой до большой, затем другой и так далее.&#10;     *&#10;     * @return Итератор для обхода частей матрёшек.&#10;     */&#10;    public Iterator&lt;String&gt; getColorFirstIterator() {&#10;        return new ColorFirstIterator(List.of(red, green, blue, magenta));&#10;    }&#10;&#10;    /**&#10;     * Итератор для обхода частей матрёшек, начиная с самых маленьких всех цветов.&#10;     */&#10;    private static class SmallFirstIterator implements Iterator&lt;String&gt; {&#10;        private final List&lt;Matryoshka&gt; matryoshkas;&#10;        private int currentSize = 0;&#10;        private int currentColor = 0;&#10;&#10;        public SmallFirstIterator(List&lt;Matryoshka&gt; matryoshkas) {&#10;            this.matryoshkas = matryoshkas;&#10;        }&#10;&#10;        @Override&#10;        public boolean hasNext() {&#10;            return currentSize &lt; 10;&#10;        }&#10;&#10;        @Override&#10;        public String next() {&#10;            if (!hasNext()) {&#10;                throw new NoSuchElementException();&#10;            }&#10;&#10;            String result = matryoshkas.get(currentColor).getItems().get(currentSize);&#10;            currentColor++;&#10;            if (currentColor == matryoshkas.size()) {&#10;                currentColor = 0;&#10;                currentSize++;&#10;            }&#10;            return result;&#10;        }&#10;    }&#10;&#10;    /**&#10;     * Итератор для обхода частей одной матрёшки от маленькой до большой, затем другой и так далее.&#10;     */&#10;    private static class ColorFirstIterator implements Iterator&lt;String&gt; {&#10;        private final List&lt;Matryoshka&gt; matryoshkas;&#10;        private int currentMatryoshka = 0;&#10;        private int currentSize = 0;&#10;&#10;        public ColorFirstIterator(List&lt;Matryoshka&gt; matryoshkas) {&#10;            this.matryoshkas = matryoshkas;&#10;        }&#10;&#10;        @Override&#10;        public boolean hasNext() {&#10;            return currentMatryoshka &lt; matryoshkas.size();&#10;        }&#10;&#10;        @Override&#10;        public String next() {&#10;            if (!hasNext()) {&#10;                throw new NoSuchElementException();&#10;            }&#10;&#10;            String result = matryoshkas.get(currentMatryoshka).getItems().get(currentSize);&#10;            currentSize++;&#10;            if (currentSize == 10) {&#10;                currentSize = 0;&#10;                currentMatryoshka++;&#10;            }&#10;            return result;&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;### Пример использования&#10;&#10;```java&#10;import java.util.Arrays;&#10;&#10;public class Application {&#10;    public static void main(String[] args) {&#10;        Matryoshka red = new Matryoshka(Arrays.asList(&quot;red0&quot;, &quot;red1&quot;, &quot;red2&quot;, &quot;red3&quot;, &quot;red4&quot;, &quot;red5&quot;, &quot;red6&quot;, &quot;red7&quot;, &quot;red8&quot;, &quot;red9&quot;));&#10;        Matryoshka green = new Matryoshka(Arrays.asList(&quot;green0&quot;, &quot;green1&quot;, &quot;green2&quot;, &quot;green3&quot;, &quot;green4&quot;, &quot;green5&quot;, &quot;green6&quot;, &quot;green7&quot;, &quot;green8&quot;, &quot;green9&quot;));&#10;        Matryoshka blue = new Matryoshka(Arrays.asList(&quot;blue0&quot;, &quot;blue1&quot;, &quot;blue2&quot;, &quot;blue3&quot;, &quot;blue4&quot;, &quot;blue5&quot;, &quot;blue6&quot;, &quot;blue7&quot;, &quot;blue8&quot;, &quot;blue9&quot;));&#10;        Matryoshka magenta = new Matryoshka(Arrays.asList(&quot;magenta0&quot;, &quot;magenta1&quot;, &quot;magenta2&quot;, &quot;magenta3&quot;, &quot;magenta4&quot;, &quot;magenta5&quot;, &quot;magenta6&quot;, &quot;magenta7&quot;, &quot;magenta8&quot;, &quot;magenta9&quot;));&#10;&#10;        Box box = new Box(red, green, blue, magenta);&#10;&#10;        System.out.println(&quot;Small First Iterator:&quot;);&#10;        Iterator&lt;String&gt; smallFirstIterator = box.getSmallFirstIterator();&#10;        while (smallFirstIterator.hasNext()) {&#10;            System.out.println(smallFirstIterator.next());&#10;        }&#10;&#10;        System.out.println(&quot;\nColor First Iterator:&quot;);&#10;        Iterator&lt;String&gt; colorFirstIterator = box.getColorFirstIterator();&#10;        while (colorFirstIterator.hasNext()) {&#10;            System.out.println(colorFirstIterator.next());&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;### Заключение&#10;&#10;Эта упрощённая реализация позволяет вам использовать два различных итератора для обхода элементов матрёшек в разных порядках, не изменяя клиентский код. Javadoc комментарии на русском языке помогут лучше понять структуру и назначение каждого класса и метода." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1731395675898" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="398fed">
           <value>
             <ChatHistoryModel>
@@ -450,6 +529,44 @@
                 <list>
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="56bed1">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                </list>
+              </option>
+              <option name="id" value="56bed1" />
+              <option name="initiateTms" value="1731395424745" />
+              <option name="request" value=" А если ветки будет часть 1 и часть 2" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Если у вас есть несколько частей домашнего задания, например, часть 1 и часть 2, вы можете включить номер части в название ветки. Это поможет легко различать разные части задания и поддерживать порядок в вашем репозитории.&#10;&#10;### Примеры названий веток&#10;&#10;1. **Использование префикса `feature/`**:&#10;    - `feature/patterns-homework-part1`&#10;    - `feature/patterns-homework-part2`&#10;&#10;2. **Использование префикса `hw/` (сокращение от &quot;homework&quot;)**:&#10;    - `hw/patterns-part1`&#10;    - `hw/patterns-part2`&#10;&#10;3. **Использование префикса `task/`**:&#10;    - `task/patterns-homework-part1`&#10;    - `task/patterns-homework-part2`&#10;&#10;4. **Использование префикса `assignment/`**:&#10;    - `assignment/patterns-part1`&#10;    - `assignment/patterns-part2`&#10;&#10;### Примеры&#10;&#10;- `feature/patterns-homework-part1`&#10;- `feature/patterns-homework-part2`&#10;- `hw/patterns-part1`&#10;- `hw/patterns-part2`&#10;- `task/patterns-homework-part1`&#10;- `task/patterns-homework-part2`&#10;- `assignment/patterns-part1`&#10;- `assignment/patterns-part2`&#10;&#10;### Рекомендации&#10;&#10;- **Будьте последовательны**: Используйте один и тот же формат для всех веток, связанных с домашними заданиями, чтобы было легче ориентироваться в репозитории.&#10;- **Будьте конкретны**: Указывайте номер части задания, чтобы было понятно, к какой части относится ветка.&#10;&#10;### Пример создания ветки&#10;&#10;Если вы используете Git, вы можете создать новую ветку с помощью следующей команды:&#10;&#10;```sh&#10;git checkout -b feature/patterns-homework-part1&#10;```&#10;&#10;Или, если вы предпочитаете другой формат:&#10;&#10;```sh&#10;git checkout -b hw/patterns-part1&#10;```&#10;&#10;Для второй части задания:&#10;&#10;```sh&#10;git checkout -b feature/patterns-homework-part2&#10;```&#10;&#10;Или:&#10;&#10;```sh&#10;git checkout -b hw/patterns-part2&#10;```&#10;&#10;Эти команды создадут и переключат вас на новую ветку с указанным именем." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1731395432364" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -669,6 +786,44 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="b61d7b">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                </list>
+              </option>
+              <option name="id" value="b61d7b" />
+              <option name="initiateTms" value="1731395571704" />
+              <option name="request" value=" Описание/Пошаговая инструкция выполнения домашнего задания:&#10;Паттерн Iterator&#10;&#10;Есть ящик. В ящике 4 матрёшки разных цветов. Каждая матрёшка состоит из 10 частей.&#10;Нужно программно реализовать данную концепцию. Создать возможность не менять клиентский код обеспечить возможность пересчитывать матрёшки различными способами.&#10;&#10;    Сначала сначала самые маленькие (каждого из 4х цветов), затем побольше и тд до самых больших&#10;    Сначала одну матрёшку от маленькой до большой, затем другую и тд.&#10;&#10;Создайте класс Box с четырмя внутренними листами строк, реализуйте Iterator который последовательно возвращает все строки из листов коробки&#10;&#10;Формально описание задачи про матрёшки&#10;&#10;Имеем.&#10;&#10;public final class Matryoshka {&#10;    &#10;    // [0] - the smallest / [9] - the biggest&#10;    private final List&lt;String&gt; items; &#10;&#10;}&#10;&#10;public final class Box {&#10;&#10;    private final Matryoshka red;        // &quot;red0&quot;, &quot;red1&quot;, ..., &quot;red9&quot;&#10;    private final Matryoshka green;&#10;    private final Matryoshka blue;&#10;    private final Matryoshka magenta;&#10;    &#10;    // expected: &quot;red0&quot;, &quot;green0&quot;, &quot;blue0&quot;, &quot;magenta0&quot;, &quot;red1&quot;, &quot;green1&quot;, &quot;blue1&quot;, &quot;magenta1&quot;,... &#10;    public Iterator&lt;String&gt; getSmallFirstIterator() {&#10;        // TODO&#10;    }&#10;    &#10;    // expected: &quot;red0&quot;, &quot;red1&quot;, ..., &quot;red9&quot;, &quot;green0&quot;, &quot;green1&quot;, ..., &quot;green9&quot;, ... &#10;    public Iterator&lt;String&gt; getColorFirstIterator() {&#10;        // TODO&#10;    }&#10;    &#10;}&#10;&#10;Нужно реализовать два итератора, которые в сумме выводят по 40 String, но в разном порядке." />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Для реализации паттерна `Iterator` в данном контексте, мы создадим два итератора для класса `Box`, которые будут возвращать строки в разных порядках. Один итератор будет возвращать элементы сначала самых маленьких матрёшек всех цветов, затем побольше и так далее. Второй итератор будет возвращать элементы одной матрёшки от маленькой до большой, затем другой и так далее.&#10;&#10;### Шаги для реализации&#10;&#10;1. **Создайте класс `Matryoshka`**:&#10;    - Этот класс будет содержать список строк, представляющих части матрёшки.&#10;&#10;2. **Создайте класс `Box`**:&#10;    - Этот класс будет содержать четыре объекта `Matryoshka` для разных цветов.&#10;    - Реализуйте два метода для получения итераторов: `getSmallFirstIterator` и `getColorFirstIterator`.&#10;&#10;3. **Реализуйте итераторы**:&#10;    - Итератор `SmallFirstIterator` будет возвращать элементы сначала самых маленьких матрёшек всех цветов, затем побольше и так далее.&#10;    - Итератор `ColorFirstIterator` будет возвращать элементы одной матрёшки от маленькой до большой, затем другой и так далее.&#10;&#10;### Реализация&#10;&#10;#### Класс `Matryoshka`&#10;&#10;```java&#10;import java.util.List;&#10;&#10;public final class Matryoshka {&#10;    private final List&lt;String&gt; items;&#10;&#10;    public Matryoshka(List&lt;String&gt; items) {&#10;        this.items = items;&#10;    }&#10;&#10;    public List&lt;String&gt; getItems() {&#10;        return items;&#10;    }&#10;}&#10;```&#10;&#10;#### Класс `Box`&#10;&#10;```java&#10;import java.util.Iterator;&#10;import java.util.List;&#10;import java.util.NoSuchElementException;&#10;&#10;public final class Box {&#10;    private final Matryoshka red;&#10;    private final Matryoshka green;&#10;    private final Matryoshka blue;&#10;    private final Matryoshka magenta;&#10;&#10;    public Box(Matryoshka red, Matryoshka green, Matryoshka blue, Matryoshka magenta) {&#10;        this.red = red;&#10;        this.green = green;&#10;        this.blue = blue;&#10;        this.magenta = magenta;&#10;    }&#10;&#10;    public Iterator&lt;String&gt; getSmallFirstIterator() {&#10;        return new SmallFirstIterator(List.of(red, green, blue, magenta));&#10;    }&#10;&#10;    public Iterator&lt;String&gt; getColorFirstIterator() {&#10;        return new ColorFirstIterator(List.of(red, green, blue, magenta));&#10;    }&#10;&#10;    private static class SmallFirstIterator implements Iterator&lt;String&gt; {&#10;        private final List&lt;Matryoshka&gt; matryoshkas;&#10;        private int currentIndex = 0;&#10;        private int currentSize = 0;&#10;&#10;        public SmallFirstIterator(List&lt;Matryoshka&gt; matryoshkas) {&#10;            this.matryoshkas = matryoshkas;&#10;        }&#10;&#10;        @Override&#10;        public boolean hasNext() {&#10;            return currentSize &lt; 10;&#10;        }&#10;&#10;        @Override&#10;        public String next() {&#10;            if (!hasNext()) {&#10;                throw new NoSuchElementException();&#10;            }&#10;&#10;            StringBuilder result = new StringBuilder();&#10;            for (Matryoshka matryoshka : matryoshkas) {&#10;                result.append(matryoshka.getItems().get(currentSize)).append(&quot; &quot;);&#10;            }&#10;            currentSize++;&#10;            return result.toString().trim();&#10;        }&#10;    }&#10;&#10;    private static class ColorFirstIterator implements Iterator&lt;String&gt; {&#10;        private final List&lt;Matryoshka&gt; matryoshkas;&#10;        private int currentMatryoshka = 0;&#10;        private int currentSize = 0;&#10;&#10;        public ColorFirstIterator(List&lt;Matryoshka&gt; matryoshkas) {&#10;            this.matryoshkas = matryoshkas;&#10;        }&#10;&#10;        @Override&#10;        public boolean hasNext() {&#10;            return currentMatryoshka &lt; matryoshkas.size();&#10;        }&#10;&#10;        @Override&#10;        public String next() {&#10;            if (!hasNext()) {&#10;                throw new NoSuchElementException();&#10;            }&#10;&#10;            String result = matryoshkas.get(currentMatryoshka).getItems().get(currentSize);&#10;            currentSize++;&#10;            if (currentSize == 10) {&#10;                currentSize = 0;&#10;                currentMatryoshka++;&#10;            }&#10;            return result;&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;### Пример использования&#10;&#10;```java&#10;import java.util.Arrays;&#10;&#10;public class Application {&#10;    public static void main(String[] args) {&#10;        Matryoshka red = new Matryoshka(Arrays.asList(&quot;red0&quot;, &quot;red1&quot;, &quot;red2&quot;, &quot;red3&quot;, &quot;red4&quot;, &quot;red5&quot;, &quot;red6&quot;, &quot;red7&quot;, &quot;red8&quot;, &quot;red9&quot;));&#10;        Matryoshka green = new Matryoshka(Arrays.asList(&quot;green0&quot;, &quot;green1&quot;, &quot;green2&quot;, &quot;green3&quot;, &quot;green4&quot;, &quot;green5&quot;, &quot;green6&quot;, &quot;green7&quot;, &quot;green8&quot;, &quot;green9&quot;));&#10;        Matryoshka blue = new Matryoshka(Arrays.asList(&quot;blue0&quot;, &quot;blue1&quot;, &quot;blue2&quot;, &quot;blue3&quot;, &quot;blue4&quot;, &quot;blue5&quot;, &quot;blue6&quot;, &quot;blue7&quot;, &quot;blue8&quot;, &quot;blue9&quot;));&#10;        Matryoshka magenta = new Matryoshka(Arrays.asList(&quot;magenta0&quot;, &quot;magenta1&quot;, &quot;magenta2&quot;, &quot;magenta3&quot;, &quot;magenta4&quot;, &quot;magenta5&quot;, &quot;magenta6&quot;, &quot;magenta7&quot;, &quot;magenta8&quot;, &quot;magenta9&quot;));&#10;&#10;        Box box = new Box(red, green, blue, magenta);&#10;&#10;        System.out.println(&quot;Small First Iterator:&quot;);&#10;        Iterator&lt;String&gt; smallFirstIterator = box.getSmallFirstIterator();&#10;        while (smallFirstIterator.hasNext()) {&#10;            System.out.println(smallFirstIterator.next());&#10;        }&#10;&#10;        System.out.println(&quot;\nColor First Iterator:&quot;);&#10;        Iterator&lt;String&gt; colorFirstIterator = box.getColorFirstIterator();&#10;        while (colorFirstIterator.hasNext()) {&#10;            System.out.println(colorFirstIterator.next());&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;### Заключение&#10;&#10;Эта реализация позволяет вам использовать два различных итератора для обхода элементов матрёшек в разных порядках, не изменяя клиентский код. Вы можете легко расширить эту концепцию для добавления новых способов обхода, создавая новые итераторы." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1731395586855" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="b6bfb7">
           <value>
             <ChatHistoryModel>
@@ -692,6 +847,44 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="bff744">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                </list>
+              </option>
+              <option name="id" value="bff744" />
+              <option name="initiateTms" value="1731395465569" />
+              <option name="request" value=" homework-patterns-part1" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Отличный выбор! Название ветки `homework-patterns-part1` является информативным и легко идентифицируемым. Оно четко указывает, что это домашнее задание по паттернам и что это первая часть.&#10;&#10;### Пример создания ветки&#10;&#10;Если вы используете Git, вы можете создать новую ветку с помощью следующей команды:&#10;&#10;```sh&#10;git checkout -b homework-patterns-part1&#10;```&#10;&#10;Для второй части задания:&#10;&#10;```sh&#10;git checkout -b homework-patterns-part2&#10;```&#10;&#10;### Полный процесс создания и переключения на новую ветку&#10;&#10;1. **Создание и переключение на новую ветку для первой части**:&#10;&#10;```sh&#10;git checkout -b homework-patterns-part1&#10;```&#10;&#10;2. **Создание и переключение на новую ветку для второй части**:&#10;&#10;```sh&#10;git checkout -b homework-patterns-part2&#10;```&#10;&#10;### Пример использования&#10;&#10;Предположим, вы находитесь в основной ветке (`main` или `master`), и вам нужно создать ветку для первой части домашнего задания:&#10;&#10;```sh&#10;git checkout main&#10;git pull origin main&#10;git checkout -b homework-patterns-part1&#10;```&#10;&#10;После завершения работы над первой частью, вы можете создать ветку для второй части:&#10;&#10;```sh&#10;git checkout main&#10;git pull origin main&#10;git checkout -b homework-patterns-part2&#10;```&#10;&#10;### Заключение&#10;&#10;Использование таких имен веток поможет вам и вашим коллегам легко ориентироваться в репозитории и понимать, к какой части домашнего задания относится каждая ветка." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1731395470433" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/exceptions/TestConfigurationException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/BeforeSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/AfterSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Test.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestSuite.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/annotations/Disabled.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/TestRunner.java" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -769,6 +962,32 @@
                 <list>
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="edb7c4">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
+                </list>
+              </option>
+              <option name="id" value="edb7c4" />
+              <option name="initiateTms" value="1731395118738" />
+              <option name="request" value=" В методе     /**&#10;              * Инициирует упорядоченное завершение работы пула потоков&#10;              * Новые задачи не будут приниматься, и все рабочие потоки завершат работу&#10;              * после выполнения всех задач в очереди&#10;              */&#10;             public void shutdown() {&#10;                 isShutdown = true;&#10;                 synchronized (taskQueue) {&#10;                     taskQueue.notifyAll();&#10;                 }&#10;             }&#10;Получил комментарий:&#10;Здесь можно использовать join() для каждого worker, чтобы дождаться завершения всех потоков перед завершением работы пула:&#10;&#10;public void shutdown() {&#10;    isShutdown = true;&#10;    synchronized (taskQueue) {&#10;        taskQueue.notifyAll();&#10;    }&#10;    // Ждать завершения потоков&#10;    for (Worker worker : workers) {&#10;        try {&#10;            worker.join();&#10;        } catch (InterruptedException e) {&#10;            Thread.currentThread().interrupt();&#10;        }&#10;    }&#10;}" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Да, использование метода `join()` для каждого рабочего потока в методе `shutdown()` является хорошей практикой, чтобы убедиться, что все потоки завершили свою работу перед завершением работы пула. Это гарантирует, что все задачи будут выполнены до завершения программы.&#10;&#10;Вот обновленный метод `shutdown()` с использованием `join()`:&#10;&#10;```java&#10;/**&#10; * Инициирует упорядоченное завершение работы пула потоков.&#10; * Новые задачи не будут приниматься, и все рабочие потоки завершат работу&#10; * после выполнения всех задач в очереди.&#10; */&#10;public void shutdown() {&#10;    isShutdown = true;&#10;    synchronized (taskQueue) {&#10;        taskQueue.notifyAll();&#10;    }&#10;    // Ждать завершения потоков&#10;    for (Worker worker : workers) {&#10;        try {&#10;            worker.join();&#10;        } catch (InterruptedException e) {&#10;            Thread.currentThread().interrupt();&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;### Объяснение изменений&#10;&#10;1. **Установка флага `isShutdown` в `true`**:&#10;    - Это предотвращает добавление новых задач в пул потоков.&#10;&#10;2. **Уведомление всех потоков**:&#10;    - `synchronized (taskQueue)` и `taskQueue.notifyAll()` используются для пробуждения всех потоков, которые могут быть в состоянии ожидания.&#10;&#10;3. **Ожидание завершения всех рабочих потоков**:&#10;    - Цикл `for (Worker worker : workers)` проходит по всем рабочим потокам.&#10;    - Метод `worker.join()` заставляет текущий поток (тот, который вызывает `shutdown()`) ждать завершения рабочего потока `worker`.&#10;    - Если поток прерывается во время ожидания, обрабатывается `InterruptedException`, и текущий поток также прерывается с помощью `Thread.currentThread().interrupt()`.&#10;&#10;### Полный код класса `CustomThreadPool`&#10;&#10;Для полноты картины, вот полный код класса `CustomThreadPool` с обновленным методом `shutdown()`:&#10;&#10;```java&#10;package ru.otus.java.pro.concurrency;&#10;&#10;import org.slf4j.Logger;&#10;import org.slf4j.LoggerFactory;&#10;&#10;import java.util.LinkedList;&#10;import java.util.List;&#10;import java.util.Queue;&#10;&#10;/**&#10; * CustomThreadPool - это простая реализация пула потоков.&#10; * Он управляет фиксированным количеством рабочих потоков и очередью задач.&#10; * Задачи выполняются рабочими потоками по мере их доступности.&#10; */&#10;public class CustomThreadPool {&#10;    private static final Logger log = LoggerFactory.getLogger(CustomThreadPool.class);&#10;&#10;    private final List&lt;Worker&gt; workers;&#10;    private final Queue&lt;Runnable&gt; taskQueue;&#10;    private volatile boolean isShutdown;&#10;&#10;    /**&#10;     * Создает CustomThreadPool с указанным количеством рабочих потоков.&#10;     *&#10;     * @param capacity количество рабочих потоков в пуле&#10;     */&#10;    public CustomThreadPool(int capacity) {&#10;        this.taskQueue = new LinkedList&lt;&gt;();&#10;        this.workers = new LinkedList&lt;&gt;();&#10;        this.isShutdown = false;&#10;&#10;        for (int i = 0; i &lt; capacity; i++) {&#10;            Worker worker = new Worker(taskQueue, this);&#10;            workers.add(worker);&#10;            worker.start();&#10;        }&#10;    }&#10;&#10;    /**&#10;     * Добавляет задачу для выполнения в пул потоков.&#10;     *&#10;     * @param task задача для выполнения&#10;     * @throws IllegalStateException если пул потоков завершен&#10;     */&#10;    public void execute(Runnable task) {&#10;        if (isShutdown) {&#10;            throw new IllegalStateException(&quot;Пул потоков завершен, невозможно принять новые задачи&quot;);&#10;        }&#10;        synchronized (taskQueue) {&#10;            taskQueue.add(task);&#10;            taskQueue.notify();&#10;        }&#10;    }&#10;&#10;    /**&#10;     * Инициирует упорядоченное завершение работы пула потоков.&#10;     * Новые задачи не будут приниматься, и все рабочие потоки завершат работу&#10;     * после выполнения всех задач в очереди.&#10;     */&#10;    public void shutdown() {&#10;        isShutdown = true;&#10;        synchronized (taskQueue) {&#10;            taskQueue.notifyAll();&#10;        }&#10;        // Ждать завершения потоков&#10;        for (Worker worker : workers) {&#10;            try {&#10;                worker.join();&#10;            } catch (InterruptedException e) {&#10;                Thread.currentThread().interrupt();&#10;            }&#10;        }&#10;    }&#10;&#10;    /**&#10;     * Проверяет, завершен ли пул потоков.&#10;     *&#10;     * @return true, если пул потоков завершен, иначе false&#10;     */&#10;    public boolean isShutdown() {&#10;        return isShutdown;&#10;    }&#10;}&#10;```&#10;&#10;Этот подход гарантирует, что все рабочие потоки завершат выполнение своих задач перед тем, как метод `shutdown()` вернет управление вызывающему коду." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1731395130234" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
                 </list>
               </option>
             </ChatHistoryModel>
