@@ -72,7 +72,7 @@ public final class Box {
 
         @Override
         public boolean hasNext() {
-            return currentMatryoshka < matryoshkas.size();
+            return currentMatryoshka < matryoshkas.size() && currentSize < 10;
         }
 
         @Override
