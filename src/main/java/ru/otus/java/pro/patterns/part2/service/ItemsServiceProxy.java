@@ -19,7 +19,7 @@ public class ItemsServiceProxy {
                 connection.rollback();
                 throw new RuntimeException("Transaction failed, rolled back", e);
             }
-        } catch (SQLException e) {
+        } catch (Exception e) {
             throw new RuntimeException("Error managing transaction", e);
         }
     }

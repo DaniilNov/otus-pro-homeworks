@@ -7,25 +7,24 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class ItemsService {
-    private final ItemsDao itemsDao = new ItemsDao();
+    private final ItemsDao itemDao = new ItemsDao();
 
     public void saveItems() throws SQLException {
         for (int i = 1; i <= 100; i++) {
             Item item = new Item(i, "Item " + i, i * 10.0);
-            itemsDao.saveItem(item);
+            itemDao.saveItem(item);
         }
     }
 
     public void doublePrices() throws SQLException {
-        List<Item> items = itemsDao.getAllItems();
+        List<Item> items = itemDao.getAllItems();
         for (Item item : items) {
-            double newPrice = item.getPrice() * 2;
-            itemsDao.updateItemPrice(item.getId(), newPrice);
+            itemDao.updateItemPrice(item.getId(), item.getPrice() * 2);
         }
     }
 
     public List<Item> getAllItems() throws SQLException {
-        return itemsDao.getAllItems();
+        return itemDao.getAllItems();
     }
 
     public void printAllItems() throws SQLException {

@@ -1,38 +1,40 @@
 package ru.otus.java.pro.patterns.part2;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.otus.java.pro.patterns.part2.service.ItemsServiceProxy;
 
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
 
 public class Main {
-    public static void main(String[] args) {
+    private static final Logger log = LoggerFactory.getLogger(Main.class);
 
-        //Чего-то с кодировкой. Добавил для вывода русских букв в консоль
+    public static void main(String[] args) {
         System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
 
         ItemsServiceProxy itemsServiceProxy = new ItemsServiceProxy();
 
         try {
-            System.out.println("Демонстрация сохранения 100 новых Items");
+            log.info("Демонстрация сохранения 100 новых Items");
             itemsServiceProxy.saveItems();
-            System.out.println("100 новых Items сохранены успешно");
+            log.info("100 новых Items сохранены успешно");
         } catch (RuntimeException e) {
-            System.err.println("Неуспешное сохранение Items: " + e.getMessage());
+            log.error("Неуспешное сохранение Items: {}", e.getMessage());
         }
 
-        System.out.println("Вывод всех Item после сохранения:");
+        log.info("Вывод всех Item после сохранения:");
         itemsServiceProxy.printAllItems();
 
         try {
-            System.out.println("Демонстрация удвоения цен всех Items");
+            log.info("Демонстрация удвоения цен всех Items");
             itemsServiceProxy.doublePrices();
-            System.out.println("Операция удвоения цен для всех элементов в базе данных прошла успешно");
+            log.info("Операция удвоения цен для всех элементов в базе данных прошла успешно");
         } catch (RuntimeException e) {
-            System.err.println("Операция удвоения цен для всех элементов в базе данных прошла неуспешно: " + e.getMessage());
+            log.info("Операция удвоения цен для всех элементов в базе данных прошла неуспешно: " + e.getMessage());
         }
 
-        System.out.println("Вывод всех Item после удвоения цен:");
+        log.error("Вывод всех Item после удвоения цен:");
         itemsServiceProxy.printAllItems();
     }
 }
