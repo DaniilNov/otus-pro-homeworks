@@ -15,11 +15,13 @@ public class AbstractRepository<T> {
     private final String tableName;
     private final List<Field> cachedFields;
     private final Field idField;
+    private final Class<T> cls;
 
     private PreparedStatement psInsert;
 
     public AbstractRepository(DataSource dataSource, Class<T> cls) {
         this.dataSource = dataSource;
+        this.cls = cls;
         if (!cls.isAnnotationPresent(RepositoryTable.class)) {
             throw new ORMException("Класс " + cls.getName() + " не содержит аннотацию @RepositoryTable");
         }
@@ -51,7 +53,7 @@ public class AbstractRepository<T> {
         }
     }
 
-    public Optional<T> findById(Object id, Class<T> cls) {
+    public Optional<T> findById(Object id) {
         String query = String.format("SELECT * FROM %s WHERE %s = ?", tableName, getColumnName(idField));
         try (PreparedStatement ps = dataSource.getConnection().prepareStatement(query)) {
             ps.setObject(1, id);
@@ -71,7 +73,7 @@ public class AbstractRepository<T> {
         return Optional.empty();
     }
 
-    public List<T> findAll(Class<T> cls) {
+    public List<T> findAll() {
         String query = "SELECT * FROM " + tableName;
         try (PreparedStatement ps = dataSource.getConnection().prepareStatement(query)) {
             ResultSet rs = ps.executeQuery();

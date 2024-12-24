@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/BonusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/BonusService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DbMigrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DbMigrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/UsersStatisticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/UsersStatisticService.java" afterDir="false" />
-    </list>
+    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -274,7 +266,7 @@
       <workItem from="1733040733691" duration="91000" />
       <workItem from="1733040835668" duration="7128000" />
       <workItem from="1733051178238" duration="2447000" />
-      <workItem from="1735016113699" duration="1311000" />
+      <workItem from="1735016113699" duration="1624000" />
     </task>
     <task id="LOCAL-00001" summary="master-commit">
       <option name="closed" value="true" />
@@ -340,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733053411804</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Homework DB Interaction v2">
+      <option name="closed" value="true" />
+      <created>1735017594761</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735017594761</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +355,8 @@
     <MESSAGE value="Homework Concurrency v1" />
     <MESSAGE value="Homework Patterns part1 v1" />
     <MESSAGE value="Homework DB Interaction v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework DB Interaction v1" />
+    <MESSAGE value="Homework DB Interaction v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework DB Interaction v2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -1385,6 +1386,40 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="b76829">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/UsersDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/User.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryField.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryTable.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
+                </list>
+              </option>
+              <option name="id" value="b76829" />
+              <option name="initiateTms" value="1735017475340" />
+              <option name="request" value=" И здесь     public Optional&lt;User&gt; getUserById(Long id) {&#10;                try (ResultSet rs = dataSource.getStatement().executeQuery(&quot;select * from users where id = &quot; + id)) {&#10;                    if (rs.next() != false) {&#10;                        return Optional.of(new User(rs.getLong(&quot;id&quot;), rs.getString(&quot;login&quot;), rs.getString(&quot;password&quot;), rs.getString(&quot;nickname&quot;)));&#10;                    }&#10;                } catch (SQLException e) {&#10;                    e.printStackTrace();&#10;                }&#10;                return Optional.empty();&#10;            }" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Конечно, давайте заменим `e.printStackTrace()` на `logger.error` в методе `getUserById`. Также, для улучшения кода, мы можем использовать `try-with-resources` для автоматического закрытия `ResultSet` и других ресурсов.&#10;&#10;Вот обновленный метод `getUserById`:&#10;&#10;### Обновленный метод `getUserById`&#10;&#10;```java&#10;package ru.otus.java.pro.dbinteraction;&#10;&#10;import org.slf4j.Logger;&#10;import org.slf4j.LoggerFactory;&#10;&#10;import java.sql.Connection;&#10;import java.sql.PreparedStatement;&#10;import java.sql.ResultSet;&#10;import java.sql.SQLException;&#10;import java.util.Optional;&#10;&#10;public class UsersDao {&#10;    private static final Logger logger = LoggerFactory.getLogger(UsersDao.class);&#10;    private final DataSource dataSource;&#10;&#10;    public UsersDao(DataSource dataSource) {&#10;        this.dataSource = dataSource;&#10;    }&#10;&#10;    public Optional&lt;User&gt; getUserById(Long id) {&#10;        String query = &quot;SELECT * FROM users WHERE id = ?&quot;;&#10;        try (Connection connection = dataSource.getConnection();&#10;             PreparedStatement ps = connection.prepareStatement(query)) {&#10;            ps.setLong(1, id);&#10;            try (ResultSet rs = ps.executeQuery()) {&#10;                if (rs.next()) {&#10;                    User user = new User(rs.getLong(&quot;id&quot;), rs.getString(&quot;login&quot;), rs.getString(&quot;password&quot;), rs.getString(&quot;nickname&quot;));&#10;                    return Optional.of(user);&#10;                }&#10;            }&#10;        } catch (SQLException e) {&#10;            logger.error(&quot;Error fetching user by id: {}&quot;, id, e);&#10;        }&#10;        return Optional.empty();&#10;    }&#10;}&#10;```&#10;&#10;### Обновленный класс `UsersDao`&#10;&#10;```java&#10;package ru.otus.java.pro.dbinteraction;&#10;&#10;import org.slf4j.Logger;&#10;import org.slf4j.LoggerFactory;&#10;&#10;import java.sql.Connection;&#10;import java.sql.PreparedStatement;&#10;import java.sql.ResultSet;&#10;import java.sql.SQLException;&#10;import java.util.ArrayList;&#10;import java.util.Collections;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;public class UsersDao {&#10;    private static final Logger logger = LoggerFactory.getLogger(UsersDao.class);&#10;    private final DataSource dataSource;&#10;&#10;    public UsersDao(DataSource dataSource) {&#10;        this.dataSource = dataSource;&#10;    }&#10;&#10;    public Optional&lt;User&gt; getUserByLoginAndPassword(String login, String password) {&#10;        String query = &quot;SELECT * FROM users WHERE login = ? AND password = ?&quot;;&#10;        try (Connection connection = dataSource.getConnection();&#10;             PreparedStatement ps = connection.prepareStatement(query)) {&#10;            ps.setString(1, login);&#10;            ps.setString(2, password);&#10;            try (ResultSet rs = ps.executeQuery()) {&#10;                if (rs.next()) {&#10;                    User user = new User(rs.getLong(&quot;id&quot;), rs.getString(&quot;login&quot;), rs.getString(&quot;password&quot;), rs.getString(&quot;nickname&quot;));&#10;                    return Optional.of(user);&#10;                }&#10;            }&#10;        } catch (SQLException e) {&#10;            logger.error(&quot;Error fetching user by login and password: login={}, password={}&quot;, login, password, e);&#10;        }&#10;        return Optional.empty();&#10;    }&#10;&#10;    public Optional&lt;User&gt; getUserById(Long id) {&#10;        String query = &quot;SELECT * FROM users WHERE id = ?&quot;;&#10;        try (Connection connection = dataSource.getConnection();&#10;             PreparedStatement ps = connection.prepareStatement(query)) {&#10;            ps.setLong(1, id);&#10;            try (ResultSet rs = ps.executeQuery()) {&#10;                if (rs.next()) {&#10;                    User user = new User(rs.getLong(&quot;id&quot;), rs.getString(&quot;login&quot;), rs.getString(&quot;password&quot;), rs.getString(&quot;nickname&quot;));&#10;                    return Optional.of(user);&#10;                }&#10;            }&#10;        } catch (SQLException e) {&#10;            logger.error(&quot;Error fetching user by id: {}&quot;, id, e);&#10;        }&#10;        return Optional.empty();&#10;    }&#10;&#10;    public List&lt;User&gt; getAllUsers() {&#10;        String query = &quot;SELECT * FROM users&quot;;&#10;        List&lt;User&gt; result = new ArrayList&lt;&gt;();&#10;        try (Connection connection = dataSource.getConnection();&#10;             PreparedStatement ps = connection.prepareStatement(query);&#10;             ResultSet rs = ps.executeQuery()) {&#10;            while (rs.next()) {&#10;                User user = new User(rs.getLong(&quot;id&quot;), rs.getString(&quot;login&quot;), rs.getString(&quot;password&quot;), rs.getString(&quot;nickname&quot;));&#10;                result.add(user);&#10;            }&#10;        } catch (SQLException e) {&#10;            logger.error(&quot;Error fetching all users&quot;, e);&#10;        }&#10;        return Collections.unmodifiableList(result);&#10;    }&#10;&#10;    public void save(User user) throws SQLException {&#10;        String query = &quot;INSERT INTO users (login, password, nickname) VALUES (?, ?, ?)&quot;;&#10;        try (Connection connection = dataSource.getConnection();&#10;             PreparedStatement ps = connection.prepareStatement(query)) {&#10;            ps.setString(1, user.getLogin());&#10;            ps.setString(2, user.getUserPassword());&#10;            ps.setString(3, user.getUserNickname());&#10;            ps.executeUpdate();&#10;        }&#10;    }&#10;&#10;    public void saveAll(List&lt;User&gt; users) throws SQLException {&#10;        String query = &quot;INSERT INTO users (login, password, nickname) VALUES (?, ?, ?)&quot;;&#10;        try (Connection connection = dataSource.getConnection();&#10;             PreparedStatement ps = connection.prepareStatement(query)) {&#10;            connection.setAutoCommit(false);&#10;            for (User user : users) {&#10;                ps.setString(1, user.getLogin());&#10;                ps.setString(2, user.getUserPassword());&#10;                ps.setString(3, user.getUserNickname());&#10;                ps.addBatch();&#10;            }&#10;            ps.executeBatch();&#10;            connection.setAutoCommit(true);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;В этом обновленном коде:&#10;&#10;1. Используется `try-with-resources` для автоматического закрытия `Connection`, `PreparedStatement` и `ResultSet`.&#10;2. Исключения `SQLException` логируются с помощью `logger.error`, что позволяет лучше управлять логами и сохранять их в централизованном месте.&#10;3. Методы `getUserByLoginAndPassword`, `getUserById`, `getAllUsers`, `save` и `saveAll` обновлены для использования `PreparedStatement` и логирования ошибок.&#10;&#10;Эти изменения делают код более чистым, надежным и улучшают управление логами." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1735017489209" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryTable.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/UsersDao.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/User.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryField.java" />
                 </list>
               </option>
             </ChatHistoryModel>

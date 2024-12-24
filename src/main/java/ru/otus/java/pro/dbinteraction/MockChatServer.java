@@ -25,7 +25,7 @@ public class MockChatServer {
             usersRepository.save(new User(null, "Иван", "123", "Ivan"));
             System.out.println("Все пользователи: " + usersDao.getAllUsers());
 
-            Optional<User> foundUser = usersRepository.findById(12L, User.class);
+            Optional<User> foundUser = usersRepository.findById(12L);
             foundUser.ifPresent(user -> System.out.println("Найден пользователь: " + user));
 
             if (foundUser.isPresent()) {
@@ -35,13 +35,13 @@ public class MockChatServer {
                 System.out.println("Обновлен пользователь: " + userToUpdate);
             }
 
-            List<User> users = usersRepository.findAll(User.class);
+            List<User> users = usersRepository.findAll();
             System.out.println("Все пользователи: " + users);
 
             usersRepository.deleteById(1L);
             System.out.println("Пользователь с ID 1 удален");
 
-            users = usersRepository.findAll(User.class);
+            users = usersRepository.findAll();
             System.out.println("Все пользователи после удаления: " + users);
 
         } catch (SQLException e) {
