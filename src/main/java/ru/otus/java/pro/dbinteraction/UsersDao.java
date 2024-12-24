@@ -1,5 +1,8 @@
 package ru.otus.java.pro.dbinteraction;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -8,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class UsersDao {
+    private static final Logger logger = LoggerFactory.getLogger(UsersDao.class);
     private DataSource dataSource;
 
     public UsersDao(DataSource dataSource) {
@@ -18,7 +22,7 @@ public class UsersDao {
         try (ResultSet rs = dataSource.getStatement().executeQuery("select * from users where login = '" + login + "' AND password = '" + password + "'")) {
             return Optional.of(new User(rs.getLong("id"), rs.getString("login"), rs.getString("password"), rs.getString("nickname")));
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("Error fetching user by login and password: login={}, password={}", login, password, e);
         }
         return Optional.empty();
     }
@@ -29,7 +33,7 @@ public class UsersDao {
                 return Optional.of(new User(rs.getLong("id"), rs.getString("login"), rs.getString("password"), rs.getString("nickname")));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("Error fetching user by id: {}", id, e);
         }
         return Optional.empty();
     }
@@ -41,7 +45,7 @@ public class UsersDao {
                 result.add(new User(rs.getLong("id"), rs.getString("login"), rs.getString("password"), rs.getString("nickname")));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("Error fetching all users", e);
         }
         return Collections.unmodifiableList(result);
     }

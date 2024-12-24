@@ -5,26 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/db.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.trace.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/BonusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DbMigrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/MockChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/UsersDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/UsersStatisticService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/BonusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/BonusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DbMigrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DbMigrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/UsersStatisticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/UsersStatisticService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +109,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/xa86/Downloads/pro-java-db-interaction",
+    "last_opened_file_path": "C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -286,7 +273,8 @@
       <workItem from="1733039101427" duration="1194000" />
       <workItem from="1733040733691" duration="91000" />
       <workItem from="1733040835668" duration="7128000" />
-      <workItem from="1733051178238" duration="1999000" />
+      <workItem from="1733051178238" duration="2447000" />
+      <workItem from="1735016113699" duration="1311000" />
     </task>
     <task id="LOCAL-00001" summary="master-commit">
       <option name="closed" value="true" />
@@ -344,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731566488527</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Homework DB Interaction v1">
+      <option name="closed" value="true" />
+      <created>1733053411804</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733053411804</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +354,8 @@
     <MESSAGE value="Homework Stream Api v1" />
     <MESSAGE value="Homework Concurrency v1" />
     <MESSAGE value="Homework Patterns part1 v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework Patterns part1 v1" />
+    <MESSAGE value="Homework DB Interaction v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework DB Interaction v1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -506,6 +503,50 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="22f614">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/MockChatServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/User.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/gradlew.bat" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryField.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryTable.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
+                </list>
+              </option>
+              <option name="id" value="22f614" />
+              <option name="initiateTms" value="1735016871416" />
+              <option name="request" value=" Execution failed for task ':MockChatServer.main()'.&#10;&gt; Process 'command 'C:\Users\xa86\.jdks\temurin-17.0.7\bin\java.exe'' finished with non-zero exit value 1&#10;&#10;* Try:&#10;&gt; Run with --stacktrace option to get the stack trace.&#10;&gt; Run with --info or --debug option to get more log output.&#10;&gt; Run with --scan to get full insights.&#10;&gt; Get more help at https://help.gradle.org.&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;For more on this, please refer to https://docs.gradle.org/8.10.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;BUILD FAILED in 685ms&#10;3 actionable tasks: 2 executed, 1 up-to-date" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Ошибка, которую вы видите, указывает на то, что выполнение задачи `:MockChatServer.main()` завершилось с ненулевым кодом выхода, что обычно означает, что произошла ошибка во время выполнения программы. Чтобы понять, что именно пошло не так, нужно посмотреть на стек трассировки (stack trace) ошибки.&#10;&#10;Для этого выполните команду с опцией `--stacktrace`, чтобы получить более подробную информацию о причине ошибки:&#10;&#10;```sh&#10;./gradlew run --stacktrace&#10;```&#10;&#10;Если вы используете Windows, команда будет выглядеть так:&#10;&#10;```sh&#10;gradlew.bat run --stacktrace&#10;```&#10;&#10;Эта команда предоставит вам полный стек трассировки, который поможет определить, где именно произошла ошибка.&#10;&#10;Также, чтобы увидеть больше информации о процессе сборки и выполнения, вы можете использовать опции `--info` или `--debug`:&#10;&#10;```sh&#10;./gradlew run --info&#10;```&#10;&#10;или&#10;&#10;```sh&#10;./gradlew run --debug&#10;```&#10;&#10;На Windows:&#10;&#10;```sh&#10;gradlew.bat run --info&#10;```&#10;&#10;или&#10;&#10;```sh&#10;gradlew.bat run --debug&#10;```&#10;&#10;Эти команды предоставят более детальную информацию о процессе сборки и выполнения, что может помочь в диагностике проблемы.&#10;&#10;### Возможные причины ошибки&#10;&#10;1. **Исключения в коде**: Возможно, в вашем коде есть исключение, которое не было обработано. Проверьте блоки `try-catch` и убедитесь, что все исключения обрабатываются корректно.&#10;&#10;2. **Проблемы с подключением к базе данных**: Убедитесь, что база данных доступна и параметры подключения указаны правильно.&#10;&#10;3. **Ошибки в SQL-запросах**: Проверьте правильность SQL-запросов, которые вы выполняете в вашем коде.&#10;&#10;4. **Проблемы с зависимостями**: Убедитесь, что все зависимости указаны правильно в `build.gradle` и все необходимые библиотеки загружены.&#10;&#10;### Пример использования `--stacktrace`&#10;&#10;```sh&#10;gradlew.bat run --stacktrace&#10;```&#10;&#10;После выполнения этой команды вы получите стек трассировки, который поможет вам определить точное место и причину ошибки. Пожалуйста, предоставьте стек трассировки, если вам нужна дополнительная помощь в диагностике проблемы." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1735016877929" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryTable.java" />
+                  <option value="$PROJECT_DIR$/gradlew.bat" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/MockChatServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/User.java" />
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Task.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryField.java" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -740,6 +781,36 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/Main.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="3f8be4">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DbMigrator.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part2/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part2/service/ItemsServiceProxy.java" />
+                </list>
+              </option>
+              <option name="id" value="3f8be4" />
+              <option name="initiateTms" value="1735017376926" />
+              <option name="request" value=" } catch (SQLException | IOException e) {&#10;            e.printStackTrace();&#10;        }&#10;        Замени на logger.error" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Конечно, замена `e.printStackTrace()` на `logger.error` является хорошей практикой, так как это позволяет лучше управлять логированием и сохранять логи в централизованном месте.&#10;&#10;Вот как можно изменить ваш метод `migrate` в классе `DbMigrator`:&#10;&#10;### Обновленный метод `migrate`&#10;&#10;```java&#10;public void migrate() {&#10;    try (Connection connection = dataSource.getConnection();&#10;         Statement statement = connection.createStatement()) {&#10;&#10;        String sql = readSqlFile(&quot;init.sql&quot;);&#10;        for (String query : sql.split(&quot;;&quot;)) {&#10;            if (!query.trim().isEmpty()) {&#10;                statement.executeUpdate(query);&#10;            }&#10;        }&#10;        logger.info(&quot;Database migration completed successfully.&quot;);&#10;    } catch (SQLException | IOException e) {&#10;        logger.error(&quot;Error during database migration: {}&quot;, e.getMessage(), e);&#10;    }&#10;}&#10;```&#10;&#10;### Обновленный метод `readSqlFile`&#10;&#10;```java&#10;private String readSqlFile(String fileName) throws IOException {&#10;    StringBuilder sb = new StringBuilder();&#10;    try (InputStream is = getClass().getClassLoader().getResourceAsStream(fileName);&#10;         BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {&#10;&#10;        String line;&#10;        while ((line = reader.readLine()) != null) {&#10;            sb.append(line).append(&quot;\n&quot;);&#10;        }&#10;    }&#10;    return sb.toString();&#10;}&#10;```&#10;&#10;### Полный класс `DbMigrator`&#10;&#10;```java&#10;package ru.otus.java.pro.dbinteraction;&#10;&#10;import org.slf4j.Logger;&#10;import org.slf4j.LoggerFactory;&#10;import ru.otus.java.pro.patterns.part2.Main;&#10;&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStream;&#10;import java.io.InputStreamReader;&#10;import java.sql.Connection;&#10;import java.sql.SQLException;&#10;import java.sql.Statement;&#10;&#10;public class DbMigrator {&#10;    private final DataSource dataSource;&#10;    private static final Logger logger = LoggerFactory.getLogger(Main.class);&#10;&#10;    public DbMigrator(DataSource dataSource) {&#10;        this.dataSource = dataSource;&#10;    }&#10;&#10;    public void migrate() {&#10;        try (Connection connection = dataSource.getConnection();&#10;             Statement statement = connection.createStatement()) {&#10;&#10;            String sql = readSqlFile(&quot;init.sql&quot;);&#10;            for (String query : sql.split(&quot;;&quot;)) {&#10;                if (!query.trim().isEmpty()) {&#10;                    statement.executeUpdate(query);&#10;                }&#10;            }&#10;            logger.info(&quot;Database migration completed successfully.&quot;);&#10;        } catch (SQLException | IOException e) {&#10;            logger.error(&quot;Error during database migration: {}&quot;, e.getMessage(), e);&#10;        }&#10;    }&#10;&#10;    private String readSqlFile(String fileName) throws IOException {&#10;        StringBuilder sb = new StringBuilder();&#10;        try (InputStream is = getClass().getClassLoader().getResourceAsStream(fileName);&#10;             BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {&#10;&#10;            String line;&#10;            while ((line = reader.readLine()) != null) {&#10;                sb.append(line).append(&quot;\n&quot;);&#10;            }&#10;        }&#10;        return sb.toString();&#10;    }&#10;}&#10;```&#10;&#10;В этом обновленном коде:&#10;&#10;1. Используется `try-with-resources` для автоматического закрытия `Connection` и `Statement`.&#10;2. Исключения `SQLException` и `IOException` логируются с помощью `logger.error`, что позволяет лучше управлять логами и сохранять их в централизованном месте.&#10;3. Метод `readSqlFile` также использует `try-with-resources` для автоматического закрытия `InputStream` и `BufferedReader`.&#10;&#10;Эти изменения делают код более чистым и надежным, а также улучшают управление логами." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1735017385321" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part2/service/ItemsServiceProxy.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part2/Main.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DbMigrator.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -1451,6 +1522,40 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="e24c9d">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryField.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryTable.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
+                </list>
+              </option>
+              <option name="id" value="e24c9d" />
+              <option name="initiateTms" value="1735016658013" />
+              <option name="request" value=" public Optional&lt;T&gt; findById(Object id, Class&lt;T&gt; cls) {&#10;        String query = String.format(&quot;SELECT * FROM %s WHERE %s = ?&quot;, tableName, getColumnName(idField));&#10;        try {&#10;            PreparedStatement ps = dataSource.getConnection().prepareStatement(query);&#10;            ps.setObject(1, id);&#10;            ResultSet rs = ps.executeQuery();&#10;            if (rs.next()) {&#10;                T entity = cls.getDeclaredConstructor().newInstance();&#10;                for (Field field : cls.getDeclaredFields()) {&#10;                    field.setAccessible(true);&#10;                    field.set(entity, rs.getObject(getColumnName(field)));&#10;                }&#10;                return Optional.of(entity);&#10;            }&#10;        } catch (Exception e) {&#10;            throw new ORMException(&quot;Не удалось найти сущность с id: &quot; + id, e);&#10;        }&#10;        return Optional.empty();&#10;    } исп. try-with-resources" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Использование `try-with-resources` в методе `findById` гарантирует, что все ресурсы будут корректно закрыты после использования, даже если произойдет исключение. Это помогает избежать утечек ресурсов и делает код более надежным.&#10;&#10;Вот как можно переписать метод `findById` с использованием `try-with-resources`:&#10;&#10;```java&#10;public Optional&lt;T&gt; findById(Object id, Class&lt;T&gt; cls) {&#10;    String query = String.format(&quot;SELECT * FROM %s WHERE %s = ?&quot;, tableName, getColumnName(idField));&#10;    try (Connection connection = dataSource.getConnection();&#10;         PreparedStatement ps = connection.prepareStatement(query)) {&#10;        ps.setObject(1, id);&#10;        try (ResultSet rs = ps.executeQuery()) {&#10;            if (rs.next()) {&#10;                T entity = cls.getDeclaredConstructor().newInstance();&#10;                for (Field field : cls.getDeclaredFields()) {&#10;                    field.setAccessible(true);&#10;                    field.set(entity, rs.getObject(getColumnName(field)));&#10;                }&#10;                return Optional.of(entity);&#10;            }&#10;        }&#10;    } catch (Exception e) {&#10;        throw new ORMException(&quot;Не удалось найти сущность с id: &quot; + id, e);&#10;    }&#10;    return Optional.empty();&#10;}&#10;```&#10;&#10;В этом коде:&#10;&#10;1. `try-with-resources` используется для автоматического закрытия `Connection`, `PreparedStatement` и `ResultSet`.&#10;2. `Connection` и `PreparedStatement` создаются в одном `try` блоке.&#10;3. `ResultSet` создается и используется во вложенном `try` блоке.&#10;&#10;Этот подход гарантирует, что все ресурсы будут закрыты корректно, даже если произойдет исключение." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1735016667692" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryTable.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryField.java" />
                 </list>
               </option>
             </ChatHistoryModel>

@@ -1,7 +1,7 @@
 package ru.otus.java.pro.dbinteraction;
 
 public class UsersStatisticService {
-    private UsersDao usersDao;
+    private final UsersDao usersDao;
 
     public UsersStatisticService(UsersDao usersDao) {
         this.usersDao = usersDao;

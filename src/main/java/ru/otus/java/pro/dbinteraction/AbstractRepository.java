@@ -52,18 +52,18 @@ public class AbstractRepository<T> {
     }
 
     public Optional<T> findById(Object id, Class<T> cls) {
-        String query = "SELECT * FROM " + tableName + " WHERE " + getColumnName(idField) + " = ?";
-        try {
-            PreparedStatement ps = dataSource.getConnection().prepareStatement(query);
+        String query = String.format("SELECT * FROM %s WHERE %s = ?", tableName, getColumnName(idField));
+        try (PreparedStatement ps = dataSource.getConnection().prepareStatement(query)) {
             ps.setObject(1, id);
-            ResultSet rs = ps.executeQuery();
-            if (rs.next()) {
-                T entity = cls.getDeclaredConstructor().newInstance();
-                for (Field field : cls.getDeclaredFields()) {
-                    field.setAccessible(true);
-                    field.set(entity, rs.getObject(getColumnName(field)));
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    T entity = cls.getDeclaredConstructor().newInstance();
+                    for (Field field : cls.getDeclaredFields()) {
+                        field.setAccessible(true);
+                        field.set(entity, rs.getObject(getColumnName(field)));
+                    }
+                    return Optional.of(entity);
                 }
-                return Optional.of(entity);
             }
         } catch (Exception e) {
             throw new ORMException("Не удалось найти сущность с id: " + id, e);
@@ -73,8 +73,7 @@ public class AbstractRepository<T> {
 
     public List<T> findAll(Class<T> cls) {
         String query = "SELECT * FROM " + tableName;
-        try {
-            PreparedStatement ps = dataSource.getConnection().prepareStatement(query);
+        try (PreparedStatement ps = dataSource.getConnection().prepareStatement(query)) {
             ResultSet rs = ps.executeQuery();
             List<T> result = new ArrayList<>();
             while (rs.next()) {

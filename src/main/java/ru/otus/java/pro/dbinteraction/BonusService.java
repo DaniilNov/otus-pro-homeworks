@@ -21,7 +21,4 @@ public class BonusService {
         System.out.println("Сервис бонусов успешно запущен");
     }
 
-    public void createBonus(String login, int amount) {
-        // dataSource.getStatement()...
-    }
 }

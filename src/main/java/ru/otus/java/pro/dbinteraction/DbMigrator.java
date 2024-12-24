@@ -1,5 +1,9 @@
 package ru.otus.java.pro.dbinteraction;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import ru.otus.java.pro.patterns.part2.Main;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,6 +14,8 @@ import java.sql.Statement;
 
 public class DbMigrator {
     private final DataSource dataSource;
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+
 
     public DbMigrator(DataSource dataSource) {
         this.dataSource = dataSource;
@@ -28,7 +34,7 @@ public class DbMigrator {
             }
             System.out.println("Database migration completed successfully.");
         } catch (SQLException | IOException e) {
-            e.printStackTrace();
+            logger.error("Error during database migration: {}", e.getMessage(), e);
         }
     }
 
