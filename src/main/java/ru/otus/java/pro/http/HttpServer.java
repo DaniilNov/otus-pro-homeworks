@@ -5,10 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -20,6 +24,8 @@ import java.util.concurrent.Executors;
 public class HttpServer {
     private static final int BUFFER_SIZE = 8192;
     private static final int MAX_REQUEST_SIZE = 5 * 1024 * 1024;
+    private static final Charset CHARSET = StandardCharsets.UTF_8;
+    private static final CharsetDecoder DECODER = CHARSET.newDecoder();
     private final int port;
     private final ExecutorService threadPool;
     private volatile boolean running = true;
@@ -98,6 +104,7 @@ public class HttpServer {
                         sendResponse(socketChannel, "HTTP/1.1 500 Internal Server Error\r\n\r\n");
                     }
                     socketChannel.close();
+                    buffer.clear();
                 }
             } catch (IOException e) {
                 log.error("Error handling read", e);
@@ -114,39 +121,32 @@ public class HttpServer {
 
     private HttpRequest parseRequest(ByteBuffer buffer) {
         try {
-            String requestString = new String(buffer.array(), 0, buffer.limit());
-            String[] lines = requestString.split("\r\n");
-            if (lines.length < 1) {
-                throw new IllegalArgumentException("Invalid HTTP request");
-            }
-
-            String[] requestLine = lines[0].split(" ");
-            if (requestLine.length < 2) {
-                throw new IllegalArgumentException("Invalid HTTP request line");
-            }
-
-            String method = requestLine[0];
-            String uri = requestLine[1];
+            CharBuffer charBuffer = DECODER.decode(buffer);
+            String method = readToken(charBuffer);
+            String uri = readToken(charBuffer);
+            skipLine(charBuffer);
 
             Map<String, String> headers = new HashMap<>();
-            int i = 1;
-            while (i < lines.length && !lines[i].isEmpty()) {
-                String[] header = lines[i].split(": ");
-                if (header.length == 2) {
-                    headers.put(header[0], header[1]);
+            while (charBuffer.hasRemaining()) {
+                String line = readLine(charBuffer);
+                if (line.isEmpty()) {
+                    break;
                 }
-                i++;
+                int colonIndex = line.indexOf(": ");
+                if (colonIndex != -1) {
+                    headers.put(line.substring(0, colonIndex), line.substring(colonIndex + 2));
+                }
             }
 
             Map<String, String> parameters = new HashMap<>();
             if (uri.contains("?")) {
-                String[] uriParts = uri.split("\\?");
-                uri = uriParts[0];
-                String[] params = uriParts[1].split("&");
+                int questionMarkIndex = uri.indexOf("?");
+                String[] params = uri.substring(questionMarkIndex + 1).split("&");
+                uri = uri.substring(0, questionMarkIndex);
                 for (String param : params) {
-                    String[] keyValue = param.split("=");
-                    if (keyValue.length == 2) {
-                        parameters.put(keyValue[0], keyValue[1]);
+                    int equalsIndex = param.indexOf("=");
+                    if (equalsIndex != -1) {
+                        parameters.put(param.substring(0, equalsIndex), param.substring(equalsIndex + 1));
                     }
                 }
             }
@@ -164,8 +164,44 @@ public class HttpServer {
         }
     }
 
+    private String readToken(CharBuffer buffer) {
+        StringBuilder token = new StringBuilder();
+        while (buffer.hasRemaining()) {
+            char c = buffer.get();
+            if (c == ' ' || c == '\r' || c == '\n') {
+                break;
+            }
+            token.append(c);
+        }
+        return token.toString();
+    }
+
+    private void skipLine(CharBuffer buffer) {
+        while (buffer.hasRemaining()) {
+            char c = buffer.get();
+            if (c == '\n') {
+                break;
+            }
+        }
+    }
+
+    private String readLine(CharBuffer buffer) {
+        StringBuilder line = new StringBuilder();
+        while (buffer.hasRemaining()) {
+            char c = buffer.get();
+            if (c == '\r') {
+                continue;
+            }
+            if (c == '\n') {
+                break;
+            }
+            line.append(c);
+        }
+        return line.toString();
+    }
+
     private void sendResponse(SocketChannel socketChannel, String response) throws IOException {
-        ByteBuffer buffer = ByteBuffer.wrap(response.getBytes());
+        ByteBuffer buffer = ByteBuffer.wrap(response.getBytes(CHARSET));
         while (buffer.hasRemaining()) {
             socketChannel.write(buffer);
         }
