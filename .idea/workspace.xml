@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="" />
+    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="Homework HTTP Protocol details v2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/AddServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/DivideServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/LoggingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/MultiplyServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/SubtractServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +100,9 @@
     "Gradle.otus-pro-homeworks [:Main.main()].executor": "Run",
     "Gradle.otus-pro-homeworks [:MockChatServer.main()].executor": "Run",
     "Gradle.otus-pro-homeworks [build].executor": "Run",
+    "Gradle.otus-pro-homeworks [clean].executor": "Run",
     "Gradle.otus-pro-homeworks [dependencies].executor": "Run",
+    "Gradle.otus-pro-homeworks [war].executor": "Run",
     "JUnit.AccountServiceImplParametrizedTest.executor": "Run",
     "JUnit.AccountServiceImplTest.executor": "Run",
     "JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor": "Run",
@@ -101,7 +112,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks",
+    "last_opened_file_path": "C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -121,6 +132,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\src\main\webapp" />
       <recent name="C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\src\main\java\ru\otus\java\pro\dbinteraction" />
       <recent name="C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\src\main\test\ru\otus\java\pro\unittests\bank\service\impl" />
       <recent name="C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\src\main\java\ru\otus\java\pro\unittests\bank" />
@@ -132,7 +144,7 @@
       <recent name="ru.otus.java.pro.unittests.bank.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MockChatServer">
+  <component name="RunManager" selected="Gradle.otus-pro-homeworks [build]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.patterns.part2.Main" />
       <module name="otus-pro-homeworks.main" />
@@ -140,32 +152,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.otus.java.pro.patterns.part2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MockChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.dbinteraction.MockChatServer" />
-      <module name="otus-pro-homeworks.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.otus.java.pro.dbinteraction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ru.otus.java.pro.streamapi.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.streamapi.Main" />
-      <module name="otus-pro-homeworks.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.otus.java.pro.streamapi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,7 +183,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="otus-pro-homeworks [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="otus-pro-homeworks [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -208,7 +194,51 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="otus-pro-homeworks [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="otus-pro-homeworks [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="war" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,19 +250,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.MockChatServer" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.ru.otus.java.pro.streamapi.Main" />
-      <item itemvalue="Gradle.otus-pro-homeworks [dependencies]" />
+      <item itemvalue="Gradle.otus-pro-homeworks [build]" />
+      <item itemvalue="Gradle.otus-pro-homeworks [clean]" />
+      <item itemvalue="Gradle.otus-pro-homeworks [war]" />
       <item itemvalue="Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MockChatServer" />
-        <item itemvalue="Gradle.otus-pro-homeworks [dependencies]" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.otus-pro-homeworks [build]" />
+        <item itemvalue="Gradle.otus-pro-homeworks [clean]" />
+        <item itemvalue="Gradle.otus-pro-homeworks [war]" />
         <item itemvalue="Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'" />
-        <item itemvalue="Application.ru.otus.java.pro.streamapi.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +386,8 @@
     <MESSAGE value="Homework Patterns part1 v1" />
     <MESSAGE value="Homework DB Interaction v1" />
     <MESSAGE value="Homework DB Interaction v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework DB Interaction v2" />
+    <MESSAGE value="Homework HTTP Protocol details v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework HTTP Protocol details v2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -365,6 +396,30 @@
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
       <map>
+        <entry key="0a7027">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/DivideServlet.java" />
+                </list>
+              </option>
+              <option name="id" value="0a7027" />
+              <option name="initiateTms" value="1736667537562" />
+              <option name="request" value=" Не понял" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Извините за путаницу. Давайте упростим и уточним, как настроить контекстный путь для вашего приложения, чтобы все запросы начинались с `/online-calculator`.&#10;&#10;### Настройка контекстного пути в Gradle проекте&#10;&#10;1. **Создайте файл `src/main/webapp/WEB-INF/web.xml` (если его еще нет).**&#10;&#10;   Хотя мы используем аннотации для регистрации сервлетов и фильтров, файл `web.xml` может быть полезен для настройки контекстного пути.&#10;&#10;2. **Настройте контекстный путь в `build.gradle`.**&#10;&#10;   Убедитесь, что ваш `build.gradle` настроен для создания WAR файла:&#10;&#10;   ```groovy&#10;   plugins {&#10;       id 'java'&#10;       id 'war'&#10;   }&#10;&#10;   group 'ru.otus.java.pro'&#10;   version '1.0-SNAPSHOT'&#10;&#10;   repositories {&#10;       mavenCentral()&#10;   }&#10;&#10;   dependencies {&#10;       providedCompile 'javax:javaee-api:8.0'&#10;       implementation 'org.slf4j:slf4j-api:1.7.30'&#10;       implementation 'ch.qos.logback:logback-classic:1.2.3'&#10;       testImplementation 'junit:junit:4.13.1'&#10;   }&#10;&#10;   tasks.withType(JavaCompile) {&#10;       options.encoding = 'UTF-8'&#10;   }&#10;   ```&#10;&#10;3. **Создайте файл `src/main/webapp/WEB-INF/web.xml` с минимальной конфигурацией.**&#10;&#10;   ```xml&#10;   &lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;&#10;            xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;            xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;&#10;            version=&quot;3.1&quot;&gt;&#10;   &lt;/web-app&gt;&#10;   ```&#10;&#10;4. **Создайте файл `src/main/webapp/META-INF/context.xml` для указания контекстного пути.**&#10;&#10;   ```xml&#10;   &lt;Context path=&quot;/online-calculator&quot; /&gt;&#10;   ```&#10;&#10;### Пример сервлетов и фильтра&#10;&#10;#### AddServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/add&quot;)&#10;public class AddServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a + b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### SubtractServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/subtract&quot;)&#10;public class SubtractServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a - b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### MultiplyServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/multiply&quot;)&#10;public class MultiplyServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a * b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### DivideServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/div&quot;)&#10;public class DivideServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        if (b == 0) {&#10;            resp.getWriter().write(&quot;Error: Division by zero&quot;);&#10;        } else {&#10;            double result = a / b;&#10;            resp.getWriter().write(&quot;Result: &quot; + result);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;#### LoggingFilter.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.*;&#10;import javax.servlet.annotation.WebFilter;&#10;import javax.servlet.http.HttpServletRequest;&#10;import java.io.IOException;&#10;&#10;@WebFilter(&quot;/*&quot;)&#10;public class LoggingFilter implements Filter {&#10;    @Override&#10;    public void init(FilterConfig filterConfig) throws ServletException {&#10;        // Initialization code, if needed&#10;    }&#10;&#10;    @Override&#10;    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {&#10;        HttpServletRequest httpRequest = (HttpServletRequest) request;&#10;        System.out.println(&quot;Incoming request: &quot; + httpRequest.getMethod() + &quot; &quot; + httpRequest.getRequestURI());&#10;        chain.doFilter(request, response);&#10;    }&#10;&#10;    @Override&#10;    public void destroy() {&#10;        // Cleanup code, if needed&#10;    }&#10;}&#10;```&#10;&#10;### Деплой и тестирование&#10;&#10;Теперь, когда все компоненты созданы и аннотации используются для регистрации сервлетов и фильтра, вы можете развернуть ваше приложение на сервере приложений, таком как Apache Tomcat или WildFly. Контекстный путь будет `/online-calculator`.&#10;&#10;### Пример запросов&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Эти запросы будут возвращать результаты операций и логироваться с помощью фильтра." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736667550233" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/DivideServlet.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="0ee1d4">
           <value>
             <ChatHistoryModel>
@@ -473,6 +528,30 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="1b90fe">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                </list>
+              </option>
+              <option name="id" value="1b90fe" />
+              <option name="initiateTms" value="1736668655279" />
+              <option name="request" value=" Это раюотает вот так http://localhost:8080/otus-pro-homeworks/subtract?a=5&amp;b=3, а нкжно http://localhost:8080/online-calculator/subtract?a=5&amp;b=3" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Понял, давайте настроим контекстный путь вашего приложения так, чтобы он был `/online-calculator`. Это можно сделать несколькими способами, в зависимости от вашего сервера приложений. Рассмотрим пример для Apache Tomcat.&#10;&#10;### Настройка контекстного пути в Apache Tomcat&#10;&#10;1. **Создайте файл `META-INF/context.xml` в вашем проекте.**&#10;&#10;   Убедитесь, что структура вашего проекта выглядит следующим образом:&#10;&#10;   ```&#10;   src&#10;   ├── main&#10;   │   ├── java&#10;   │   │   └── ru&#10;   │   │       └── otus&#10;   │   │           └── java&#10;   │   │               └── pro&#10;   │   │                   └── webserver&#10;   │   │                       ├── AddServlet.java&#10;   │   │                       ├── SubtractServlet.java&#10;   │   │                       ├── MultiplyServlet.java&#10;   │   │                       ├── DivideServlet.java&#10;   │   │                       └── LoggingFilter.java&#10;   │   └── webapp&#10;   │       ├── META-INF&#10;   │       │   └── context.xml&#10;   │       └── WEB-INF&#10;   │           └── web.xml&#10;   └── build.gradle&#10;   ```&#10;&#10;2. **Создайте файл `src/main/webapp/META-INF/context.xml` с содержимым:**&#10;&#10;   ```xml&#10;   &lt;Context path=&quot;/online-calculator&quot; /&gt;&#10;   ```&#10;&#10;3. **Проверьте файл `web.xml`.**&#10;&#10;   Убедитесь, что файл `src/main/webapp/WEB-INF/web.xml` существует, даже если он пустой:&#10;&#10;   ```xml&#10;   &lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;&#10;            xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;            xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;&#10;            version=&quot;3.1&quot;&gt;&#10;   &lt;/web-app&gt;&#10;   ```&#10;&#10;4. **Проверьте файл `build.gradle`.**&#10;&#10;   Убедитесь, что ваш `build.gradle` файл настроен для создания WAR файла:&#10;&#10;   ```groovy&#10;   plugins {&#10;       id 'java'&#10;       id 'war'&#10;   }&#10;&#10;   group 'ru.otus.java.pro'&#10;   version '1.0-SNAPSHOT'&#10;&#10;   repositories {&#10;       mavenCentral()&#10;   }&#10;&#10;   dependencies {&#10;       providedCompile 'javax:javaee-api:8.0'&#10;       implementation 'org.slf4j:slf4j-api:2.0.7'&#10;       implementation 'ch.qos.logback:logback-classic:1.4.11'&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;       testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'&#10;       testImplementation 'org.mockito:mockito-core:5.11.0'&#10;       testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;       implementation 'org.postgresql:postgresql:42.2.23'&#10;   }&#10;&#10;   tasks.withType(JavaCompile) {&#10;       options.encoding = 'UTF-8'&#10;   }&#10;&#10;   test {&#10;       useJUnitPlatform()&#10;   }&#10;   ```&#10;&#10;5. **Соберите и разверните WAR файл.**&#10;&#10;   В корне вашего проекта выполните команду:&#10;&#10;   ```sh&#10;   ./gradlew clean build&#10;   ```&#10;&#10;   Эта команда соберет ваш проект и создаст WAR файл в директории `build/libs`.&#10;&#10;6. **Разверните WAR файл на сервере приложений.**&#10;&#10;   Скопируйте созданный WAR файл в директорию `webapps` вашего сервера приложений (например, Apache Tomcat).&#10;&#10;7. **Перезапустите сервер приложений.**&#10;&#10;   Убедитесь, что сервер приложений перезапущен и WAR файл развернут корректно.&#10;&#10;### Пример запросов&#10;&#10;После развертывания WAR файла, попробуйте выполнить запросы снова:&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Эти запросы должны возвращать результаты операций.&#10;&#10;### Альтернативный способ: Настройка контекста в Tomcat&#10;&#10;Если вы не хотите использовать `context.xml`, вы можете настроить контекстный путь непосредственно в конфигурации Tomcat.&#10;&#10;1. **Создайте файл `online-calculator.xml` в директории `conf/Catalina/localhost` вашего Tomcat.**&#10;&#10;   ```xml&#10;   &lt;Context docBase=&quot;path/to/your/war/file/online-calculator.war&quot; path=&quot;/online-calculator&quot; /&gt;&#10;   ```&#10;&#10;2. **Перезапустите Tomcat.**&#10;&#10;   После перезапуска Tomcat должен использовать указанный контекстный путь для вашего приложения." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736668667726" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="1c48c8">
           <value>
             <ChatHistoryModel>
@@ -504,6 +583,30 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="1e7f68">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/DivideServlet.java" />
+                </list>
+              </option>
+              <option name="id" value="1e7f68" />
+              <option name="initiateTms" value="1736667490833" />
+              <option name="request" value=" А где прописывается что путь будет начинаться с  online-calculator" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Для того чтобы указать, что путь будет начинаться с `online-calculator`, вы можете настроить контекстный путь вашего приложения в конфигурации сервера приложений, такого как Apache Tomcat или WildFly. &#10;&#10;### Настройка контекстного пути в Apache Tomcat&#10;&#10;1. **Создайте файл `META-INF/context.xml` в вашем проекте.**&#10;&#10;   В этом файле вы можете указать контекстный путь для вашего приложения.&#10;&#10;   ```xml&#10;   &lt;Context path=&quot;/online-calculator&quot; /&gt;&#10;   ```&#10;&#10;2. **Убедитесь, что ваш `build.gradle` настроен для создания WAR файла.**&#10;&#10;   ```groovy&#10;   plugins {&#10;       id 'java'&#10;       id 'war'&#10;   }&#10;&#10;   group 'ru.otus.java.pro'&#10;   version '1.0-SNAPSHOT'&#10;&#10;   repositories {&#10;       mavenCentral()&#10;   }&#10;&#10;   dependencies {&#10;       providedCompile 'javax:javaee-api:8.0'&#10;       implementation 'org.slf4j:slf4j-api:1.7.30'&#10;       implementation 'ch.qos.logback:logback-classic:1.2.3'&#10;       testImplementation 'junit:junit:4.13.1'&#10;   }&#10;&#10;   tasks.withType(JavaCompile) {&#10;       options.encoding = 'UTF-8'&#10;   }&#10;   ```&#10;&#10;3. **Структура проекта должна выглядеть следующим образом:**&#10;&#10;   ```&#10;   src&#10;   ├── main&#10;   │   ├── java&#10;   │   │   └── ru&#10;   │   │       └── otus&#10;   │   │           └── java&#10;   │   │               └── pro&#10;   │   │                   └── webserver&#10;   │   │                       ├── AddServlet.java&#10;   │   │                       ├── SubtractServlet.java&#10;   │   │                       ├── MultiplyServlet.java&#10;   │   │                       ├── DivideServlet.java&#10;   │   │                       └── LoggingFilter.java&#10;   │   └── webapp&#10;   │       └── META-INF&#10;   │           └── context.xml&#10;   └── build.gradle&#10;   ```&#10;&#10;### Пример сервлетов и фильтра&#10;&#10;#### AddServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/add&quot;)&#10;public class AddServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a + b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### SubtractServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/subtract&quot;)&#10;public class SubtractServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a - b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### MultiplyServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/multiply&quot;)&#10;public class MultiplyServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a * b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### DivideServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/div&quot;)&#10;public class DivideServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        if (b == 0) {&#10;            resp.getWriter().write(&quot;Error: Division by zero&quot;);&#10;        } else {&#10;            double result = a / b;&#10;            resp.getWriter().write(&quot;Result: &quot; + result);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;#### LoggingFilter.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.*;&#10;import javax.servlet.annotation.WebFilter;&#10;import javax.servlet.http.HttpServletRequest;&#10;import java.io.IOException;&#10;&#10;@WebFilter(&quot;/*&quot;)&#10;public class LoggingFilter implements Filter {&#10;    @Override&#10;    public void init(FilterConfig filterConfig) throws ServletException {&#10;        // Initialization code, if needed&#10;    }&#10;&#10;    @Override&#10;    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {&#10;        HttpServletRequest httpRequest = (HttpServletRequest) request;&#10;        System.out.println(&quot;Incoming request: &quot; + httpRequest.getMethod() + &quot; &quot; + httpRequest.getRequestURI());&#10;        chain.doFilter(request, response);&#10;    }&#10;&#10;    @Override&#10;    public void destroy() {&#10;        // Cleanup code, if needed&#10;    }&#10;}&#10;```&#10;&#10;### Деплой и тестирование&#10;&#10;Теперь, когда все компоненты созданы и аннотации используются для регистрации сервлетов и фильтра, вы можете развернуть ваше приложение на сервере приложений, таком как Apache Tomcat или WildFly. Контекстный путь будет `/online-calculator`.&#10;&#10;### Пример запросов&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Эти запросы будут возвращать результаты операций и логироваться с помощью фильтра." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736667503535" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/DivideServlet.java" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -616,6 +719,30 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="2dc751">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/DivideServlet.java" />
+                </list>
+              </option>
+              <option name="id" value="2dc751" />
+              <option name="initiateTms" value="1736667429090" />
+              <option name="request" value=" Зачем нам web.xml Если у нас @WebServlet стоит над каждым классом:" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Вы правы, если мы используем аннотации `@WebServlet` и `@WebFilter`, то файл `web.xml` не обязателен. Аннотации позволяют нам регистрировать сервлеты и фильтры без необходимости конфигурации в `web.xml`.&#10;&#10;Давайте упростим наш подход и уберем `web.xml`, полагаясь исключительно на аннотации.&#10;&#10;### Обновленный проект без `web.xml`&#10;&#10;#### AddServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/add&quot;)&#10;public class AddServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a + b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### SubtractServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/subtract&quot;)&#10;public class SubtractServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a - b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### MultiplyServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/multiply&quot;)&#10;public class MultiplyServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a * b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### DivideServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/div&quot;)&#10;public class DivideServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        if (b == 0) {&#10;            resp.getWriter().write(&quot;Error: Division by zero&quot;);&#10;        } else {&#10;            double result = a / b;&#10;            resp.getWriter().write(&quot;Result: &quot; + result);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;#### LoggingFilter.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.*;&#10;import javax.servlet.annotation.WebFilter;&#10;import javax.servlet.http.HttpServletRequest;&#10;import java.io.IOException;&#10;&#10;@WebFilter(&quot;/*&quot;)&#10;public class LoggingFilter implements Filter {&#10;    @Override&#10;    public void init(FilterConfig filterConfig) throws ServletException {&#10;        // Initialization code, if needed&#10;    }&#10;&#10;    @Override&#10;    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {&#10;        HttpServletRequest httpRequest = (HttpServletRequest) request;&#10;        System.out.println(&quot;Incoming request: &quot; + httpRequest.getMethod() + &quot; &quot; + httpRequest.getRequestURI());&#10;        chain.doFilter(request, response);&#10;    }&#10;&#10;    @Override&#10;    public void destroy() {&#10;        // Cleanup code, if needed&#10;    }&#10;}&#10;```&#10;&#10;### Обновление `build.gradle`&#10;&#10;Убедитесь, что ваш `build.gradle` файл настроен для создания WAR файла:&#10;&#10;```groovy&#10;plugins {&#10;    id 'java'&#10;    id 'war'&#10;}&#10;&#10;group 'ru.otus.java.pro'&#10;version '1.0-SNAPSHOT'&#10;&#10;repositories {&#10;    mavenCentral()&#10;}&#10;&#10;dependencies {&#10;    providedCompile 'javax:javaee-api:8.0'&#10;    implementation 'org.slf4j:slf4j-api:1.7.30'&#10;    implementation 'ch.qos.logback:logback-classic:1.2.3'&#10;    testImplementation 'junit:junit:4.13.1'&#10;}&#10;&#10;tasks.withType(JavaCompile) {&#10;    options.encoding = 'UTF-8'&#10;}&#10;```&#10;&#10;### Деплой и тестирование&#10;&#10;Теперь, когда все компоненты созданы и аннотации используются для регистрации сервлетов и фильтра, вы можете развернуть ваше приложение на сервере приложений, таком как Apache Tomcat или WildFly.&#10;&#10;### Пример запросов&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Эти запросы будут возвращать результаты операций и логироваться с помощью фильтра." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736667444034" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/webserver/DivideServlet.java" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -742,6 +869,30 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="3893af">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml" />
+                </list>
+              </option>
+              <option name="id" value="3893af" />
+              <option name="initiateTms" value="1736667788890" />
+              <option name="request" value=" Как теперь собрать war файл?" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Для сборки WAR файла в Gradle проекте, вам нужно убедиться, что ваш `build.gradle` файл настроен правильно. Давайте пройдемся по шагам, чтобы убедиться, что все настроено корректно.&#10;&#10;### Шаги для сборки WAR файла&#10;&#10;1. **Убедитесь, что ваш `build.gradle` файл настроен для создания WAR файла.**&#10;&#10;   ```groovy&#10;   plugins {&#10;       id 'java'&#10;       id 'war'&#10;   }&#10;&#10;   group 'ru.otus.java.pro'&#10;   version '1.0-SNAPSHOT'&#10;&#10;   repositories {&#10;       mavenCentral()&#10;   }&#10;&#10;   dependencies {&#10;       providedCompile 'javax:javaee-api:8.0'&#10;       implementation 'org.slf4j:slf4j-api:1.7.30'&#10;       implementation 'ch.qos.logback:logback-classic:1.2.3'&#10;       testImplementation 'junit:junit:4.13.1'&#10;   }&#10;&#10;   tasks.withType(JavaCompile) {&#10;       options.encoding = 'UTF-8'&#10;   }&#10;   ```&#10;&#10;2. **Создайте структуру проекта.**&#10;&#10;   Убедитесь, что структура вашего проекта соответствует стандартной структуре для веб-приложений:&#10;&#10;   ```&#10;   src&#10;   ├── main&#10;   │   ├── java&#10;   │   │   └── ru&#10;   │   │       └── otus&#10;   │   │           └── java&#10;   │   │               └── pro&#10;   │   │                   └── webserver&#10;   │   │                       ├── AddServlet.java&#10;   │   │                       ├── SubtractServlet.java&#10;   │   │                       ├── MultiplyServlet.java&#10;   │   │                       ├── DivideServlet.java&#10;   │   │                       └── LoggingFilter.java&#10;   │   └── webapp&#10;   │       ├── META-INF&#10;   │       │   └── context.xml&#10;   │       └── WEB-INF&#10;   │           └── web.xml&#10;   └── build.gradle&#10;   ```&#10;&#10;3. **Создайте файл `src/main/webapp/WEB-INF/web.xml` (если его еще нет).**&#10;&#10;   ```xml&#10;   &lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;&#10;            xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;            xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;&#10;            version=&quot;3.1&quot;&gt;&#10;   &lt;/web-app&gt;&#10;   ```&#10;&#10;4. **Создайте файл `src/main/webapp/META-INF/context.xml` для указания контекстного пути.**&#10;&#10;   ```xml&#10;   &lt;Context path=&quot;/online-calculator&quot; /&gt;&#10;   ```&#10;&#10;5. **Создайте сервлеты и фильтр.**&#10;&#10;   Убедитесь, что ваши сервлеты и фильтр находятся в правильных пакетах и имеют правильные аннотации.&#10;&#10;   #### AddServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/add&quot;)&#10;   public class AddServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a + b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### SubtractServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/subtract&quot;)&#10;   public class SubtractServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a - b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### MultiplyServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/multiply&quot;)&#10;   public class MultiplyServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a * b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### DivideServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/div&quot;)&#10;   public class DivideServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           if (b == 0) {&#10;               resp.getWriter().write(&quot;Error: Division by zero&quot;);&#10;           } else {&#10;               double result = a / b;&#10;               resp.getWriter().write(&quot;Result: &quot; + result);&#10;           }&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### LoggingFilter.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.*;&#10;   import javax.servlet.annotation.WebFilter;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import java.io.IOException;&#10;&#10;   @WebFilter(&quot;/*&quot;)&#10;   public class LoggingFilter implements Filter {&#10;       @Override&#10;       public void init(FilterConfig filterConfig) throws ServletException {&#10;           // Initialization code, if needed&#10;       }&#10;&#10;       @Override&#10;       public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {&#10;           HttpServletRequest httpRequest = (HttpServletRequest) request;&#10;           System.out.println(&quot;Incoming request: &quot; + httpRequest.getMethod() + &quot; &quot; + httpRequest.getRequestURI());&#10;           chain.doFilter(request, response);&#10;       }&#10;&#10;       @Override&#10;       public void destroy() {&#10;           // Cleanup code, if needed&#10;       }&#10;   }&#10;   ```&#10;&#10;6. **Соберите WAR файл.**&#10;&#10;   В корне вашего проекта выполните команду:&#10;&#10;   ```sh&#10;   ./gradlew clean build&#10;   ```&#10;&#10;   Эта команда соберет ваш проект и создаст WAR файл в директории `build/libs`.&#10;&#10;### Деплой и тестирование&#10;&#10;Теперь, когда WAR файл создан, вы можете развернуть его на сервере приложений, таком как Apache Tomcat или WildFly.&#10;&#10;### Пример запросов&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Эти запросы будут возвращать результаты операций и логироваться с помощью фильтра." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736667811840" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -1029,6 +1180,32 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="5d3bd4">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml" />
+                </list>
+              </option>
+              <option name="id" value="5d3bd4" />
+              <option name="initiateTms" value="1736668480081" />
+              <option name="request" value=" Так нельзя │   └── webapp&#10;           │       ├── META-INF&#10;           │       │   └── context.xml&#10;           │       └── WEB-INF&#10;           │           └── web.xml" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Понял, давайте попробуем другой подход. Мы можем настроить контекстный путь через конфигурацию сервера приложений, например, Apache Tomcat, или через аннотации в коде. &#10;&#10;### Настройка контекстного пути через аннотации&#10;&#10;1. **Убедитесь, что ваши сервлеты имеют правильные аннотации.**&#10;&#10;   #### AddServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/online-calculator/add&quot;)&#10;   public class AddServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a + b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### SubtractServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/online-calculator/subtract&quot;)&#10;   public class SubtractServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a - b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### MultiplyServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/online-calculator/multiply&quot;)&#10;   public class MultiplyServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a * b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### DivideServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/online-calculator/div&quot;)&#10;   public class DivideServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           if (b == 0) {&#10;               resp.getWriter().write(&quot;Error: Division by zero&quot;);&#10;           } else {&#10;               double result = a / b;&#10;               resp.getWriter().write(&quot;Result: &quot; + result);&#10;           }&#10;       }&#10;   }&#10;   ```&#10;&#10;2. **Проверьте файл `web.xml`.**&#10;&#10;   Убедитесь, что файл `src/main/webapp/WEB-INF/web.xml` существует, даже если он пустой:&#10;&#10;   ```xml&#10;   &lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;&#10;            xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;            xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;&#10;            version=&quot;3.1&quot;&gt;&#10;   &lt;/web-app&gt;&#10;   ```&#10;&#10;3. **Проверьте файл `build.gradle`.**&#10;&#10;   Убедитесь, что ваш `build.gradle` файл настроен для создания WAR файла:&#10;&#10;   ```groovy&#10;   plugins {&#10;       id 'java'&#10;       id 'war'&#10;   }&#10;&#10;   group 'ru.otus.java.pro'&#10;   version '1.0-SNAPSHOT'&#10;&#10;   repositories {&#10;       mavenCentral()&#10;   }&#10;&#10;   dependencies {&#10;       providedCompile 'javax:javaee-api:8.0'&#10;       implementation 'org.slf4j:slf4j-api:2.0.7'&#10;       implementation 'ch.qos.logback:logback-classic:1.4.11'&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;       testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'&#10;       testImplementation 'org.mockito:mockito-core:5.11.0'&#10;       testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;       implementation 'org.postgresql:postgresql:42.2.23'&#10;   }&#10;&#10;   tasks.withType(JavaCompile) {&#10;       options.encoding = 'UTF-8'&#10;   }&#10;&#10;   test {&#10;       useJUnitPlatform()&#10;   }&#10;   ```&#10;&#10;4. **Соберите и разверните WAR файл.**&#10;&#10;   В корне вашего проекта выполните команду:&#10;&#10;   ```sh&#10;   ./gradlew clean build&#10;   ```&#10;&#10;   Эта команда соберет ваш проект и создаст WAR файл в директории `build/libs`.&#10;&#10;5. **Разверните WAR файл на сервере приложений.**&#10;&#10;   Скопируйте созданный WAR файл в директорию `webapps` вашего сервера приложений (например, Apache Tomcat).&#10;&#10;6. **Перезапустите сервер приложений.**&#10;&#10;   Убедитесь, что сервер приложений перезапущен и WAR файл развернут корректно.&#10;&#10;### Пример запросов&#10;&#10;После развертывания WAR файла, попробуйте выполнить запросы снова:&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Эти запросы должны возвращать результаты операций." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736668497081" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml" />
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="635851">
           <value>
             <ChatHistoryModel>
@@ -1116,6 +1293,32 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/RepositoryIdField.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="72cf28">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" />
+                </list>
+              </option>
+              <option name="id" value="72cf28" />
+              <option name="initiateTms" value="1736668395115" />
+              <option name="request" value=" http://localhost:8080/online-calculator/subtract?a=5&amp;b=3&#10;HTTP Status 404 – Не найдено" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Ошибка 404 означает, что сервер не может найти запрашиваемый ресурс. Давайте проверим несколько вещей, чтобы убедиться, что ваше приложение настроено правильно и что контекстный путь `/online-calculator` работает корректно.&#10;&#10;### Проверка конфигурации&#10;&#10;1. **Проверьте структуру проекта.**&#10;&#10;   Убедитесь, что структура вашего проекта соответствует стандартной структуре для веб-приложений:&#10;&#10;   ```&#10;   src&#10;   ├── main&#10;   │   ├── java&#10;   │   │   └── ru&#10;   │   │       └── otus&#10;   │   │           └── java&#10;   │   │               └── pro&#10;   │   │                   └── webserver&#10;   │   │                       ├── AddServlet.java&#10;   │   │                       ├── SubtractServlet.java&#10;   │   │                       ├── MultiplyServlet.java&#10;   │   │                       ├── DivideServlet.java&#10;   │   │                       └── LoggingFilter.java&#10;   │   └── webapp&#10;   │       ├── META-INF&#10;   │       │   └── context.xml&#10;   │       └── WEB-INF&#10;   │           └── web.xml&#10;   └── build.gradle&#10;   ```&#10;&#10;2. **Проверьте файл `context.xml`.**&#10;&#10;   Убедитесь, что файл `src/main/webapp/META-INF/context.xml` содержит правильный контекстный путь:&#10;&#10;   ```xml&#10;   &lt;Context path=&quot;/online-calculator&quot; /&gt;&#10;   ```&#10;&#10;3. **Проверьте файл `web.xml`.**&#10;&#10;   Убедитесь, что файл `src/main/webapp/WEB-INF/web.xml` существует, даже если он пустой:&#10;&#10;   ```xml&#10;   &lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;&#10;            xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;            xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;&#10;            version=&quot;3.1&quot;&gt;&#10;   &lt;/web-app&gt;&#10;   ```&#10;&#10;4. **Проверьте аннотации в сервлетах.**&#10;&#10;   Убедитесь, что ваши сервлеты имеют правильные аннотации:&#10;&#10;   #### AddServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/add&quot;)&#10;   public class AddServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a + b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### SubtractServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/subtract&quot;)&#10;   public class SubtractServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a - b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### MultiplyServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/multiply&quot;)&#10;   public class MultiplyServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a * b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### DivideServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/div&quot;)&#10;   public class DivideServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           if (b == 0) {&#10;               resp.getWriter().write(&quot;Error: Division by zero&quot;);&#10;           } else {&#10;               double result = a / b;&#10;               resp.getWriter().write(&quot;Result: &quot; + result);&#10;           }&#10;       }&#10;   }&#10;   ```&#10;&#10;5. **Соберите и разверните WAR файл.**&#10;&#10;   В корне вашего проекта выполните команду:&#10;&#10;   ```sh&#10;   ./gradlew clean build&#10;   ```&#10;&#10;   Эта команда соберет ваш проект и создаст WAR файл в директории `build/libs`.&#10;&#10;6. **Разверните WAR файл на сервере приложений.**&#10;&#10;   Скопируйте созданный WAR файл в директорию `webapps` вашего сервера приложений (например, Apache Tomcat).&#10;&#10;7. **Перезапустите сервер приложений.**&#10;&#10;   Убедитесь, что сервер приложений перезапущен и WAR файл развернут корректно.&#10;&#10;### Пример запросов&#10;&#10;После развертывания WAR файла, попробуйте выполнить запросы снова:&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Если все настроено правильно, эти запросы должны возвращать результаты операций." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736668409826" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/streamapi/model/Status.java" />
+                  <option value="$PROJECT_DIR$/build.gradle" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -1231,6 +1434,34 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="907f97">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
+                </list>
+              </option>
+              <option name="id" value="907f97" />
+              <option name="initiateTms" value="1736667141688" />
+              <option name="request" value=" Давай сделаем это в текущем, который на гррейдл. Могу просто добавить новый пакет package ru.otus.java.pro под названием webserver или нужно отдельный модуль делать в текущем проекте?" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="В вашем текущем проекте на Gradle вы можете добавить новый пакет `ru.otus.java.pro.webserver` для реализации онлайн-калькулятора. Нет необходимости создавать отдельный модуль, если вы хотите, чтобы все было в одном проекте.&#10;&#10;### Шаги для добавления онлайн-калькулятора в текущий проект:&#10;&#10;1. **Добавьте зависимости для Java EE в `build.gradle`.**&#10;2. **Создайте новый пакет `ru.otus.java.pro.webserver`.**&#10;3. **Реализуйте сервлеты для каждой операции.**&#10;4. **Добавьте фильтр для логирования входящих запросов.**&#10;5. **Настройте `web.xml` для регистрации сервлетов и фильтра.**&#10;&#10;### 1. Обновление `build.gradle`&#10;&#10;Добавьте зависимости для Java EE в ваш `build.gradle`:&#10;&#10;```groovy&#10;plugins {&#10;    id 'java'&#10;    id 'war'&#10;}&#10;&#10;group 'ru.otus.java.pro'&#10;version '1.0-SNAPSHOT'&#10;&#10;repositories {&#10;    mavenCentral()&#10;}&#10;&#10;dependencies {&#10;    providedCompile 'javax:javaee-api:8.0'&#10;    implementation 'org.slf4j:slf4j-api:1.7.30'&#10;    implementation 'ch.qos.logback:logback-classic:1.2.3'&#10;    testImplementation 'junit:junit:4.13.1'&#10;}&#10;&#10;tasks.withType(JavaCompile) {&#10;    options.encoding = 'UTF-8'&#10;}&#10;```&#10;&#10;### 2. Создание нового пакета&#10;&#10;Создайте новый пакет `ru.otus.java.pro.webserver` в директории `src/main/java`.&#10;&#10;### 3. Реализация сервлетов&#10;&#10;Создайте четыре сервлета для операций сложения, вычитания, умножения и деления.&#10;&#10;#### AddServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/add&quot;)&#10;public class AddServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a + b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### SubtractServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/subtract&quot;)&#10;public class SubtractServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a - b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### MultiplyServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/multiply&quot;)&#10;public class MultiplyServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a * b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### DivideServlet.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/div&quot;)&#10;public class DivideServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        if (b == 0) {&#10;            resp.getWriter().write(&quot;Error: Division by zero&quot;);&#10;        } else {&#10;            double result = a / b;&#10;            resp.getWriter().write(&quot;Result: &quot; + result);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;### 4. Добавление фильтра для логирования&#10;&#10;Создайте фильтр для логирования входящих запросов.&#10;&#10;#### LoggingFilter.java&#10;&#10;```java&#10;package ru.otus.java.pro.webserver;&#10;&#10;import javax.servlet.*;&#10;import javax.servlet.annotation.WebFilter;&#10;import javax.servlet.http.HttpServletRequest;&#10;import java.io.IOException;&#10;&#10;@WebFilter(&quot;/*&quot;)&#10;public class LoggingFilter implements Filter {&#10;    @Override&#10;    public void init(FilterConfig filterConfig) throws ServletException {&#10;        // Initialization code, if needed&#10;    }&#10;&#10;    @Override&#10;    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {&#10;        HttpServletRequest httpRequest = (HttpServletRequest) request;&#10;        System.out.println(&quot;Incoming request: &quot; + httpRequest.getMethod() + &quot; &quot; + httpRequest.getRequestURI());&#10;        chain.doFilter(request, response);&#10;    }&#10;&#10;    @Override&#10;    public void destroy() {&#10;        // Cleanup code, if needed&#10;    }&#10;}&#10;```&#10;&#10;### 5. Настройка `web.xml`&#10;&#10;Создайте файл `web.xml` в директории `src/main/webapp/WEB-INF` для регистрации сервлетов и фильтра.&#10;&#10;#### web.xml&#10;&#10;```xml&#10;&lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;&#10;         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;         xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;&#10;         version=&quot;3.1&quot;&gt;&#10;&#10;    &lt;filter&gt;&#10;        &lt;filter-name&gt;LoggingFilter&lt;/filter-name&gt;&#10;        &lt;filter-class&gt;ru.otus.java.pro.webserver.LoggingFilter&lt;/filter-class&gt;&#10;    &lt;/filter&gt;&#10;    &lt;filter-mapping&gt;&#10;        &lt;filter-name&gt;LoggingFilter&lt;/filter-name&gt;&#10;        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;&#10;    &lt;/filter-mapping&gt;&#10;&#10;    &lt;servlet&gt;&#10;        &lt;servlet-name&gt;AddServlet&lt;/servlet-name&gt;&#10;        &lt;servlet-class&gt;ru.otus.java.pro.webserver.AddServlet&lt;/servlet-class&gt;&#10;    &lt;/servlet&gt;&#10;    &lt;servlet-mapping&gt;&#10;        &lt;servlet-name&gt;AddServlet&lt;/servlet-name&gt;&#10;        &lt;url-pattern&gt;/add&lt;/url-pattern&gt;&#10;    &lt;/servlet-mapping&gt;&#10;&#10;    &lt;servlet&gt;&#10;        &lt;servlet-name&gt;SubtractServlet&lt;/servlet-name&gt;&#10;        &lt;servlet-class&gt;ru.otus.java.pro.webserver.SubtractServlet&lt;/servlet-class&gt;&#10;    &lt;/servlet&gt;&#10;    &lt;servlet-mapping&gt;&#10;        &lt;servlet-name&gt;SubtractServlet&lt;/servlet-name&gt;&#10;        &lt;url-pattern&gt;/subtract&lt;/url-pattern&gt;&#10;    &lt;/servlet-mapping&gt;&#10;&#10;    &lt;servlet&gt;&#10;        &lt;servlet-name&gt;MultiplyServlet&lt;/servlet-name&gt;&#10;        &lt;servlet-class&gt;ru.otus.java.pro.webserver.MultiplyServlet&lt;/servlet-class&gt;&#10;    &lt;/servlet&gt;&#10;    &lt;servlet-mapping&gt;&#10;        &lt;servlet-name&gt;MultiplyServlet&lt;/servlet-name&gt;&#10;        &lt;url-pattern&gt;/multiply&lt;/url-pattern&gt;&#10;    &lt;/servlet-mapping&gt;&#10;&#10;    &lt;servlet&gt;&#10;        &lt;servlet-name&gt;DivideServlet&lt;/servlet-name&gt;&#10;        &lt;servlet-class&gt;ru.otus.java.pro.webserver.DivideServlet&lt;/servlet-class&gt;&#10;    &lt;/servlet&gt;&#10;    &lt;servlet-mapping&gt;&#10;        &lt;servlet-name&gt;DivideServlet&lt;/servlet-name&gt;&#10;        &lt;url-pattern&gt;/div&lt;/url-pattern&gt;&#10;    &lt;/servlet-mapping&gt;&#10;&#10;&lt;/web-app&gt;&#10;```&#10;&#10;### Деплой и тестирование&#10;&#10;Теперь, когда все компоненты созданы, вы можете развернуть ваше приложение на сервере приложений, таком как Apache Tomcat или WildFly.&#10;&#10;### Пример запросов&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Эти запросы будут возвращать результаты операций и логироваться с помощью фильтра." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736667156895" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="921ee9">
           <value>
             <ChatHistoryModel>
@@ -1328,6 +1559,20 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/DataSource.java" />
                 </list>
               </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="a481ad">
+          <value>
+            <ChatHistoryModel>
+              <option name="id" value="a481ad" />
+              <option name="initiateTms" value="1736667034121" />
+              <option name="request" value=" Реализуйте онлайн-калькулятор на Java EE, поддерживающий операции +, -, *, /. Каждая операция работает на своем endpoint'е: /add, /subtract, /multiply, /div. Добавьте фильтр для логирования входящих запросов." />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Для реализации онлайн-калькулятора на Java EE, поддерживающего операции сложения, вычитания, умножения и деления, мы создадим четыре сервлета, каждый из которых будет обрабатывать одну из операций. Также добавим фильтр для логирования входящих запросов.&#10;&#10;### Шаги реализации:&#10;&#10;1. Создадим Maven-проект с зависимостями для Java EE.&#10;2. Реализуем сервлеты для каждой операции.&#10;3. Добавим фильтр для логирования входящих запросов.&#10;&#10;### 1. Создание Maven-проекта&#10;&#10;Создайте новый Maven-проект и добавьте зависимости для Java EE в файл `pom.xml`:&#10;&#10;```xml&#10;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;&#10;         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;&#10;    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#10;    &lt;groupId&gt;com.example&lt;/groupId&gt;&#10;    &lt;artifactId&gt;online-calculator&lt;/artifactId&gt;&#10;    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;&#10;    &lt;packaging&gt;war&lt;/packaging&gt;&#10;&#10;    &lt;dependencies&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;javax&lt;/groupId&gt;&#10;            &lt;artifactId&gt;javaee-api&lt;/artifactId&gt;&#10;            &lt;version&gt;8.0&lt;/version&gt;&#10;            &lt;scope&gt;provided&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;    &lt;/dependencies&gt;&#10;&#10;    &lt;build&gt;&#10;        &lt;finalName&gt;online-calculator&lt;/finalName&gt;&#10;    &lt;/build&gt;&#10;&lt;/project&gt;&#10;```&#10;&#10;### 2. Реализация сервлетов&#10;&#10;Создадим четыре сервлета для операций сложения, вычитания, умножения и деления.&#10;&#10;#### AddServlet.java&#10;&#10;```java&#10;package com.example.calculator;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/add&quot;)&#10;public class AddServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a + b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### SubtractServlet.java&#10;&#10;```java&#10;package com.example.calculator;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/subtract&quot;)&#10;public class SubtractServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a - b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### MultiplyServlet.java&#10;&#10;```java&#10;package com.example.calculator;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/multiply&quot;)&#10;public class MultiplyServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        double result = a * b;&#10;        resp.getWriter().write(&quot;Result: &quot; + result);&#10;    }&#10;}&#10;```&#10;&#10;#### DivideServlet.java&#10;&#10;```java&#10;package com.example.calculator;&#10;&#10;import javax.servlet.ServletException;&#10;import javax.servlet.annotation.WebServlet;&#10;import javax.servlet.http.HttpServlet;&#10;import javax.servlet.http.HttpServletRequest;&#10;import javax.servlet.http.HttpServletResponse;&#10;import java.io.IOException;&#10;&#10;@WebServlet(&quot;/div&quot;)&#10;public class DivideServlet extends HttpServlet {&#10;    @Override&#10;    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;        double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;        double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;        if (b == 0) {&#10;            resp.getWriter().write(&quot;Error: Division by zero&quot;);&#10;        } else {&#10;            double result = a / b;&#10;            resp.getWriter().write(&quot;Result: &quot; + result);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;### 3. Добавление фильтра для логирования&#10;&#10;Создадим фильтр для логирования входящих запросов.&#10;&#10;#### LoggingFilter.java&#10;&#10;```java&#10;package com.example.calculator;&#10;&#10;import javax.servlet.*;&#10;import javax.servlet.annotation.WebFilter;&#10;import javax.servlet.http.HttpServletRequest;&#10;import java.io.IOException;&#10;&#10;@WebFilter(&quot;/*&quot;)&#10;public class LoggingFilter implements Filter {&#10;    @Override&#10;    public void init(FilterConfig filterConfig) throws ServletException {&#10;        // Initialization code, if needed&#10;    }&#10;&#10;    @Override&#10;    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {&#10;        HttpServletRequest httpRequest = (HttpServletRequest) request;&#10;        System.out.println(&quot;Incoming request: &quot; + httpRequest.getMethod() + &quot; &quot; + httpRequest.getRequestURI());&#10;        chain.doFilter(request, response);&#10;    }&#10;&#10;    @Override&#10;    public void destroy() {&#10;        // Cleanup code, if needed&#10;    }&#10;}&#10;```&#10;&#10;### 4. Деплой и тестирование&#10;&#10;Теперь, когда все компоненты созданы, вы можете развернуть ваше приложение на сервере приложений, таком как Apache Tomcat или WildFly.&#10;&#10;### Пример запросов&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Эти запросы будут возвращать результаты операций и логироваться с помощью фильтра." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736667047350" />
             </ChatHistoryModel>
           </value>
         </entry>
@@ -1464,6 +1709,32 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/AbstractRepository.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/MockChatServer.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/dbinteraction/ORMException.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="c4bf4a">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml" />
+                </list>
+              </option>
+              <option name="id" value="c4bf4a" />
+              <option name="initiateTms" value="1736668716794" />
+              <option name="request" value=" Можно вот это объеденить в одно?&#10;│       ├── META-INF&#10;│       │   └── context.xml&#10;│       └── WEB-INF&#10;│           └── web.xml" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="К сожалению, объединить `context.xml` и `web.xml` в один файл невозможно, так как они служат разным целям и обрабатываются разными компонентами сервера приложений. Однако, вы можете настроить контекстный путь вашего приложения исключительно через `web.xml` и аннотации в коде, что упростит конфигурацию.&#10;&#10;### Настройка контекстного пути через `web.xml` и аннотации&#10;&#10;1. **Удалите файл `context.xml`.**&#10;&#10;   Убедитесь, что файл `src/main/webapp/META-INF/context.xml` удален.&#10;&#10;2. **Проверьте файл `web.xml`.**&#10;&#10;   Убедитесь, что файл `src/main/webapp/WEB-INF/web.xml` существует и содержит базовую конфигурацию:&#10;&#10;   ```xml&#10;   &lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;&#10;            xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;            xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;&#10;            version=&quot;3.1&quot;&gt;&#10;       &lt;!-- Здесь можно добавить дополнительные конфигурации, если необходимо --&gt;&#10;   &lt;/web-app&gt;&#10;   ```&#10;&#10;3. **Проверьте аннотации в сервлетах.**&#10;&#10;   Убедитесь, что ваши сервлеты имеют правильные аннотации для указания контекстного пути:&#10;&#10;   #### AddServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/online-calculator/add&quot;)&#10;   public class AddServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a + b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### SubtractServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/online-calculator/subtract&quot;)&#10;   public class SubtractServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a - b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### MultiplyServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/online-calculator/multiply&quot;)&#10;   public class MultiplyServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           double result = a * b;&#10;           resp.getWriter().write(&quot;Result: &quot; + result);&#10;       }&#10;   }&#10;   ```&#10;&#10;   #### DivideServlet.java&#10;&#10;   ```java&#10;   package ru.otus.java.pro.webserver;&#10;&#10;   import javax.servlet.ServletException;&#10;   import javax.servlet.annotation.WebServlet;&#10;   import javax.servlet.http.HttpServlet;&#10;   import javax.servlet.http.HttpServletRequest;&#10;   import javax.servlet.http.HttpServletResponse;&#10;   import java.io.IOException;&#10;&#10;   @WebServlet(&quot;/online-calculator/div&quot;)&#10;   public class DivideServlet extends HttpServlet {&#10;       @Override&#10;       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {&#10;           double a = Double.parseDouble(req.getParameter(&quot;a&quot;));&#10;           double b = Double.parseDouble(req.getParameter(&quot;b&quot;));&#10;           if (b == 0) {&#10;               resp.getWriter().write(&quot;Error: Division by zero&quot;);&#10;           } else {&#10;               double result = a / b;&#10;               resp.getWriter().write(&quot;Result: &quot; + result);&#10;           }&#10;       }&#10;   }&#10;   ```&#10;&#10;4. **Проверьте файл `build.gradle`.**&#10;&#10;   Убедитесь, что ваш `build.gradle` файл настроен для создания WAR файла:&#10;&#10;   ```groovy&#10;   plugins {&#10;       id 'java'&#10;       id 'war'&#10;   }&#10;&#10;   group 'ru.otus.java.pro'&#10;   version '1.0-SNAPSHOT'&#10;&#10;   repositories {&#10;       mavenCentral()&#10;   }&#10;&#10;   dependencies {&#10;       providedCompile 'javax:javaee-api:8.0'&#10;       implementation 'org.slf4j:slf4j-api:2.0.7'&#10;       implementation 'ch.qos.logback:logback-classic:1.4.11'&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'&#10;       testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'&#10;       testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'&#10;       testImplementation 'org.mockito:mockito-core:5.11.0'&#10;       testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'&#10;       implementation 'org.postgresql:postgresql:42.2.23'&#10;   }&#10;&#10;   tasks.withType(JavaCompile) {&#10;       options.encoding = 'UTF-8'&#10;   }&#10;&#10;   test {&#10;       useJUnitPlatform()&#10;   }&#10;   ```&#10;&#10;5. **Соберите и разверните WAR файл.**&#10;&#10;   В корне вашего проекта выполните команду:&#10;&#10;   ```sh&#10;   ./gradlew clean build&#10;   ```&#10;&#10;   Эта команда соберет ваш проект и создаст WAR файл в директории `build/libs`.&#10;&#10;6. **Разверните WAR файл на сервере приложений.**&#10;&#10;   Скопируйте созданный WAR файл в директорию `webapps` вашего сервера приложений (например, Apache Tomcat).&#10;&#10;7. **Перезапустите сервер приложений.**&#10;&#10;   Убедитесь, что сервер приложений перезапущен и WAR файл развернут корректно.&#10;&#10;### Пример запросов&#10;&#10;После развертывания WAR файла, попробуйте выполнить запросы снова:&#10;&#10;- Сложение: `http://localhost:8080/online-calculator/add?a=5&amp;b=3`&#10;- Вычитание: `http://localhost:8080/online-calculator/subtract?a=5&amp;b=3`&#10;- Умножение: `http://localhost:8080/online-calculator/multiply?a=5&amp;b=3`&#10;- Деление: `http://localhost:8080/online-calculator/div?a=5&amp;b=3`&#10;&#10;Эти запросы должны возвращать результаты операций." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1736668737682" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/context.xml" />
+                  <option value="$PROJECT_DIR$/build.gradle" />
                 </list>
               </option>
             </ChatHistoryModel>
