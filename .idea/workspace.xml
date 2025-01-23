@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="" />
+    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="Homework HTTP Protocol details v2">
+      <change afterPath="$PROJECT_DIR$/spring-app/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/SpringAppApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/controllers/FirstController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-app/src/test/java/ru/otus/java/pro/spring/app/SpringAppApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +31,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/spring-app">
       <ProjectState />
     </projectState>
   </component>
@@ -24,6 +46,9 @@
         <task path="$PROJECT_DIR$/web">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/spring-app">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -33,23 +58,18 @@
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="otus-pro-homeworks" type="f1a62948:ProjectNode" />
+                <item name="spring-app" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-app" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="otus-pro-homeworks" type="f1a62948:ProjectNode" />
+                <item name="spring-app" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="web" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="web" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -92,52 +112,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.AccountServiceImplParametrizedTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build otus-pro-homeworks.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'impl'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.otus-pro-homeworks [:Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.otus-pro-homeworks [:HttpServer.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.otus-pro-homeworks [:HttpServerDemo.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.otus-pro-homeworks [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.otus-pro-homeworks [:MockChatServer.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.otus-pro-homeworks [:ShoppingCartApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.otus-pro-homeworks [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.otus-pro-homeworks [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AccountServiceImplParametrizedTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AccountServiceImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/xa86/IdeaProjects/learning-project/java-first-project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.AccountServiceImplParametrizedTest.executor": "Run",
+    "Gradle.Build otus-pro-homeworks.executor": "Run",
+    "Gradle.Build spring-app.executor": "Run",
+    "Gradle.Tests in 'impl'.executor": "Run",
+    "Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'.executor": "Run",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "Gradle.otus-pro-homeworks [:Application.main()].executor": "Run",
+    "Gradle.otus-pro-homeworks [:HttpServer.main()].executor": "Run",
+    "Gradle.otus-pro-homeworks [:HttpServerDemo.main()].executor": "Run",
+    "Gradle.otus-pro-homeworks [:Main.main()].executor": "Run",
+    "Gradle.otus-pro-homeworks [:MockChatServer.main()].executor": "Run",
+    "Gradle.otus-pro-homeworks [:ShoppingCartApplication.main()].executor": "Run",
+    "Gradle.otus-pro-homeworks [build].executor": "Run",
+    "Gradle.otus-pro-homeworks [dependencies].executor": "Run",
+    "JUnit.AccountServiceImplParametrizedTest.executor": "Run",
+    "JUnit.AccountServiceImplTest.executor": "Run",
+    "JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.SpringAppApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "jdk.selected.JAVA_MODULE": "temurin-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/xa86/Downloads/spring_app-otus",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\xa86\IdeaProjects\learning-project\otus-pro-homeworks\src\main\java\ru\otus\java\pro\dbinteraction" />
@@ -156,13 +184,13 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ShoppingCartApplication">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.patterns.part2.Main" />
+  <component name="RunManager" selected="Spring Boot.SpringAppApplication">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.otus.java.pro.reflection.Application" />
       <module name="otus-pro-homeworks.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.otus.java.pro.http.*" />
+          <option name="PATTERN" value="ru.otus.java.pro.reflection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -240,20 +268,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="SpringAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-app.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.otus.java.pro.spring.app.SpringAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.Application" />
       <item itemvalue="Application.ShoppingCartApplication" />
       <item itemvalue="Application.MockChatServer" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.otus-pro-homeworks [build]" />
       <item itemvalue="Gradle.otus-pro-homeworks [dependencies]" />
+      <item itemvalue="Spring Boot.SpringAppApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="Application.ShoppingCartApplication" />
         <item itemvalue="Gradle.otus-pro-homeworks [build]" />
         <item itemvalue="Gradle.otus-pro-homeworks [dependencies]" />
         <item itemvalue="Application.MockChatServer" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -388,6 +424,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="master-commit" />
     <MESSAGE value="Homework Reflection API и аннотации" />
     <MESSAGE value="Homework Reflection API и аннотации v2" />
@@ -407,31 +444,79 @@
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
       <map>
-        <entry key="f6c6aa">
+        <entry key="6332d0">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springcontext/ShoppingCartApplication.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springcontext/model/Product.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springcontext/repository/ProductRepository.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springcontext/service/Cart.java" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/controllers/FirstController.java" />
                 </list>
               </option>
-              <option name="id" value="f6c6aa" />
-              <option name="initiateTms" value="1737546335800" />
-              <option name="request" value=" Проверь пакет package ru.otus.java.pro.springcontext; соответствует ли он заданию &#10;Имеется класс Product (id, название, цена). Товары хранятся в бине ProductRepository, в виде List, при старте приложения в него необходимо добавить 10 любых товаров. ProductRepository должен позволять получить весь список или один товар по id. Создаем бин Cart, в который можно добавлять и удалять товары по id из репозитория. Написать консольное приложение, позволяющее управлять корзиной. При каждом запросе корзины из контекста, должна создаваться новая корзина." />
+              <option name="id" value="6332d0" />
+              <option name="initiateTms" value="1737619358707" />
+              <option name="request" value=" Создайте сервис, который хранит продукты (id, title, price)&#10;    Сервис должен быть разделен на стандартный набор слоев: контроллеры, сервисы, репозитории (в данном задании репозитории в проекте не используют в качестве источника данных базу данных)&#10;    Хранение продуктов орагнизуйте через List в отдельном компоненте&#10;    Сервис должен давать возможность: запросить все продукты, запросить продукт по id, создавть новый продукт" />
               <option name="response" value="" />
-              <option name="responseDescription" value="Да, пакет `ru.otus.java.pro.springcontext` и его содержимое соответствуют заданию. Давайте проверим каждый пункт задания и соответствие кода:&#10;&#10;1. **Класс Product (id, название, цена)**:&#10;   - Класс `Product` определен в файле `Product.java` и содержит поля `id`, `name` и `price`.&#10;&#10;2. **Товары хранятся в бине ProductRepository, в виде List, при старте приложения в него необходимо добавить 10 любых товаров**:&#10;   - Класс `ProductRepository` определен в файле `ProductRepository.java`. В методе `init()` добавляются 10 товаров в список `products` при старте приложения.&#10;&#10;3. **ProductRepository должен позволять получить весь список или один товар по id**:&#10;   - В `ProductRepository` реализованы методы `findAll()` для получения всего списка товаров и `findById(int id)` для получения товара по id.&#10;&#10;4. **Создаем бин Cart, в который можно добавлять и удалять товары по id из репозитория**:&#10;   - Класс `Cart` определен в файле `Cart.java`. В нем реализованы методы `addProductById(int id)` и `removeProductById(int id)` для добавления и удаления товаров по id из репозитория.&#10;&#10;5. **Написать консольное приложение, позволяющее управлять корзиной**:&#10;   - Консольное приложение реализовано в классе `ShoppingCartApplication` в файле `ShoppingCartApplication.java`. Оно позволяет добавлять и удалять товары из корзины, а также просматривать содержимое корзины.&#10;&#10;6. **При каждом запросе корзины из контекста, должна создаваться новая корзина**:&#10;   - В классе `Cart` используется аннотация `@Scope(&quot;prototype&quot;)`, что обеспечивает создание новой корзины при каждом запросе из контекста.&#10;&#10;Таким образом, все требования задания выполнены. Код соответствует заданию и реализует все необходимые функции." />
+              <option name="responseDescription" value="Для реализации сервиса, который хранит продукты и предоставляет возможности для их запроса и создания, мы создадим несколько классов, разделенных на контроллеры, сервисы и репозитории. В данном случае репозитории будут использовать `List` для хранения данных.&#10;&#10;### Шаг 1: Создание модели продукта&#10;&#10;Создадим класс `Product`, который будет представлять продукт.&#10;&#10;```java&#10;package ru.otus.java.pro.spring.app.models;&#10;&#10;public class Product {&#10;    private Long id;&#10;    private String title;&#10;    private Double price;&#10;&#10;    // Constructors, getters, and setters&#10;    public Product() {}&#10;&#10;    public Product(Long id, String title, Double price) {&#10;        this.id = id;&#10;        this.title = title;&#10;        this.price = price;&#10;    }&#10;&#10;    public Long getId() {&#10;        return id;&#10;    }&#10;&#10;    public void setId(Long id) {&#10;        this.id = id;&#10;    }&#10;&#10;    public String getTitle() {&#10;        return title;&#10;    }&#10;&#10;    public void setTitle(String title) {&#10;        this.title = title;&#10;    }&#10;&#10;    public Double getPrice() {&#10;        return price;&#10;    }&#10;&#10;    public void setPrice(Double price) {&#10;        this.price = price;&#10;    }&#10;}&#10;```&#10;&#10;### Шаг 2: Создание репозитория для хранения продуктов&#10;&#10;Создадим компонент `ProductRepository`, который будет хранить продукты в `List`.&#10;&#10;```java&#10;package ru.otus.java.pro.spring.app.repositories;&#10;&#10;import org.springframework.stereotype.Component;&#10;import ru.otus.java.pro.spring.app.models.Product;&#10;&#10;import java.util.ArrayList;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;@Component&#10;public class ProductRepository {&#10;    private final List&lt;Product&gt; products = new ArrayList&lt;&gt;();&#10;&#10;    public List&lt;Product&gt; findAll() {&#10;        return new ArrayList&lt;&gt;(products);&#10;    }&#10;&#10;    public Optional&lt;Product&gt; findById(Long id) {&#10;        return products.stream().filter(product -&gt; product.getId().equals(id)).findFirst();&#10;    }&#10;&#10;    public void save(Product product) {&#10;        products.add(product);&#10;    }&#10;}&#10;```&#10;&#10;### Шаг 3: Создание сервиса для управления продуктами&#10;&#10;Создадим сервис `ProductService`, который будет использовать репозиторий для выполнения операций.&#10;&#10;```java&#10;package ru.otus.java.pro.spring.app.services;&#10;&#10;import org.springframework.beans.factory.annotation.Autowired;&#10;import org.springframework.stereotype.Service;&#10;import ru.otus.java.pro.spring.app.models.Product;&#10;import ru.otus.java.pro.spring.app.repositories.ProductRepository;&#10;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;@Service&#10;public class ProductService {&#10;    private final ProductRepository productRepository;&#10;&#10;    @Autowired&#10;    public ProductService(ProductRepository productRepository) {&#10;        this.productRepository = productRepository;&#10;    }&#10;&#10;    public List&lt;Product&gt; getAllProducts() {&#10;        return productRepository.findAll();&#10;    }&#10;&#10;    public Optional&lt;Product&gt; getProductById(Long id) {&#10;        return productRepository.findById(id);&#10;    }&#10;&#10;    public void createProduct(Product product) {&#10;        productRepository.save(product);&#10;    }&#10;}&#10;```&#10;&#10;### Шаг 4: Создание контроллера для обработки HTTP-запросов&#10;&#10;Создадим контроллер `ProductController`, который будет обрабатывать запросы к сервису продуктов.&#10;&#10;```java&#10;package ru.otus.java.pro.spring.app.controllers;&#10;&#10;import org.springframework.beans.factory.annotation.Autowired;&#10;import org.springframework.web.bind.annotation.*;&#10;import ru.otus.java.pro.spring.app.models.Product;&#10;import ru.otus.java.pro.spring.app.services.ProductService;&#10;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;@RestController&#10;@RequestMapping(&quot;/products&quot;)&#10;public class ProductController {&#10;    private final ProductService productService;&#10;&#10;    @Autowired&#10;    public ProductController(ProductService productService) {&#10;        this.productService = productService;&#10;    }&#10;&#10;    @GetMapping&#10;    public List&lt;Product&gt; getAllProducts() {&#10;        return productService.getAllProducts();&#10;    }&#10;&#10;    @GetMapping(&quot;/{id}&quot;)&#10;    public Optional&lt;Product&gt; getProductById(@PathVariable Long id) {&#10;        return productService.getProductById(id);&#10;    }&#10;&#10;    @PostMapping&#10;    public void createProduct(@RequestBody Product product) {&#10;        productService.createProduct(product);&#10;    }&#10;}&#10;```&#10;&#10;### Итоговая структура проекта&#10;&#10;```&#10;src/main/java/ru/otus/java/pro/spring/app/&#10;├── controllers&#10;│   └── ProductController.java&#10;├── models&#10;│   └── Product.java&#10;├── repositories&#10;│   └── ProductRepository.java&#10;└── services&#10;    └── ProductService.java&#10;```&#10;&#10;Теперь у вас есть сервис для управления продуктами, который включает в себя контроллеры, сервисы и репозитории, использующие `List` для хранения данных." />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1737546347060" />
+              <option name="responseTms" value="1737619374266" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springcontext/ShoppingCartApplication.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springcontext/service/Cart.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springcontext/model/Product.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springcontext/repository/ProductRepository.java" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/controllers/FirstController.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="e63fef">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/controllers/ProductController.java" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/models/Product.java" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/services/ProductService.java" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/repositories/ProductRepository.java" />
+                </list>
+              </option>
+              <option name="id" value="e63fef" />
+              <option name="initiateTms" value="1737619735828" />
+              <option name="request" value=" Как теперь из Postman Проверить" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Чтобы проверить работу вашего сервиса с помощью Postman, выполните следующие шаги:&#10;&#10;### Шаг 1: Запуск Spring Boot приложения&#10;&#10;Убедитесь, что ваше Spring Boot приложение запущено. Вы можете запустить его из вашей IDE или с помощью команды Maven/Gradle:&#10;&#10;```sh&#10;mvn spring-boot:run&#10;```&#10;&#10;### Шаг 2: Проверка доступности сервиса&#10;&#10;Откройте Postman и выполните следующие запросы:&#10;&#10;#### 1. Получение всех продуктов&#10;&#10;- **Метод:** GET&#10;- **URL:** `http://localhost:8080/products`&#10;&#10;**Пример запроса:**&#10;&#10;```http&#10;GET /products HTTP/1.1&#10;Host: localhost:8080&#10;```&#10;&#10;**Пример ответа:**&#10;&#10;```json&#10;[]&#10;```&#10;&#10;#### 2. Создание нового продукта&#10;&#10;- **Метод:** POST&#10;- **URL:** `http://localhost:8080/products`&#10;- **Тело запроса (JSON):**&#10;&#10;```json&#10;{&#10;    &quot;id&quot;: 1,&#10;    &quot;title&quot;: &quot;Product 1&quot;,&#10;    &quot;price&quot;: 100.0&#10;}&#10;```&#10;&#10;**Пример запроса:**&#10;&#10;```http&#10;POST /products HTTP/1.1&#10;Host: localhost:8080&#10;Content-Type: application/json&#10;&#10;{&#10;    &quot;id&quot;: 1,&#10;    &quot;title&quot;: &quot;Product 1&quot;,&#10;    &quot;price&quot;: 100.0&#10;}&#10;```&#10;&#10;**Пример ответа:**&#10;&#10;HTTP Status 200 OK (без тела ответа)&#10;&#10;#### 3. Получение продукта по ID&#10;&#10;- **Метод:** GET&#10;- **URL:** `http://localhost:8080/products/1`&#10;&#10;**Пример запроса:**&#10;&#10;```http&#10;GET /products/1 HTTP/1.1&#10;Host: localhost:8080&#10;```&#10;&#10;**Пример ответа:**&#10;&#10;```json&#10;{&#10;    &quot;id&quot;: 1,&#10;    &quot;title&quot;: &quot;Product 1&quot;,&#10;    &quot;price&quot;: 100.0&#10;}&#10;```&#10;&#10;### Шаг 3: Проверка запросов в Postman&#10;&#10;1. **Создание нового продукта:**&#10;&#10;   - Откройте Postman.&#10;   - Выберите метод `POST`.&#10;   - Введите URL `http://localhost:8080/products`.&#10;   - Перейдите на вкладку `Body`, выберите `raw` и `JSON`.&#10;   - Вставьте JSON тело запроса:&#10;&#10;   ```json&#10;   {&#10;       &quot;id&quot;: 1,&#10;       &quot;title&quot;: &quot;Product 1&quot;,&#10;       &quot;price&quot;: 100.0&#10;   }&#10;   ```&#10;&#10;   - Нажмите кнопку `Send`.&#10;&#10;2. **Получение всех продуктов:**&#10;&#10;   - Выберите метод `GET`.&#10;   - Введите URL `http://localhost:8080/products`.&#10;   - Нажмите кнопку `Send`.&#10;&#10;3. **Получение продукта по ID:**&#10;&#10;   - Выберите метод `GET`.&#10;   - Введите URL `http://localhost:8080/products/1`.&#10;   - Нажмите кнопку `Send`.&#10;&#10;### Примечание&#10;&#10;Убедитесь, что ваш сервер запущен на порту 8080. Если вы используете другой порт, замените `8080` на ваш порт в URL.&#10;&#10;Теперь вы можете использовать Postman для проверки вашего сервиса. Если все настроено правильно, вы должны увидеть соответствующие ответы на ваши запросы." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1737619747610" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/services/ProductService.java" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/repositories/ProductRepository.java" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/models/Product.java" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/controllers/ProductController.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="f23944">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/controllers/FirstController.java" />
+                </list>
+              </option>
+              <option name="id" value="f23944" />
+              <option name="initiateTms" value="1737619414958" />
+              <option name="request" value=" Давай использовать lombok" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Использование Lombok значительно упростит наш код, убрав необходимость в явном написании геттеров, сеттеров, конструкторов и других стандартных методов. Давайте обновим наш проект, чтобы использовать Lombok.&#10;&#10;### Шаг 1: Добавление зависимости Lombok&#10;&#10;Сначала добавим Lombok в наш `pom.xml` (если используем Maven):&#10;&#10;```xml&#10;&lt;dependency&gt;&#10;    &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;&#10;    &lt;artifactId&gt;lombok&lt;/artifactId&gt;&#10;    &lt;version&gt;1.18.24&lt;/version&gt;&#10;    &lt;scope&gt;provided&lt;/scope&gt;&#10;&lt;/dependency&gt;&#10;```&#10;&#10;### Шаг 2: Обновление модели продукта&#10;&#10;Используем аннотации Lombok в классе `Product`.&#10;&#10;```java&#10;package ru.otus.java.pro.spring.app.models;&#10;&#10;import lombok.AllArgsConstructor;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;@Data&#10;@NoArgsConstructor&#10;@AllArgsConstructor&#10;public class Product {&#10;    private Long id;&#10;    private String title;&#10;    private Double price;&#10;}&#10;```&#10;&#10;### Шаг 3: Репозиторий остается без изменений&#10;&#10;Класс `ProductRepository` остается без изменений, так как он не требует генерации методов, которые предоставляет Lombok.&#10;&#10;### Шаг 4: Обновление сервиса&#10;&#10;Класс `ProductService` также остается без изменений, так как он не требует генерации методов, которые предоставляет Lombok.&#10;&#10;### Шаг 5: Контроллер остается без изменений&#10;&#10;Класс `ProductController` также остается без изменений, так как он не требует генерации методов, которые предоставляет Lombok.&#10;&#10;### Итоговая структура проекта&#10;&#10;```&#10;src/main/java/ru/otus/java/pro/spring/app/&#10;├── controllers&#10;│   └── ProductController.java&#10;├── models&#10;│   └── Product.java&#10;├── repositories&#10;│   └── ProductRepository.java&#10;└── services&#10;    └── ProductService.java&#10;```&#10;&#10;### Полный код с использованием Lombok&#10;&#10;#### Product.java&#10;&#10;```java&#10;package ru.otus.java.pro.spring.app.models;&#10;&#10;import lombok.AllArgsConstructor;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;@Data&#10;@NoArgsConstructor&#10;@AllArgsConstructor&#10;public class Product {&#10;    private Long id;&#10;    private String title;&#10;    private Double price;&#10;}&#10;```&#10;&#10;#### ProductRepository.java&#10;&#10;```java&#10;package ru.otus.java.pro.spring.app.repositories;&#10;&#10;import org.springframework.stereotype.Component;&#10;import ru.otus.java.pro.spring.app.models.Product;&#10;&#10;import java.util.ArrayList;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;@Component&#10;public class ProductRepository {&#10;    private final List&lt;Product&gt; products = new ArrayList&lt;&gt;();&#10;&#10;    public List&lt;Product&gt; findAll() {&#10;        return new ArrayList&lt;&gt;(products);&#10;    }&#10;&#10;    public Optional&lt;Product&gt; findById(Long id) {&#10;        return products.stream().filter(product -&gt; product.getId().equals(id)).findFirst();&#10;    }&#10;&#10;    public void save(Product product) {&#10;        products.add(product);&#10;    }&#10;}&#10;```&#10;&#10;#### ProductService.java&#10;&#10;```java&#10;package ru.otus.java.pro.spring.app.services;&#10;&#10;import org.springframework.beans.factory.annotation.Autowired;&#10;import org.springframework.stereotype.Service;&#10;import ru.otus.java.pro.spring.app.models.Product;&#10;import ru.otus.java.pro.spring.app.repositories.ProductRepository;&#10;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;@Service&#10;public class ProductService {&#10;    private final ProductRepository productRepository;&#10;&#10;    @Autowired&#10;    public ProductService(ProductRepository productRepository) {&#10;        this.productRepository = productRepository;&#10;    }&#10;&#10;    public List&lt;Product&gt; getAllProducts() {&#10;        return productRepository.findAll();&#10;    }&#10;&#10;    public Optional&lt;Product&gt; getProductById(Long id) {&#10;        return productRepository.findById(id);&#10;    }&#10;&#10;    public void createProduct(Product product) {&#10;        productRepository.save(product);&#10;    }&#10;}&#10;```&#10;&#10;#### ProductController.java&#10;&#10;```java&#10;package ru.otus.java.pro.spring.app.controllers;&#10;&#10;import org.springframework.beans.factory.annotation.Autowired;&#10;import org.springframework.web.bind.annotation.*;&#10;import ru.otus.java.pro.spring.app.models.Product;&#10;import ru.otus.java.pro.spring.app.services.ProductService;&#10;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;@RestController&#10;@RequestMapping(&quot;/products&quot;)&#10;public class ProductController {&#10;    private final ProductService productService;&#10;&#10;    @Autowired&#10;    public ProductController(ProductService productService) {&#10;        this.productService = productService;&#10;    }&#10;&#10;    @GetMapping&#10;    public List&lt;Product&gt; getAllProducts() {&#10;        return productService.getAllProducts();&#10;    }&#10;&#10;    @GetMapping(&quot;/{id}&quot;)&#10;    public Optional&lt;Product&gt; getProductById(@PathVariable Long id) {&#10;        return productService.getProductById(id);&#10;    }&#10;&#10;    @PostMapping&#10;    public void createProduct(@RequestBody Product product) {&#10;        productService.createProduct(product);&#10;    }&#10;}&#10;```&#10;&#10;Теперь наш проект использует Lombok для упрощения кода, что делает его более чистым и поддерживаемым." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1737619428621" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/spring-app/src/main/java/ru/otus/java/pro/spring/app/controllers/FirstController.java" />
                 </list>
               </option>
             </ChatHistoryModel>
