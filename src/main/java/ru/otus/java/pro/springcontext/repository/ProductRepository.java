@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @Repository
 public class ProductRepository {
-    private List<Product> products = new ArrayList<>();
+    private final List<Product> products = new ArrayList<>();
 
     @PostConstruct
     public void init() {
