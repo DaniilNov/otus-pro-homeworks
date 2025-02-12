@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="Homework JPA/Hibernate Basic v1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Purchase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +118,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/xa86/Downloads/hibernate_app",
+    "last_opened_file_path": "C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -315,7 +310,8 @@
       <workItem from="1738395724961" duration="39000" />
       <workItem from="1738395789324" duration="459000" />
       <workItem from="1738643354426" duration="69000" />
-      <workItem from="1738644826381" duration="3863000" />
+      <workItem from="1738644826381" duration="4482000" />
+      <workItem from="1739335858217" duration="645000" />
     </task>
     <task id="LOCAL-00001" summary="master-commit">
       <option name="closed" value="true" />
@@ -397,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737546935333</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Homework JPA/Hibernate Basic v1">
+      <option name="closed" value="true" />
+      <created>1738648708300</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738648708300</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1027,6 +1031,34 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="cdd60b">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Purchase.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Product.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Customer.java" />
+                </list>
+              </option>
+              <option name="id" value="cdd60b" />
+              <option name="initiateTms" value="1739336159867" />
+              <option name="request" value=" Покажи только участки кода где были изменения" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Конечно, вот участки кода, где были внесены изменения для безопасной инициализации ленивых коллекций:&#10;&#10;### Метод `viewProductsByCustomer`&#10;&#10;```java&#10;private static void viewProductsByCustomer(Scanner scanner) {&#10;    System.out.print(&quot;Enter customer ID: &quot;);&#10;    Long customerId = scanner.nextLong();&#10;    try (Session session = sessionFactory.openSession()) {&#10;        Customer customer = session.get(Customer.class, customerId);&#10;        if (customer != null) {&#10;            customer.getPurchases().size(); // Инициализация ленивой коллекции&#10;            System.out.println(&quot;Products bought by &quot; + customer.getName() + &quot;:&quot;);&#10;            customer.getPurchases().forEach(purchase -&gt; System.out.println(purchase.getProduct().getName()));&#10;        } else {&#10;            System.out.println(&quot;Customer not found.&quot;);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;### Метод `viewCustomersByProduct`&#10;&#10;```java&#10;private static void viewCustomersByProduct(Scanner scanner) {&#10;    System.out.print(&quot;Enter product ID: &quot;);&#10;    Long productId = scanner.nextLong();&#10;    try (Session session = sessionFactory.openSession()) {&#10;        Product product = session.get(Product.class, productId);&#10;        if (product != null) {&#10;            product.getPurchases().size(); // Инициализация ленивой коллекции&#10;            System.out.println(&quot;Customers who bought &quot; + product.getName() + &quot;:&quot;);&#10;            product.getPurchases().forEach(purchase -&gt; System.out.println(purchase.getCustomer().getName()));&#10;        } else {&#10;            System.out.println(&quot;Product not found.&quot;);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;Эти изменения обеспечат корректное поведение при ленивой загрузке коллекций, предотвращая `LazyInitializationException`." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1739336164890" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Purchase.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Customer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Product.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="cf9bf0">
           <value>
             <ChatHistoryModel>
@@ -1140,6 +1172,42 @@
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Worker.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="fb2ab9">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Purchase.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part1/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Product.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Customer.java" />
+                </list>
+              </option>
+              <option name="id" value="fb2ab9" />
+              <option name="initiateTms" value="1739336073826" />
+              <option name="request" value=" В классе Application.java в строке            purchase3.setProduct(product1);&#10;                                               session.save(purchase3);&#10;                                   &#10;                                               session.getTransaction().commit();&#10;                                               получил комментарий:&#10;                                               &#10;&#10;лучше использовать более безопасные механизмы для извлечения коллекций, чтобы избежать LazyInitializationException, особенно при использовании ленивой загрузки - здесь можно использовать&#10;&#10;customer.getPurchases().size(); &#10;&#10;Этот вызов загрузит данные и обеспечит корректное поведение в случае ленивой загрузки." />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Да, использование вызова `size()` на ленивой коллекции является хорошей практикой для инициализации коллекции и предотвращения `LazyInitializationException`. Давайте обновим методы в классе `Application.java`, чтобы использовать этот подход.&#10;&#10;### Обновление методов для безопасной инициализации коллекций&#10;&#10;#### viewProductsByCustomer&#10;&#10;```java&#10;private static void viewProductsByCustomer(Scanner scanner) {&#10;    System.out.print(&quot;Enter customer ID: &quot;);&#10;    Long customerId = scanner.nextLong();&#10;    try (Session session = sessionFactory.openSession()) {&#10;        Customer customer = session.get(Customer.class, customerId);&#10;        if (customer != null) {&#10;            customer.getPurchases().size(); // Инициализация ленивой коллекции&#10;            System.out.println(&quot;Products bought by &quot; + customer.getName() + &quot;:&quot;);&#10;            customer.getPurchases().forEach(purchase -&gt; System.out.println(purchase.getProduct().getName()));&#10;        } else {&#10;            System.out.println(&quot;Customer not found.&quot;);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;#### viewCustomersByProduct&#10;&#10;```java&#10;private static void viewCustomersByProduct(Scanner scanner) {&#10;    System.out.print(&quot;Enter product ID: &quot;);&#10;    Long productId = scanner.nextLong();&#10;    try (Session session = sessionFactory.openSession()) {&#10;        Product product = session.get(Product.class, productId);&#10;        if (product != null) {&#10;            product.getPurchases().size(); // Инициализация ленивой коллекции&#10;            System.out.println(&quot;Customers who bought &quot; + product.getName() + &quot;:&quot;);&#10;            product.getPurchases().forEach(purchase -&gt; System.out.println(purchase.getCustomer().getName()));&#10;        } else {&#10;            System.out.println(&quot;Product not found.&quot;);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;### Полный код класса Application.java&#10;&#10;```java&#10;package ru.otus.java.pro.hibernate;&#10;&#10;import org.hibernate.Session;&#10;import org.hibernate.SessionFactory;&#10;import org.hibernate.boot.registry.StandardServiceRegistryBuilder;&#10;import org.hibernate.cfg.Configuration;&#10;import org.hibernate.service.ServiceRegistry;&#10;&#10;import java.util.Properties;&#10;import java.util.Scanner;&#10;&#10;public class Application {&#10;    private static final SessionFactory sessionFactory = buildSessionFactory();&#10;&#10;    private static SessionFactory buildSessionFactory() {&#10;        try {&#10;            // Create a Configuration instance&#10;            Configuration configuration = new Configuration();&#10;&#10;            // Load properties from hibernate.properties&#10;            Properties properties = new Properties();&#10;            properties.load(Application.class.getClassLoader().getResourceAsStream(&quot;hibernate.properties&quot;));&#10;            configuration.setProperties(properties);&#10;&#10;            // Add annotated classes&#10;            configuration.addAnnotatedClass(Customer.class);&#10;            configuration.addAnnotatedClass(Product.class);&#10;            configuration.addAnnotatedClass(Purchase.class);&#10;&#10;            // Build the ServiceRegistry&#10;            ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()&#10;                    .applySettings(configuration.getProperties()).build();&#10;&#10;            // Build the SessionFactory&#10;            return configuration.buildSessionFactory(serviceRegistry);&#10;        } catch (Exception ex) {&#10;            System.err.println(&quot;Initial SessionFactory creation failed.&quot; + ex);&#10;            throw new ExceptionInInitializerError(ex);&#10;        }&#10;    }&#10;&#10;    public static void main(String[] args) {&#10;        populateTestData();&#10;&#10;        try (Scanner scanner = new Scanner(System.in)) {&#10;            while (true) {&#10;                System.out.println(&quot;1. View products by customer&quot;);&#10;                System.out.println(&quot;2. View customers by product&quot;);&#10;                System.out.println(&quot;3. Delete product&quot;);&#10;                System.out.println(&quot;4. Delete customer&quot;);&#10;                System.out.println(&quot;5. Exit&quot;);&#10;                System.out.print(&quot;Choose an option: &quot;);&#10;                int option = scanner.nextInt();&#10;                scanner.nextLine();  // Consume newline&#10;&#10;                switch (option) {&#10;                    case 1 -&gt; viewProductsByCustomer(scanner);&#10;                    case 2 -&gt; viewCustomersByProduct(scanner);&#10;                    case 3 -&gt; deleteProduct(scanner);&#10;                    case 4 -&gt; deleteCustomer(scanner);&#10;                    case 5 -&gt; {&#10;                        sessionFactory.close();&#10;                        return;&#10;                    }&#10;                    default -&gt; System.out.println(&quot;Invalid option. Try again.&quot;);&#10;                }&#10;            }&#10;        }&#10;    }&#10;&#10;    private static void populateTestData() {&#10;        try (Session session = sessionFactory.openSession()) {&#10;            session.beginTransaction();&#10;&#10;            // Create customers&#10;            Customer customer1 = new Customer();&#10;            customer1.setName(&quot;John Doe&quot;);&#10;            session.save(customer1);&#10;&#10;            Customer customer2 = new Customer();&#10;            customer2.setName(&quot;Jane Smith&quot;);&#10;            session.save(customer2);&#10;&#10;            // Create products&#10;            Product product1 = new Product();&#10;            product1.setName(&quot;Laptop&quot;);&#10;            product1.setPrice(1000.0);&#10;            session.save(product1);&#10;&#10;            Product product2 = new Product();&#10;            product2.setName(&quot;Smartphone&quot;);&#10;            product2.setPrice(500.0);&#10;            session.save(product2);&#10;&#10;            // Create purchases&#10;            Purchase purchase1 = new Purchase();&#10;            purchase1.setCustomer(customer1);&#10;            purchase1.setProduct(product1);&#10;            session.save(purchase1);&#10;&#10;            Purchase purchase2 = new Purchase();&#10;            purchase2.setCustomer(customer1);&#10;            purchase2.setProduct(product2);&#10;            session.save(purchase2);&#10;&#10;            Purchase purchase3 = new Purchase();&#10;            purchase3.setCustomer(customer2);&#10;            purchase3.setProduct(product1);&#10;            session.save(purchase3);&#10;&#10;            session.getTransaction().commit();&#10;        }&#10;    }&#10;&#10;    private static void viewProductsByCustomer(Scanner scanner) {&#10;        System.out.print(&quot;Enter customer ID: &quot;);&#10;        Long customerId = scanner.nextLong();&#10;        try (Session session = sessionFactory.openSession()) {&#10;            Customer customer = session.get(Customer.class, customerId);&#10;            if (customer != null) {&#10;                customer.getPurchases().size(); // Инициализация ленивой коллекции&#10;                System.out.println(&quot;Products bought by &quot; + customer.getName() + &quot;:&quot;);&#10;                customer.getPurchases().forEach(purchase -&gt; System.out.println(purchase.getProduct().getName()));&#10;            } else {&#10;                System.out.println(&quot;Customer not found.&quot;);&#10;            }&#10;        }&#10;    }&#10;&#10;    private static void viewCustomersByProduct(Scanner scanner) {&#10;        System.out.print(&quot;Enter product ID: &quot;);&#10;        Long productId = scanner.nextLong();&#10;        try (Session session = sessionFactory.openSession()) {&#10;            Product product = session.get(Product.class, productId);&#10;            if (product != null) {&#10;                product.getPurchases().size(); // Инициализация ленивой коллекции&#10;                System.out.println(&quot;Customers who bought &quot; + product.getName() + &quot;:&quot;);&#10;                product.getPurchases().forEach(purchase -&gt; System.out.println(purchase.getCustomer().getName()));&#10;            } else {&#10;                System.out.println(&quot;Product not found.&quot;);&#10;            }&#10;        }&#10;    }&#10;&#10;    private static void deleteProduct(Scanner scanner) {&#10;        System.out.print(&quot;Enter product ID: &quot;);&#10;        Long productId = scanner.nextLong();&#10;        try (Session session = sessionFactory.openSession()) {&#10;            session.beginTransaction();&#10;            Product product = session.get(Product.class, productId);&#10;            if (product != null) {&#10;                session.delete(product);&#10;                session.getTransaction().commit();&#10;                System.out.println(&quot;Product deleted.&quot;);&#10;            } else {&#10;                System.out.println(&quot;Product not found.&quot;);&#10;            }&#10;        }&#10;    }&#10;&#10;    private static void deleteCustomer(Scanner scanner) {&#10;        System.out.print(&quot;Enter customer ID: &quot;);&#10;        Long customerId = scanner.nextLong();&#10;        try (Session session = sessionFactory.openSession()) {&#10;            session.beginTransaction();&#10;            Customer customer = session.get(Customer.class, customerId);&#10;            if (customer != null) {&#10;                session.delete(customer);&#10;                session.getTransaction().commit();&#10;                System.out.println(&quot;Customer deleted.&quot;);&#10;            } else {&#10;                System.out.println(&quot;Customer not found.&quot;);&#10;            }&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;Теперь методы `viewProductsByCustomer` и `viewCustomersByProduct` используют вызов `size()` для инициализации ленивых коллекций, что должно предотвратить `LazyInitializationException` и обеспечить корректное поведение при ленивой загрузке." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1739336096981" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Purchase.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Customer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part1/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Product.java" />
                 </list>
               </option>
             </ChatHistoryModel>
