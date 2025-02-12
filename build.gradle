@@ -27,6 +27,11 @@ dependencies {
     implementation 'org.springframework:spring-aop:5.3.22'
     implementation 'org.springframework:spring-expression:5.3.22'
     testImplementation 'org.springframework:spring-test:5.3.22'
+    implementation 'org.hibernate:hibernate-core:5.4.26.Final'
+    implementation 'org.hibernate:hibernate-validator:5.4.3.Final'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.13.3'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.3'
     annotationProcessor 'org.projectlombok:lombok:1.18.28'
 }
 
