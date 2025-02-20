@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="Homework SPRING-DATA-JPA v1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,6 +313,7 @@
       <workItem from="1738643354426" duration="69000" />
       <workItem from="1738644826381" duration="4482000" />
       <workItem from="1739335858217" duration="645000" />
+      <workItem from="1740054738056" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="master-commit">
       <option name="closed" value="true" />
@@ -482,6 +478,34 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="45f67a">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Phone.java" />
+                </list>
+              </option>
+              <option name="id" value="45f67a" />
+              <option name="initiateTms" value="1740054931393" />
+              <option name="request" value=" В @Entity&#10;  @Data&#10;  @NoArgsConstructor&#10;  public class Client {&#10;      @Id&#10;      @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;      private Long id;&#10;  &#10;      private String name;&#10;  &#10;      @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)&#10;      @JoinColumn(name = &quot;address_id&quot;, referencedColumnName = &quot;id&quot;)&#10;      private Address address;&#10;  &#10;      @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = &quot;client&quot;)&#10;      private List&lt;Phone&gt; phones;&#10;      Над     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = &quot;client&quot;)&#10;              private List&lt;Phone&gt; phones;&#10;              получил комментарий:&#10;              можно сразу инициализировать коллекцию" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Инициализация коллекции сразу при объявлении является хорошей практикой, так как это позволяет избежать `NullPointerException` при добавлении элементов в коллекцию до её инициализации. Давайте обновим класс `Client`, чтобы инициализировать коллекцию `phones` сразу при объявлении.&#10;&#10;### Обновленный класс `Client`&#10;&#10;```java&#10;package ru.otus.java.pro.springdatajpql.entity;&#10;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import javax.persistence.*;&#10;import java.util.ArrayList;&#10;import java.util.List;&#10;&#10;@Entity&#10;@Data&#10;@NoArgsConstructor&#10;public class Client {&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;    private Long id;&#10;&#10;    private String name;&#10;&#10;    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)&#10;    @JoinColumn(name = &quot;address_id&quot;, referencedColumnName = &quot;id&quot;)&#10;    private Address address;&#10;&#10;    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = &quot;client&quot;)&#10;    private List&lt;Phone&gt; phones = new ArrayList&lt;&gt;();&#10;}&#10;```&#10;&#10;### Обновленный класс `Application`&#10;&#10;#### Application.java&#10;```java&#10;package ru.otus.java.pro.springdatajpql;&#10;&#10;import org.hibernate.Session;&#10;import org.hibernate.SessionFactory;&#10;import org.hibernate.boot.registry.StandardServiceRegistryBuilder;&#10;import org.hibernate.cfg.Configuration;&#10;import org.hibernate.service.ServiceRegistry;&#10;import ru.otus.java.pro.springdatajpql.entity.Address;&#10;import ru.otus.java.pro.springdatajpql.entity.Client;&#10;import ru.otus.java.pro.springdatajpql.entity.Phone;&#10;&#10;import java.util.Arrays;&#10;import java.util.Properties;&#10;&#10;public class Application {&#10;    public static void main(String[] args) {&#10;        Configuration configuration = new Configuration();&#10;        Properties properties = new Properties();&#10;        try {&#10;            properties.load(Application.class.getClassLoader().getResourceAsStream(&quot;hibernate.properties&quot;));&#10;        } catch (Exception e) {&#10;            e.printStackTrace();&#10;            return;&#10;        }&#10;        configuration.setProperties(properties);&#10;&#10;        configuration.addAnnotatedClass(Client.class);&#10;        configuration.addAnnotatedClass(Address.class);&#10;        configuration.addAnnotatedClass(Phone.class);&#10;&#10;        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()&#10;                .applySettings(configuration.getProperties()).build();&#10;        SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);&#10;&#10;        try (Session session = sessionFactory.openSession()) {&#10;            session.beginTransaction();&#10;&#10;            Address address = new Address();&#10;            address.setStreet(&quot;123 Main St&quot;);&#10;&#10;            Phone phone1 = new Phone();&#10;            phone1.setNumber(&quot;123-456-7890&quot;);&#10;&#10;            Phone phone2 = new Phone();&#10;            phone2.setNumber(&quot;098-765-4321&quot;);&#10;&#10;            Client client = new Client();&#10;            client.setName(&quot;John Doe&quot;);&#10;            client.setAddress(address);&#10;            client.setPhones(Arrays.asList(phone1, phone2));&#10;&#10;            phone1.setClient(client);&#10;            phone2.setClient(client);&#10;&#10;            session.save(client);&#10;&#10;            session.getTransaction().commit();&#10;        }&#10;&#10;        sessionFactory.close();&#10;    }&#10;}&#10;```&#10;&#10;### Обновленные классы сущностей&#10;&#10;#### Address.java&#10;```java&#10;package ru.otus.java.pro.springdatajpql.entity;&#10;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import javax.persistence.*;&#10;&#10;@Entity&#10;@Data&#10;@NoArgsConstructor&#10;public class Address {&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;    private Long id;&#10;&#10;    private String street;&#10;}&#10;```&#10;&#10;#### Phone.java&#10;```java&#10;package ru.otus.java.pro.springdatajpql.entity;&#10;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import javax.persistence.*;&#10;&#10;@Entity&#10;@Data&#10;@NoArgsConstructor&#10;public class Phone {&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;    private Long id;&#10;&#10;    private String number;&#10;&#10;    @ManyToOne&#10;    @JoinColumn(name = &quot;client_id&quot;)&#10;    private Client client;&#10;}&#10;```&#10;&#10;Теперь коллекция `phones` инициализируется сразу при объявлении, что предотвращает возможные `NullPointerException` при добавлении элементов в коллекцию до её инициализации." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1740054947997" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Phone.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="529b1d">
           <value>
             <ChatHistoryModel>
@@ -550,6 +574,48 @@
                   <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="a02176">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part1/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/resources/application.yaml" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Phone.java" />
+                </list>
+              </option>
+              <option name="id" value="a02176" />
+              <option name="initiateTms" value="1740055036822" />
+              <option name="request" value=" В классе Application получил компментарий над:&#10;     ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()&#10;                .applySettings(configuration.getProperties()).build();&#10;        SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);&#10;       Сам комментарий: &#10;       Здесь можно не создавать ServiceRegistry вручную. В новых версиях Hibernate buildSessionFactory() уже обрабатывает ServiceRegistry внутри" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Да, в новых версиях Hibernate создание `ServiceRegistry` вручную не обязательно, так как `buildSessionFactory()` уже обрабатывает это внутри. Давайте упростим код, убрав явное создание `ServiceRegistry`.&#10;&#10;### Обновленный класс `Application`&#10;&#10;```java&#10;package ru.otus.java.pro.springdatajpql;&#10;&#10;import org.hibernate.Session;&#10;import org.hibernate.SessionFactory;&#10;import org.hibernate.cfg.Configuration;&#10;import ru.otus.java.pro.springdatajpql.entity.Address;&#10;import ru.otus.java.pro.springdatajpql.entity.Client;&#10;import ru.otus.java.pro.springdatajpql.entity.Phone;&#10;&#10;import java.util.Arrays;&#10;import java.util.Properties;&#10;&#10;public class Application {&#10;    public static void main(String[] args) {&#10;        Configuration configuration = new Configuration();&#10;        Properties properties = new Properties();&#10;        try {&#10;            properties.load(Application.class.getClassLoader().getResourceAsStream(&quot;hibernate.properties&quot;));&#10;        } catch (Exception e) {&#10;            e.printStackTrace();&#10;            return;&#10;        }&#10;        configuration.setProperties(properties);&#10;&#10;        configuration.addAnnotatedClass(Client.class);&#10;        configuration.addAnnotatedClass(Address.class);&#10;        configuration.addAnnotatedClass(Phone.class);&#10;&#10;        // Создание SessionFactory без явного создания ServiceRegistry&#10;        SessionFactory sessionFactory = configuration.buildSessionFactory();&#10;&#10;        try (Session session = sessionFactory.openSession()) {&#10;            session.beginTransaction();&#10;&#10;            Address address = new Address();&#10;            address.setStreet(&quot;123 Main St&quot;);&#10;&#10;            Phone phone1 = new Phone();&#10;            phone1.setNumber(&quot;123-456-7890&quot;);&#10;&#10;            Phone phone2 = new Phone();&#10;            phone2.setNumber(&quot;098-765-4321&quot;);&#10;&#10;            Client client = new Client();&#10;            client.setName(&quot;John Doe&quot;);&#10;            client.setAddress(address);&#10;            client.setPhones(Arrays.asList(phone1, phone2));&#10;&#10;            phone1.setClient(client);&#10;            phone2.setClient(client);&#10;&#10;            session.save(client);&#10;&#10;            session.getTransaction().commit();&#10;        }&#10;&#10;        sessionFactory.close();&#10;    }&#10;}&#10;```&#10;&#10;### Обновленные классы сущностей&#10;&#10;#### Address.java&#10;```java&#10;package ru.otus.java.pro.springdatajpql.entity;&#10;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import javax.persistence.*;&#10;&#10;@Entity&#10;@Data&#10;@NoArgsConstructor&#10;public class Address {&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;    private Long id;&#10;&#10;    private String street;&#10;}&#10;```&#10;&#10;#### Client.java&#10;```java&#10;package ru.otus.java.pro.springdatajpql.entity;&#10;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import javax.persistence.*;&#10;import java.util.ArrayList;&#10;import java.util.List;&#10;&#10;@Entity&#10;@Data&#10;@NoArgsConstructor&#10;public class Client {&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;    private Long id;&#10;&#10;    private String name;&#10;&#10;    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)&#10;    @JoinColumn(name = &quot;address_id&quot;, referencedColumnName = &quot;id&quot;)&#10;    private Address address;&#10;&#10;    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = &quot;client&quot;)&#10;    private List&lt;Phone&gt; phones = new ArrayList&lt;&gt;();&#10;}&#10;```&#10;&#10;#### Phone.java&#10;```java&#10;package ru.otus.java.pro.springdatajpql.entity;&#10;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import javax.persistence.*;&#10;&#10;@Entity&#10;@Data&#10;@NoArgsConstructor&#10;public class Phone {&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;    private Long id;&#10;&#10;    private String number;&#10;&#10;    @ManyToOne&#10;    @JoinColumn(name = &quot;client_id&quot;)&#10;    private Client client;&#10;}&#10;```&#10;&#10;Теперь код стал более простым и современным, используя возможности новых версий Hibernate." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1740055046298" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/reflection/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/patterns/part1/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
+                  <option value="$PROJECT_DIR$/spring-app/src/main/resources/application.yaml" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Phone.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" />
                 </list>
               </option>
             </ChatHistoryModel>

@@ -9,6 +9,8 @@ import ru.otus.java.pro.springdatajpql.entity.Address;
 import ru.otus.java.pro.springdatajpql.entity.Client;
 import ru.otus.java.pro.springdatajpql.entity.Phone;
 
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Arrays;
 import java.util.Properties;
 
@@ -16,21 +18,23 @@ public class Application {
     public static void main(String[] args) {
         Configuration configuration = new Configuration();
         Properties properties = new Properties();
-        try {
-            properties.load(Application.class.getClassLoader().getResourceAsStream("hibernate.properties"));
+        try (InputStream input = Application.class.getClassLoader().getResourceAsStream("hibernate.properties")) {
+            if (input == null) {
+                throw new FileNotFoundException("hibernate.properties not found");
+            }
+            properties.load(input);
         } catch (Exception e) {
             e.printStackTrace();
             return;
         }
+
         configuration.setProperties(properties);
 
         configuration.addAnnotatedClass(Client.class);
         configuration.addAnnotatedClass(Address.class);
         configuration.addAnnotatedClass(Phone.class);
 
-        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
-                .applySettings(configuration.getProperties()).build();
-        SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+        SessionFactory sessionFactory = configuration.buildSessionFactory();
 
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
