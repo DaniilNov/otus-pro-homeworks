@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/hibernate/Application.java" afterDir="false" />
-    </list>
+    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,46 +101,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.AccountServiceImplParametrizedTest.executor": "Run",
-    "Gradle.Build otus-pro-homeworks.executor": "Run",
-    "Gradle.Tests in 'impl'.executor": "Run",
-    "Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'.executor": "Run",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "Gradle.otus-pro-homeworks [:Application.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [:HttpServer.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [:HttpServerDemo.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [:Main.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [:MockChatServer.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [:ShoppingCartApplication.main()].executor": "Run",
-    "Gradle.otus-pro-homeworks [build].executor": "Run",
-    "Gradle.otus-pro-homeworks [clean].executor": "Run",
-    "Gradle.otus-pro-homeworks [dependencies].executor": "Run",
-    "JUnit.AccountServiceImplParametrizedTest.executor": "Run",
-    "JUnit.AccountServiceImplTest.executor": "Run",
-    "JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "http.proxy",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.AccountServiceImplParametrizedTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build otus-pro-homeworks.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'impl'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'ru.otus.java.pro.unittests.bank.service.impl'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:HttpServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:HttpServerDemo.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:MockChatServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [:ShoppingCartApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.otus-pro-homeworks [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountServiceImplParametrizedTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ru.otus.java.pro.unittests.bank.service.impl in otus-pro-homeworks.main.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xa86/IdeaProjects/learning-project/otus-pro-homeworks&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -219,6 +216,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="otus-pro-homeworks [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="spring-data-jdbc [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -263,28 +282,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="otus-pro-homeworks [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="SpringAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-app.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.otus.java.pro.spring.app.SpringAppApplication" />
@@ -302,15 +299,16 @@
     <list>
       <item itemvalue="Application.Application" />
       <item itemvalue="Application.ShoppingCartApplication" />
-      <item itemvalue="Gradle.otus-pro-homeworks [clean]" />
+      <item itemvalue="Gradle.spring-data-jdbc [build]" />
+      <item itemvalue="Gradle.spring-data-jdbc [clean]" />
       <item itemvalue="Gradle.otus-pro-homeworks [build]" />
       <item itemvalue="Gradle.otus-pro-homeworks [dependencies]" />
+      <item itemvalue="Spring Boot.SpringDataJdbcApplication" />
       <item itemvalue="Spring Boot.SpringAppApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.otus-pro-homeworks [build]" />
-        <item itemvalue="Gradle.otus-pro-homeworks [clean]" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.ShoppingCartApplication" />
         <item itemvalue="Gradle.otus-pro-homeworks [dependencies]" />
@@ -481,6 +479,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="master-commit" />
     <MESSAGE value="Homework Reflection API и аннотации" />
     <MESSAGE value="Homework Reflection API и аннотации v2" />
