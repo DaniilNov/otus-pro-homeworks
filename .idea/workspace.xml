@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="Homework SPRING-DATA-JPA v1">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" afterDir="false" />
-    </list>
+    <list default="true" id="03de08ac-fd37-4f38-ae33-dc113f4d10c8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -313,7 +309,7 @@
       <workItem from="1738643354426" duration="69000" />
       <workItem from="1738644826381" duration="4482000" />
       <workItem from="1739335858217" duration="645000" />
-      <workItem from="1740054738056" duration="342000" />
+      <workItem from="1740054738056" duration="653000" />
     </task>
     <task id="LOCAL-00001" summary="master-commit">
       <option name="closed" value="true" />
@@ -411,7 +407,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739344246979</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Homework SPRING-DATA-JPQL v2">
+      <option name="closed" value="true" />
+      <created>1740055381650</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1740055381650</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +445,8 @@
     <MESSAGE value="Homework Spring Context v1" />
     <MESSAGE value="Homework JPA/Hibernate Basic v1" />
     <MESSAGE value="Homework SPRING-DATA-JPA v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework SPRING-DATA-JPA v1" />
+    <MESSAGE value="Homework SPRING-DATA-JPQL v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework SPRING-DATA-JPQL v2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -548,6 +553,24 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="5782c2">
+          <value>
+            <ChatHistoryModel>
+              <option name="id" value="5782c2" />
+              <option name="initiateTms" value="1740055163240" />
+              <option name="request" value=" Над catch (Exception e) {&#10;                e.printStackTrace();&#10;                return;&#10;            } получил комментарий&#10;            Рекомендуется использовать try-with-resources для загрузки файла свойств. Это исключает возможность утечки ресурсов" />
+              <option name="response" value="" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Phone.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="5e7941">
           <value>
             <ChatHistoryModel>
@@ -574,6 +597,36 @@
                   <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/Application.java" />
                   <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/concurrency/CustomThreadPool.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="6ab181">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Phone.java" />
+                </list>
+              </option>
+              <option name="id" value="6ab181" />
+              <option name="initiateTms" value="1740055238670" />
+              <option name="request" value=" Над catch (Exception e) { e.printStackTrace(); return; } получил комментарий Рекомендуется использовать try-with-resources для загрузки файла свойств. Это исключает возможность утечки ресурсов" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Использование `try-with-resources` для загрузки файла свойств действительно является хорошей практикой, так как это гарантирует закрытие ресурса после использования, что предотвращает утечки ресурсов. Давайте обновим код, чтобы использовать `try-with-resources` для загрузки файла свойств.&#10;&#10;### Обновленный класс `Application`&#10;&#10;```java&#10;package ru.otus.java.pro.springdatajpql;&#10;&#10;import org.hibernate.Session;&#10;import org.hibernate.SessionFactory;&#10;import org.hibernate.cfg.Configuration;&#10;import ru.otus.java.pro.springdatajpql.entity.Address;&#10;import ru.otus.java.pro.springdatajpql.entity.Client;&#10;import ru.otus.java.pro.springdatajpql.entity.Phone;&#10;&#10;import java.io.InputStream;&#10;import java.util.Arrays;&#10;import java.util.Properties;&#10;&#10;public class Application {&#10;    public static void main(String[] args) {&#10;        Configuration configuration = new Configuration();&#10;        Properties properties = new Properties();&#10;&#10;        // Использование try-with-resources для загрузки файла свойств&#10;        try (InputStream input = Application.class.getClassLoader().getResourceAsStream(&quot;hibernate.properties&quot;)) {&#10;            if (input == null) {&#10;                System.out.println(&quot;Sorry, unable to find hibernate.properties&quot;);&#10;                return;&#10;            }&#10;            properties.load(input);&#10;        } catch (Exception e) {&#10;            e.printStackTrace();&#10;            return;&#10;        }&#10;&#10;        configuration.setProperties(properties);&#10;&#10;        configuration.addAnnotatedClass(Client.class);&#10;        configuration.addAnnotatedClass(Address.class);&#10;        configuration.addAnnotatedClass(Phone.class);&#10;&#10;        // Создание SessionFactory без явного создания ServiceRegistry&#10;        SessionFactory sessionFactory = configuration.buildSessionFactory();&#10;&#10;        try (Session session = sessionFactory.openSession()) {&#10;            session.beginTransaction();&#10;&#10;            Address address = new Address();&#10;            address.setStreet(&quot;123 Main St&quot;);&#10;&#10;            Phone phone1 = new Phone();&#10;            phone1.setNumber(&quot;123-456-7890&quot;);&#10;&#10;            Phone phone2 = new Phone();&#10;            phone2.setNumber(&quot;098-765-4321&quot;);&#10;&#10;            Client client = new Client();&#10;            client.setName(&quot;John Doe&quot;);&#10;            client.setAddress(address);&#10;            client.setPhones(Arrays.asList(phone1, phone2));&#10;&#10;            phone1.setClient(client);&#10;            phone2.setClient(client);&#10;&#10;            session.save(client);&#10;&#10;            session.getTransaction().commit();&#10;        }&#10;&#10;        sessionFactory.close();&#10;    }&#10;}&#10;```&#10;&#10;### Обновленные классы сущностей&#10;&#10;#### Address.java&#10;```java&#10;package ru.otus.java.pro.springdatajpql.entity;&#10;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import javax.persistence.*;&#10;&#10;@Entity&#10;@Data&#10;@NoArgsConstructor&#10;public class Address {&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;    private Long id;&#10;&#10;    private String street;&#10;}&#10;```&#10;&#10;#### Client.java&#10;```java&#10;package ru.otus.java.pro.springdatajpql.entity;&#10;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import javax.persistence.*;&#10;import java.util.ArrayList;&#10;import java.util.List;&#10;&#10;@Entity&#10;@Data&#10;@NoArgsConstructor&#10;public class Client {&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;    private Long id;&#10;&#10;    private String name;&#10;&#10;    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)&#10;    @JoinColumn(name = &quot;address_id&quot;, referencedColumnName = &quot;id&quot;)&#10;    private Address address;&#10;&#10;    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = &quot;client&quot;)&#10;    private List&lt;Phone&gt; phones = new ArrayList&lt;&gt;();&#10;}&#10;```&#10;&#10;#### Phone.java&#10;```java&#10;package ru.otus.java.pro.springdatajpql.entity;&#10;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import javax.persistence.*;&#10;&#10;@Entity&#10;@Data&#10;@NoArgsConstructor&#10;public class Phone {&#10;    @Id&#10;    @GeneratedValue(strategy = GenerationType.IDENTITY)&#10;    private Long id;&#10;&#10;    private String number;&#10;&#10;    @ManyToOne&#10;    @JoinColumn(name = &quot;client_id&quot;)&#10;    private Client client;&#10;}&#10;```&#10;&#10;Теперь загрузка файла свойств выполняется с использованием `try-with-resources`, что гарантирует закрытие ресурса после использования и предотвращает утечки ресурсов." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1740055248538" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Address.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/Application.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Phone.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/ru/otus/java/pro/springdatajpql/entity/Client.java" />
                 </list>
               </option>
             </ChatHistoryModel>
