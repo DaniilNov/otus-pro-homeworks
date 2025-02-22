@@ -1,0 +1,25 @@
+[ {
+  "chatIdentifier" : "Apple",
+  "memberLastName" : "Saint-Petersburg",
+  "belongNumber" : "+79215553267",
+  "sendDate" : "03-31-2023 14:53:34",
+  "text" : "PROBLEM WARNING - No more free space on the disc"
+}, {
+  "chatIdentifier" : "Apple",
+  "memberLastName" : "Saint-Petersburg",
+  "belongNumber" : "+79215553267",
+  "sendDate" : "03-31-2023 15:09:15",
+  "text" : "PROBLEM CRITICAL - The weather is not good for today"
+}, {
+  "chatIdentifier" : "Apple",
+  "memberLastName" : "Saint-Petersburg",
+  "belongNumber" : "+79219213267",
+  "sendDate" : "03-31-2023 14:09:19",
+  "text" : "PROBLEM CRITICAL - There is hight price of the order"
+}, {
+  "chatIdentifier" : "Apple",
+  "memberLastName" : "Saint-Petersburg",
+  "belongNumber" : "+79219213267",
+  "sendDate" : "03-31-2023 15:53:28",
+  "text" : "PROBLEM WARNING - It's raining like dogs and cats"
+} ]
