@@ -20,8 +20,11 @@ public class Main {
     @SneakyThrows
     public static void main(String[] args) {
         ObjectMapper objectMapper = new ObjectMapper();
-        SmsData smsData = objectMapper.readValue(new File("src/main/resources/sms.json"), SmsData.class);
-
+        File file = new File("src/main/resources/sms.json");
+        if (!file.exists() || !file.canRead()) {
+            throw new IllegalArgumentException("File not found or unreadable: " + file.getAbsolutePath());
+        }
+        SmsData smsData = objectMapper.readValue(file, SmsData.class);
         List<SimplifiedChatSession> simplifiedChatSessions = getSimplifiedChatSessions(smsData);
 
         Map<String, List<SimplifiedChatSession>> groupedMessages = simplifiedChatSessions.stream()
@@ -46,7 +49,9 @@ public class Main {
         System.out.println("XML Output:");
         System.out.println(xmlOutput);
 
-        Files.write(Paths.get("output.xml"), xmlOutput.getBytes());
+        try (var writer = Files.newBufferedWriter(Paths.get("output.xml"))) {
+            writer.write(xmlOutput);
+        }
     }
 
     private static List<SimplifiedChatSession> getSimplifiedChatSessions(SmsData smsData) {
